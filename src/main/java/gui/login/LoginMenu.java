@@ -1,6 +1,11 @@
 package gui.login;
 
 import gui.MainFrame;
+import gui.main.professor.ProfessorMenu;
+import gui.main.student.StudentMenu;
+import logic.menus.login.AccountType;
+import logic.menus.login.CredentialsVerifier;
+import logic.menus.login.LoggedInAccount;
 import utils.logging.MasterLogger;
 
 import javax.swing.*;
@@ -94,7 +99,20 @@ public class LoginMenu extends JPanel {
                     return;
                 }
 
-                // TODO
+                LoggedInAccount loggedInAccount = CredentialsVerifier.checkCredentials(enteredUsername, enteredPassword);
+                if (!loggedInAccount.credentialsIsValid) {
+                    MasterLogger.error("invalid login credentials", getClass());
+                    JOptionPane.showMessageDialog(mainFrame, "The entered credentials are wrong.");
+                    return;
+                }
+
+                if (loggedInAccount.accountType == AccountType.STUDENT) {
+                    MasterLogger.info("logged in as student", getClass());
+                    mainFrame.setCurrentPanel(new StudentMenu(mainFrame));
+                } else { // would be AccountType.PROFESSOR by design
+                    MasterLogger.info("logged in as professor", getClass());
+                    mainFrame.setCurrentPanel(new ProfessorMenu(mainFrame));
+                }
             }
         });
     }

@@ -32,8 +32,8 @@ public class Main {
         Course course = new Course("Complex Analysis", LocalDate.of(2022, 07, 22),
                 shahshahani);
         Student student = new Student("Ali", "Alizadeh", "0150332134", "09199921032",
-                "ali.alizadeh@sharif.edu", "3231PLWS", 4.0, educationDeputy, 2021,
-                Student.AcademicStatus.CURRENTLY_STUDYING);
+                "ali.alizadeh@sharif.edu", "400107123", "3231PLWS", 4.0, educationDeputy,
+                2021, Student.AcademicStatus.CURRENTLY_STUDYING);
         mathDepartment.addStudent(student);
         course.addStudent(student);
     }

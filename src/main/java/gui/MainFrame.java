@@ -4,6 +4,7 @@ import gui.login.LoginMenu;
 import utils.database.tools.DatabaseIdentifier;
 import utils.database.tools.DatabaseReader;
 import utils.database.tools.DatabaseWriter;
+import utils.logging.MasterLogger;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,13 +15,22 @@ public class MainFrame extends JFrame {
     public final int FRAME_WIDTH = 1000;
     public final int FRAME_HEIGHT = 700;
 
+    private JPanel currentPanel;
+
     public MainFrame() {
+        MasterLogger.info("program has started", getClass());
         initializeObjects();
         LoginMenu loginMenu = new LoginMenu(this);
-        add(loginMenu);
+        setCurrentPanel(loginMenu);
         configureFrame();
         repaintFrame();
+    }
 
+    public void setCurrentPanel(JPanel currentPanel) {
+        this.currentPanel = currentPanel;
+        getContentPane().removeAll();
+        setContentPane(this.currentPanel);
+        repaintFrame();
     }
 
     private void initializeObjects() {

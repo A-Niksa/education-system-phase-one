@@ -11,20 +11,26 @@ public class Student extends User {
         CURRENTLY_STUDYING, GRADUATED, DROPPED_OUT
     }
 
+    private String studentID;
     private double totalGPA;
     private Professor advisingProfessor;
     private int yearOfEntry;
     private AcademicStatus academicStatus;
 
     public Student(String firstName, String lastName, String nationalID, String phoneNumber, String emailAddress,
-                   String password, double totalGPA, Professor advisingProfessor, int yearOfEntry,
+                   String studentID, String password, double totalGPA, Professor advisingProfessor, int yearOfEntry,
                    AcademicStatus academicStatus) {
         super(firstName, lastName, nationalID, phoneNumber, emailAddress, password);
+        this.studentID = studentID;
         this.totalGPA = totalGPA;
         this.advisingProfessor = advisingProfessor;
         this.yearOfEntry = yearOfEntry;
         this.academicStatus = academicStatus;
         StudentsDB.addToDatabase(this);
+    }
+
+    public String getStudentID() {
+        return studentID;
     }
 
     public double getTotalGPA() {
