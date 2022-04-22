@@ -1,8 +1,8 @@
 package gui.login;
 
 import gui.MainFrame;
-import gui.main.professor.ProfessorMenu;
-import gui.main.student.StudentMenu;
+import gui.main.ProfessorMenu;
+import gui.main.StudentMenu;
 import logic.menus.login.AccountType;
 import logic.menus.login.CredentialsVerifier;
 import logic.menus.login.LoggedInAccount;

@@ -81,4 +81,21 @@ public class DepartmentsDB extends ModelDB {
             e.printStackTrace();
         }
     }
+
+    public static Department getStudentsDepartment(Student targetStudent) {
+        return getInstance().getStudentsDepartmentByInstance(targetStudent);
+    }
+
+    private Department getStudentsDepartmentByInstance(Student targetStudent) {
+        LinkedList<Student> studentsPerDepartment;
+        for (Department department : departmentsList) {
+            studentsPerDepartment = department.getListOfStudents();
+            for (Student student : studentsPerDepartment) {
+                if (student.getStudentID().equals(targetStudent.getStudentID())) {
+                    return department;
+                }
+            }
+        }
+        return null;
+    }
 }

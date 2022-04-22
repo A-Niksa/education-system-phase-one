@@ -182,3 +182,66 @@
 2022/04/22 | 18:16:38 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
 2022/04/22 | 18:16:53 - INFO - updated json databases - connectToDatabase - gui.MainFrame$1
 2022/04/22 | 18:16:53 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 18:58:47 - INFO - start of program - psvm - Main
+2022/04/22 | 18:58:55 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/22 | 18:59:16 - INFO - updated json databases - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 18:59:16 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:00:27 - INFO - start of program - psvm - Main
+2022/04/22 | 19:00:32 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/22 | 19:00:43 - INFO - updated json databases - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:00:43 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:01:42 - INFO - start of program - psvm - Main
+2022/04/22 | 19:01:47 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/22 | 19:01:55 - INFO - updated json databases - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:01:55 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:02:05 - INFO - start of program - psvm - Main
+2022/04/22 | 19:02:10 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/22 | 19:02:14 - INFO - updated json databases - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:02:14 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:03:40 - INFO - start of program - psvm - Main
+2022/04/22 | 19:03:45 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/22 | 19:04:23 - INFO - start of program - psvm - Main
+2022/04/22 | 19:04:32 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/22 | 19:05:19 - INFO - start of program - psvm - Main
+2022/04/22 | 19:05:23 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/22 | 19:05:32 - INFO - updated json databases - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:05:32 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:06:17 - INFO - start of program - psvm - Main
+2022/04/22 | 19:06:22 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/22 | 19:07:39 - INFO - start of program - psvm - Main
+2022/04/22 | 19:07:44 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/22 | 19:07:49 - INFO - updated json databases - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:07:49 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:07:59 - INFO - start of program - psvm - Main
+2022/04/22 | 19:08:03 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/22 | 19:08:41 - INFO - start of program - psvm - Main
+2022/04/22 | 19:08:46 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/22 | 19:09:06 - INFO - updated json databases - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:09:06 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:10:31 - INFO - start of program - psvm - Main
+2022/04/22 | 19:10:37 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/22 | 19:10:48 - INFO - updated json databases - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:10:48 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:10:54 - INFO - start of program - psvm - Main
+2022/04/22 | 19:10:58 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/22 | 19:11:02 - INFO - updated json databases - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:11:02 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:11:12 - INFO - start of program - psvm - Main
+2022/04/22 | 19:11:19 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/22 | 19:11:26 - INFO - updated json databases - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:11:26 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:18:13 - INFO - start of program - psvm - Main
+2022/04/22 | 19:18:18 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/22 | 19:18:39 - INFO - updated json databases - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:18:39 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:23:33 - INFO - start of program - psvm - Main
+2022/04/22 | 19:23:38 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/22 | 19:23:48 - INFO - student changed phone number - connectListeners - gui.profile.StudentProfile$1
+2022/04/22 | 19:23:50 - INFO - updated json databases - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:23:50 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:24:37 - INFO - start of program - psvm - Main
+2022/04/22 | 19:24:41 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/22 | 19:24:51 - INFO - student changed phone number - connectListeners - gui.profile.StudentProfile$1
+2022/04/22 | 19:24:59 - INFO - student changed email address - connectListeners - gui.profile.StudentProfile$2
+2022/04/22 | 19:25:02 - INFO - updated json databases - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 19:25:02 - INFO - end of program - connectToDatabase - gui.MainFrame$1

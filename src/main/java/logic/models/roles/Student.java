@@ -2,6 +2,7 @@ package logic.models.roles;
 
 import logic.models.abstractions.Course;
 import logic.models.abstractions.Department;
+import utils.database.data.DepartmentsDB;
 import utils.database.data.StudentsDB;
 
 import java.util.LinkedList;
@@ -66,11 +67,11 @@ public class Student extends User {
     public String getAcademicStatusString() {
         switch (academicStatus) {
             case CURRENTLY_STUDYING:
-                return "Currently studying";
+                return "Currently Studying";
             case GRADUATED:
                 return "Graduated";
             case DROPPED_OUT:
-                return "Dropped out";
+                return "Dropped Out";
         }
         return "";
     }
@@ -87,11 +88,28 @@ public class Student extends User {
         this.studentID = studentID;
     }
 
+    public String getSoughtDegreeString() {
+        switch (soughtDegree) {
+            case BACHELORS:
+                return "Bachelors";
+            case GRADUATE:
+                return "Graduate";
+            case PHD:
+                return "PhD";
+        }
+        return "";
+    }
+
     public SoughtDegree getSoughtDegree() {
         return soughtDegree;
     }
 
     public void setSoughtDegree(SoughtDegree soughtDegree) {
         this.soughtDegree = soughtDegree;
+    }
+
+    public String getDepartmentName() {
+        Department department = DepartmentsDB.getStudentsDepartment(this);
+        return department.getDepartmentName();
     }
 }

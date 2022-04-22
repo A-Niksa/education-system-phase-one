@@ -1,7 +1,8 @@
-package gui.main.student;
+package gui.main;
 
 import gui.MainFrame;
 import gui.main.MainMenu;
+import gui.profile.StudentProfile;
 import logic.models.roles.Professor;
 import logic.models.roles.Student;
 import logic.models.roles.User;
@@ -10,7 +11,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.geom.Line2D;
 
 public class StudentMenu extends MainMenu {
     private JLabel academicStatusLabel;
@@ -36,6 +36,7 @@ public class StudentMenu extends MainMenu {
     private JMenuItem defenseSlot;
     private JMenuItem temporaryScores;
     private JMenuItem currentAcademicStanding;
+    private JMenuItem editUserProfile;
 
     public StudentMenu(MainFrame mainFrame, User user) {
         super(mainFrame, user);
@@ -71,6 +72,7 @@ public class StudentMenu extends MainMenu {
         defenseSlot = new JMenuItem("Defense Slot Request");
         temporaryScores = new JMenuItem("Temporary Scores");
         currentAcademicStanding = new JMenuItem("Current Academic Standing");
+        editUserProfile = new JMenuItem("Edit Profile");
     }
 
     private void alignComponents() {
@@ -98,6 +100,7 @@ public class StudentMenu extends MainMenu {
         academicStanding.add(temporaryScores);
         academicStanding.add(currentAcademicStanding);
         menuBar.add(userProfile);
+        userProfile.add(editUserProfile);
     }
 
     private void alignServicesMenu() {
@@ -124,10 +127,11 @@ public class StudentMenu extends MainMenu {
     }
 
     private void connectListeners() {
-        userProfile.addActionListener(new ActionListener() {
+        MainMenu mainMenu = this;
+        editUserProfile.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-
+                mainFrame.setCurrentPanel(new StudentProfile(mainFrame, mainMenu, user));
             }
         });
     }

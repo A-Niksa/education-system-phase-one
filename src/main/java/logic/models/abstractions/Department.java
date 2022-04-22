@@ -52,4 +52,12 @@ public class Department {
     public void setEducationDeputy(EducationDeputy educationDeputy) {
         this.educationDeputy = educationDeputy;
     }
+
+    public LinkedList<Student> getListOfStudents() {
+        return listOfStudents;
+    }
+
+    public String getDepartmentName() {
+        return departmentName;
+    }
 }

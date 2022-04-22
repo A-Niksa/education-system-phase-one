@@ -1,10 +1,7 @@
-package gui.main.professor;
+package gui.main;
 
 import gui.MainFrame;
-import gui.main.MainMenu;
 import logic.models.roles.User;
-
-import javax.swing.*;
 
 public class ProfessorMenu extends MainMenu {
     public ProfessorMenu(MainFrame mainFrame, User user) {

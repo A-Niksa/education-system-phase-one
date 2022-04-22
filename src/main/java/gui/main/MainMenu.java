@@ -42,7 +42,7 @@ public class MainMenu extends JPanel {
         profilePicture = new JLabel(profilePictureIcon);
         nameLabel = new JLabel(user.getFirstName() + " " + user.getLastName());
         emailAddressLabel = new JLabel(user.getEmailAddress());
-        logOutButton = new JButton("Log out");
+        logOutButton = new JButton("Log Out");
     }
 
     private void alignComponents() {
