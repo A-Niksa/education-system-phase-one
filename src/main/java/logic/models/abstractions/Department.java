@@ -13,6 +13,7 @@ public class Department {
     private Dean dean;
     private EducationDeputy educationDeputy;
     private LinkedList<Professor> listOfProfessors;
+    private LinkedList<Course> listOfCourses;
     private LinkedList<Student> listOfStudents;
 
     public Department(String departmentName, Dean dean) {
@@ -20,6 +21,7 @@ public class Department {
         this.dean = dean;
         listOfProfessors = new LinkedList<>();
         listOfStudents = new LinkedList<>();
+        listOfCourses = new LinkedList<>();
         DepartmentsDB.addToDatabase(this); // TODO: updating DB
     }
 
@@ -31,6 +33,19 @@ public class Department {
         for (int i = 0; i < listOfProfessors.size(); i++) {
             if (professor == listOfProfessors.get(i)) {
                 listOfProfessors.remove(i);
+                return;
+            }
+        }
+    }
+
+    public void addCourse(Course course) {
+        listOfCourses.add(course);
+    }
+
+    public void removeCourse(Course course) {
+        for (int i = 0; i < listOfCourses.size(); i++) {
+            if (course == listOfCourses.get(i)) {
+                listOfCourses.remove(i);
                 return;
             }
         }
@@ -59,5 +74,9 @@ public class Department {
 
     public String getDepartmentName() {
         return departmentName;
+    }
+
+    public LinkedList<Course> getListOfCourses() {
+        return listOfCourses;
     }
 }

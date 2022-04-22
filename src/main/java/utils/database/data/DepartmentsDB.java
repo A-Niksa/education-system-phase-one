@@ -2,6 +2,7 @@ package utils.database.data;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import logic.models.abstractions.Course;
 import logic.models.abstractions.Department;
 import logic.models.roles.Student;
 
@@ -92,6 +93,23 @@ public class DepartmentsDB extends ModelDB {
             studentsPerDepartment = department.getListOfStudents();
             for (Student student : studentsPerDepartment) {
                 if (student.getStudentID().equals(targetStudent.getStudentID())) {
+                    return department;
+                }
+            }
+        }
+        return null;
+    }
+
+    public static Department getCoursesDepartment(Course targetCourse) {
+        return getInstance().getCoursesDepartmentByInstance(targetCourse);
+    }
+
+    private Department getCoursesDepartmentByInstance(Course targetCourse) {
+        LinkedList<Course> coursesPerDepartment;
+        for (Department department : departmentsList) {
+            coursesPerDepartment = department.getListOfCourses();
+            for (Course course : coursesPerDepartment) {
+                if (course.getCourseID().equals(targetCourse.getCourseID())) {
                     return department;
                 }
             }

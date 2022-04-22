@@ -45,6 +45,18 @@ public class Professor extends User {
         this.officeNumber = officeNumber;
     }
 
+    public String getAcademicRankString() {
+        switch (academicRank) {
+            case ASSISTANT:
+                return "Assistant Professor";
+            case ASSOCIATE:
+                return "Associate Professor";
+            case FULL:
+                return "Full Professor";
+        }
+        return "";
+    }
+
     public AcademicRank getAcademicRank() {
         return academicRank;
     }

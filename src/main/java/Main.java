@@ -10,6 +10,7 @@ import utils.logging.LogIdentifier;
 import utils.logging.MasterLogger;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Main {
     public static void main(String[] args) {
@@ -32,12 +33,22 @@ public class Main {
                 "09120000000", "shahshah@sharif.edu", "12349876", "0101", 103,
                 Professor.AcademicRank.FULL, Professor.AdministrativeRole.NORMAL);
         mathDepartment.addProfessor(shahshahani);
-        Course course = new Course("Complex Analysis", LocalDate.of(2022, 07, 22),
-                shahshahani);
+        Course complexAnalysis = new Course("Complex Analysis",
+                LocalDateTime.of(2022, 7, 22, 9, 0, 0),
+                3, Course.CourseLevel.BACHELORS, "12341", shahshahani);
+        mathDepartment.addCourse(complexAnalysis);
+        Course realAnalysis = new Course("Real Analysis",
+                LocalDateTime.of(2022, 7, 23, 10, 30, 0), 2,
+                Course.CourseLevel.GRADUATE, "32134", educationDeputy);
+        mathDepartment.addCourse(realAnalysis);
+        Course partialDiffEquations = new Course("PDE",
+                LocalDateTime.of(2022, 8, 1, 8, 0, 0),
+                                4, Course.CourseLevel.PHD, "42310", mathDean);
+        mathDepartment.addCourse(partialDiffEquations);
         Student student = new Student("Ali", "Alizadeh", "0150332134", "09199921032",
                 "ali.alizadeh@sharif.edu", "1", "1", 4.0, educationDeputy,
                 2021, Student.AcademicStatus.CURRENTLY_STUDYING, Student.SoughtDegree.BACHELORS);
         mathDepartment.addStudent(student);
-        course.addStudent(student);
+        complexAnalysis.addStudent(student);
     }
 }

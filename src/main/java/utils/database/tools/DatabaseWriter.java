@@ -8,6 +8,8 @@ import utils.database.data.CoursesDB;
 import utils.database.data.DepartmentsDB;
 import utils.database.data.ProfessorsDB;
 import utils.database.data.StudentsDB;
+import utils.logging.LogIdentifier;
+import utils.logging.MasterLogger;
 
 public class DatabaseWriter extends DatabaseManager {
     private static DatabaseWriter databaseWriter;
@@ -66,6 +68,8 @@ public class DatabaseWriter extends DatabaseManager {
     }
 
     public static void updateDatabase() {
+        MasterLogger.log("updated json databases", LogIdentifier.INFO, "updateDatabase",
+                "utils.database.tools.DatabaseWriter");
         getInstance().updateDatabaseByInstance();
     }
 

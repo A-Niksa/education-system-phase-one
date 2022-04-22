@@ -1,5 +1,6 @@
 package utils.database.tools;
 
+import utils.database.data.CoursesDB;
 import utils.database.data.DepartmentsDB;
 import utils.database.data.ProfessorsDB;
 import utils.database.data.StudentsDB;
@@ -37,8 +38,7 @@ public class DatabaseReader extends DatabaseManager {
                 DepartmentsDB.setDatabase(gson.fromJson(reader, DepartmentsDB.getListType()));
                 break;
             case COURSES:
-//                CoursesDB.setDatabase(gson.fromJson(reader, CoursesDB.getListType()));
-                // TODO: resolving the bug with CoursesDB when calling constructFromDatabase (NPE)
+                CoursesDB.setDatabase(gson.fromJson(reader, CoursesDB.getListType()));
                 break;
             default:
                 return;

@@ -1,6 +1,8 @@
 package gui.main;
 
 import gui.MainFrame;
+import gui.enrolment.CoursesListView;
+import gui.enrolment.ProfessorsListView;
 import gui.main.MainMenu;
 import gui.profile.StudentProfile;
 import logic.models.roles.Professor;
@@ -128,10 +130,25 @@ public class StudentMenu extends MainMenu {
 
     private void connectListeners() {
         MainMenu mainMenu = this;
+
         editUserProfile.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 mainFrame.setCurrentPanel(new StudentProfile(mainFrame, mainMenu, user));
+            }
+        });
+
+        listOfCourses.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                mainFrame.setCurrentPanel(new CoursesListView(mainFrame, mainMenu));
+            }
+        });
+
+        listOfProfessors.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                mainFrame.setCurrentPanel(new ProfessorsListView(mainFrame, mainMenu));
             }
         });
     }

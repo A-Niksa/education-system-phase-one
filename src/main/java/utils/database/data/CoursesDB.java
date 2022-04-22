@@ -2,7 +2,9 @@ package utils.database.data;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import gui.enrolment.FilterKey;
 import logic.models.abstractions.Course;
+import logic.models.abstractions.Department;
 import logic.models.roles.Student;
 
 import java.io.FileWriter;
@@ -14,7 +16,6 @@ public class CoursesDB extends ModelDB {
     private static CoursesDB database;
 
     private LinkedList<Course> coursesList;
-    private Type listType;
 
     private CoursesDB() {
         coursesList = new LinkedList<Course>();
@@ -67,6 +68,39 @@ public class CoursesDB extends ModelDB {
 
     private LinkedList<Course> getListByInstance() {
         return coursesList;
+    }
+
+    public static LinkedList<Course> getFilteredList(FilterKey key, String filterTarget) {
+        return getInstance().getFilteredListByInstance(key, filterTarget);
+    }
+
+    private LinkedList<Course> getFilteredListByInstance(FilterKey key, String filterTarget) {
+        LinkedList<Course> filteredList = new LinkedList<>();
+        switch (key) {
+            case COURSE_ID:
+                for (Course course : coursesList) {
+                    if (course.getCourseID().equals(filterTarget)) {
+                        filteredList.add(course);
+                    }
+                }
+                break;
+            case NUMBER_OF_CREDITS:
+                for (Course course : coursesList) {
+                    if (course.getNumberOfCredits() == Integer.parseInt(filterTarget)) {
+                        filteredList.add(course);
+                    }
+                }
+                break;
+            case COURSE_LEVEL:
+                for (Course course : coursesList) {
+                    String courseLevelString = course.getCourseLevelString();
+                    if (courseLevelString.equals(filterTarget)) {
+                        filteredList.add(course);
+                    }
+                }
+                break;
+        }
+        return filteredList;
     }
 
     public static void addListToJson(FileWriter writer, Gson gson) {

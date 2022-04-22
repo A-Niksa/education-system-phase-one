@@ -43,7 +43,6 @@ public class MainFrame extends JFrame {
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
-                MasterLogger.info("updated json databases", getClass());
                 DatabaseWriter.updateDatabase();
                 MasterLogger.info("end of program", getClass());
                 e.getWindow().dispose();
