@@ -41,6 +41,7 @@ public class ProfessorsListView extends Template {
 
     @Override
     protected void alignComponents() {
+        professorsTable.setRowHeight(25);
         JScrollPane scrollPane = new JScrollPane(professorsTable);
         scrollPane.setBounds(50, 50, 885, 530);
         add(scrollPane);

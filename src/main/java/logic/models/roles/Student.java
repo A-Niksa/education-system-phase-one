@@ -2,8 +2,13 @@ package logic.models.roles;
 
 import logic.models.abstractions.Course;
 import logic.models.abstractions.Department;
+import logic.models.abstractions.StudentStatus;
+import logic.models.abstractions.Transcript;
+import utils.database.data.CoursesDB;
 import utils.database.data.DepartmentsDB;
 import utils.database.data.StudentsDB;
+import utils.logging.LogIdentifier;
+import utils.logging.MasterLogger;
 
 import java.util.LinkedList;
 
@@ -22,6 +27,7 @@ public class Student extends User {
     private int yearOfEntry;
     private AcademicStatus academicStatus;
     private SoughtDegree soughtDegree;
+    private Transcript transcript;
 
     public Student(String firstName, String lastName, String nationalID, String phoneNumber, String emailAddress,
                    String studentID, String password, double totalGPA, Professor advisingProfessor, int yearOfEntry,
@@ -33,6 +39,7 @@ public class Student extends User {
         this.yearOfEntry = yearOfEntry;
         this.academicStatus = academicStatus;
         this.soughtDegree = soughtDegree;
+        transcript = new Transcript();
         StudentsDB.addToDatabase(this);
     }
 
@@ -40,8 +47,55 @@ public class Student extends User {
         return studentID;
     }
 
+    public int getPassedCredits() {
+        LinkedList<String> passedCoursesIDs = transcript.getPassedCoursesIDs();
+        int passedCredits = 0;
+        Course course;
+        StudentStatus studentStatus;
+        for (String courseID : passedCoursesIDs) {
+            course = CoursesDB.getCourseWithID(courseID);
+            studentStatus = course.getStudentsStatus(this);
+            if (studentStatus.scoreIsFinalized()) {
+                passedCredits += course.getNumberOfCredits();
+            }
+        }
+        return passedCredits;
+    }
+
+    public String getTotalGPAString() {
+        double GPA = getTotalGPA();
+        if (GPA == -1) {
+            return "N/A";
+        }
+        return String.valueOf(GPA);
+    }
+
     public double getTotalGPA() {
-        return totalGPA;
+        LinkedList<String> passedCoursesIDs = transcript.getPassedCoursesIDs();
+        StudentStatus studentStatus;
+        double scorePerCourse;
+        double totalScore = 0;
+        int totalWeight = 0;
+        Course course;
+        for (String courseID : passedCoursesIDs) {
+            course = CoursesDB.getCourseWithID(courseID);
+            studentStatus = course.getStudentsStatus(this);
+            if (studentStatus.scoreIsFinalized()) {
+                scorePerCourse = studentStatus.getScore();
+                totalScore += scorePerCourse * course.getNumberOfCredits();
+                totalWeight += course.getNumberOfCredits();
+            }
+        }
+        double GPA;
+        if (totalWeight != 0) {
+            GPA = totalScore / totalWeight;
+        } else {
+            MasterLogger.log("no courses have been passed", LogIdentifier.ERROR, "getTotalGPA",
+                    "logic.models.roles.Student");
+            GPA = -1;
+        }
+        setTotalGPA(GPA);
+        return GPA;
     }
 
     public void setTotalGPA(double totalGPA) {
@@ -111,5 +165,23 @@ public class Student extends User {
     public String getDepartmentName() {
         Department department = DepartmentsDB.getStudentsDepartment(this);
         return department.getDepartmentName();
+    }
+
+    public Transcript getTranscript() {
+        return transcript;
+    }
+
+    public LinkedList<StudentStatus> getTemporaryAcademicStatuses() {
+        LinkedList<StudentStatus> temporaryAcademicStatuses = new LinkedList<>();
+        Course course;
+        StudentStatus studentStatus;
+        for (String courseID : transcript.getPassedCoursesIDs()) {
+            course = CoursesDB.getCourseWithID(courseID);
+            studentStatus = course.getStudentsStatus(this);
+            if (!studentStatus.scoreIsFinalized()) {
+                temporaryAcademicStatuses.add(studentStatus);
+            }
+        }
+        return temporaryAcademicStatuses;
     }
 }

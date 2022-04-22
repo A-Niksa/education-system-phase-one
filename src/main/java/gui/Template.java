@@ -1,6 +1,7 @@
 package gui;
 
 import gui.main.MainMenu;
+import utils.logging.MasterLogger;
 
 import javax.swing.*;
 import java.awt.*;
@@ -49,6 +50,7 @@ public abstract class Template extends JPanel {
         mainMenuButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
+                MasterLogger.info("returned to the main menu", getClass());
                 mainFrame.setCurrentPanel(mainMenu);
             }
         });

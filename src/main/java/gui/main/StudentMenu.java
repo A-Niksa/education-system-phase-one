@@ -5,9 +5,12 @@ import gui.enrolment.CoursesListView;
 import gui.enrolment.ProfessorsListView;
 import gui.main.MainMenu;
 import gui.profile.StudentProfile;
+import gui.standing.CurrentStanding;
+import gui.standing.TemporaryStanding;
 import logic.models.roles.Professor;
 import logic.models.roles.Student;
 import logic.models.roles.User;
+import utils.logging.MasterLogger;
 
 import javax.swing.*;
 import java.awt.*;
@@ -134,6 +137,7 @@ public class StudentMenu extends MainMenu {
         editUserProfile.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
+                MasterLogger.info("opened the profile editor in the user profile", getClass());
                 mainFrame.setCurrentPanel(new StudentProfile(mainFrame, mainMenu, user));
             }
         });
@@ -141,6 +145,7 @@ public class StudentMenu extends MainMenu {
         listOfCourses.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
+                MasterLogger.info("opened the courses list in educational services", getClass());
                 mainFrame.setCurrentPanel(new CoursesListView(mainFrame, mainMenu));
             }
         });
@@ -148,7 +153,24 @@ public class StudentMenu extends MainMenu {
         listOfProfessors.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
+                MasterLogger.info("opened the professors list in educational services", getClass());
                 mainFrame.setCurrentPanel(new ProfessorsListView(mainFrame, mainMenu));
+            }
+        });
+
+        temporaryScores.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                MasterLogger.info("opened temporary scores in academic standing", getClass());
+                mainFrame.setCurrentPanel(new TemporaryStanding(mainFrame, mainMenu, user));
+            }
+        });
+
+        currentAcademicStanding.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                MasterLogger.info("opened current academic standing in academic standing", getClass());
+                mainFrame.setCurrentPanel(new CurrentStanding(mainFrame, mainMenu, user));
             }
         });
     }

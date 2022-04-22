@@ -50,5 +50,11 @@ public class Main {
                 2021, Student.AcademicStatus.CURRENTLY_STUDYING, Student.SoughtDegree.BACHELORS);
         mathDepartment.addStudent(student);
         complexAnalysis.addStudent(student);
+        complexAnalysis.mapStudentToScore(student, 20.0);
+        complexAnalysis.finalizeScore(student);
+        realAnalysis.addStudent(student);
+        realAnalysis.mapStudentToScore(student, 18.5);
+        realAnalysis.finalizeScore(student);
+        partialDiffEquations.addStudent(student);
     }
 }

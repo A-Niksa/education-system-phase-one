@@ -67,6 +67,7 @@ public class CoursesListView extends Template {
 
     @Override
     protected void alignComponents() {
+        coursesTable.setRowHeight(25);
         scrollPane = new JScrollPane(coursesTable);
         scrollPane.setBounds(50, 120, 885, 400);
         add(scrollPane);

@@ -5,12 +5,14 @@ import logic.models.roles.Student;
 import utils.database.data.CoursesDB;
 import utils.database.data.DepartmentsDB;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Map;
 
 public class Course {
+
     public enum CourseLevel {
         BACHELORS,
         GRADUATE,
@@ -24,6 +26,7 @@ public class Course {
     private CourseLevel courseLevel;
     private String courseID;
     private LinkedList<Student> listOfStudents;
+    private LinkedList<StudentStatus> studentScores;
 
     public Course(String courseName, LocalDateTime examTime, int numberOfCredits, CourseLevel courseLevel,
                   String courseID, Professor teachingProfessor) {
@@ -34,7 +37,46 @@ public class Course {
         this.courseID = courseID;
         this.teachingProfessor = teachingProfessor;
         listOfStudents = new LinkedList<>();
+        studentScores = new LinkedList<>();
         CoursesDB.addToDatabase(this);
+    }
+
+    public void mapStudentToScore(Student student, Double score) {
+        studentScores.add(new StudentStatus(student.getStudentID(), courseName, score));
+        student.getTranscript().addCourse(this); // adding the course to the student's passed courses
+        // here, we refer to passed courses as the ones that the student has taken, not the ones that he/she has necessarily passed
+    }
+
+    public StudentStatus getStudentsStatus(Student targetStudent) {
+        String studentID;
+        Double targetStudentScore;
+        for (StudentStatus studentStatus : studentScores) {
+            studentID = studentStatus.getStudentID();
+            if (studentID.equals(targetStudent.getStudentID())) {
+                return studentStatus;
+            }
+        }
+        return null;
+    }
+
+    public String getStudentsScoreString(Student targetStudent) {
+        StudentStatus studentStatus = getStudentsStatus(targetStudent);
+        if (studentStatus.scoreIsFinalized()) {
+            double score = studentStatus.getScore();
+            return String.valueOf(score);
+        }
+        return "N/A";
+    }
+
+    public void finalizeScore(Student targetStudent) {
+        String studentID;
+        for (StudentStatus studentStatus : studentScores) {
+            studentID = studentStatus.getStudentID();
+            if (studentID.equals(targetStudent.getStudentID())) {
+                studentStatus.setScoreAsFinalized();
+                return;
+            }
+        }
     }
 
     public void addStudent(Student student) {

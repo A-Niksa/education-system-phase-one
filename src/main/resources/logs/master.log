@@ -502,3 +502,171 @@
 2022/04/22 | 22:04:43 - INFO - filters were reset - connectListeners - gui.enrolment.CoursesListView$4
 2022/04/22 | 22:04:46 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
 2022/04/22 | 22:04:46 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/22 | 23:22:21 - INFO - start of program - psvm - Main
+2022/04/22 | 23:22:21 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/22 | 23:23:24 - INFO - start of program - psvm - Main
+2022/04/22 | 23:23:24 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/22 | 23:24:52 - INFO - start of program - psvm - Main
+2022/04/22 | 23:24:52 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/22 | 23:26:13 - INFO - start of program - psvm - Main
+2022/04/22 | 23:26:13 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/22 | 23:30:53 - INFO - start of program - psvm - Main
+2022/04/22 | 23:30:53 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/22 | 23:36:55 - INFO - start of program - psvm - Main
+2022/04/22 | 23:36:55 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/22 | 23:52:35 - INFO - start of program - psvm - Main
+2022/04/22 | 23:53:07 - INFO - start of program - psvm - Main
+2022/04/22 | 23:53:07 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 00:24:06 - INFO - start of program - psvm - Main
+2022/04/23 | 00:24:19 - INFO - start of program - psvm - Main
+2022/04/23 | 00:24:19 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 00:24:27 - INFO - start of program - psvm - Main
+2022/04/23 | 00:32:49 - INFO - start of program - psvm - Main
+2022/04/23 | 00:32:49 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 00:32:58 - INFO - start of program - psvm - Main
+2022/04/23 | 00:33:03 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 00:33:05 - INFO - opened the courses list in educational services - connectListeners - gui.main.StudentMenu$2
+2022/04/23 | 00:33:06 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 00:33:13 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 00:33:13 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 00:34:30 - INFO - start of program - psvm - Main
+2022/04/23 | 00:34:35 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 00:34:37 - INFO - opened the profile editor in the user profile - connectListeners - gui.main.StudentMenu$1
+2022/04/23 | 00:34:39 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 00:34:40 - INFO - opened the professors list in educational services - connectListeners - gui.main.StudentMenu$3
+2022/04/23 | 00:34:42 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 00:34:43 - INFO - opened the courses list in educational services - connectListeners - gui.main.StudentMenu$2
+2022/04/23 | 00:34:45 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 00:34:48 - INFO - opened temporary scores in academic standing - connectListeners - gui.main.StudentMenu$4
+2022/04/23 | 00:35:22 - INFO - start of program - psvm - Main
+2022/04/23 | 00:35:28 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 00:35:30 - INFO - opened temporary scores in academic standing - connectListeners - gui.main.StudentMenu$4
+2022/04/23 | 01:03:33 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 01:03:33 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 01:04:25 - INFO - start of program - psvm - Main
+2022/04/23 | 01:04:29 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 01:04:33 - INFO - opened temporary scores in academic standing - connectListeners - gui.main.StudentMenu$4
+2022/04/23 | 01:05:19 - INFO - start of program - psvm - Main
+2022/04/23 | 01:05:23 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 01:05:25 - INFO - opened the profile editor in the user profile - connectListeners - gui.main.StudentMenu$1
+2022/04/23 | 01:05:27 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 01:05:29 - INFO - opened temporary scores in academic standing - connectListeners - gui.main.StudentMenu$4
+2022/04/23 | 01:05:50 - INFO - start of program - psvm - Main
+2022/04/23 | 01:05:55 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 01:05:58 - INFO - opened temporary scores in academic standing - connectListeners - gui.main.StudentMenu$4
+2022/04/23 | 01:06:19 - INFO - start of program - psvm - Main
+2022/04/23 | 01:06:34 - INFO - start of program - psvm - Main
+2022/04/23 | 01:06:39 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 01:06:42 - INFO - opened temporary scores in academic standing - connectListeners - gui.main.StudentMenu$4
+2022/04/23 | 01:06:56 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 01:06:56 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 01:26:27 - INFO - start of program - psvm - Main
+2022/04/23 | 01:26:32 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 01:26:35 - INFO - opened temporary scores in academic standing - connectListeners - gui.main.StudentMenu$4
+2022/04/23 | 01:26:45 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 01:26:45 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 01:28:06 - INFO - start of program - psvm - Main
+2022/04/23 | 01:28:08 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 01:28:08 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 01:29:30 - INFO - start of program - psvm - Main
+2022/04/23 | 01:29:35 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 01:29:38 - INFO - opened temporary scores in academic standing - connectListeners - gui.main.StudentMenu$4
+2022/04/23 | 01:29:48 - INFO - student protested to their score of null - actionPerformed - gui.standing.TemporaryStanding
+2022/04/23 | 01:29:51 - INFO - student protested to their score of null - actionPerformed - gui.standing.TemporaryStanding
+2022/04/23 | 01:29:53 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 01:29:53 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 01:30:12 - INFO - start of program - psvm - Main
+2022/04/23 | 01:30:17 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 01:30:19 - INFO - opened temporary scores in academic standing - connectListeners - gui.main.StudentMenu$4
+2022/04/23 | 01:30:29 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 01:30:31 - INFO - opened temporary scores in academic standing - connectListeners - gui.main.StudentMenu$4
+2022/04/23 | 01:30:43 - INFO - student protested to their score of null - actionPerformed - gui.standing.TemporaryStanding
+2022/04/23 | 01:30:46 - INFO - student protested to their score of null - actionPerformed - gui.standing.TemporaryStanding
+2022/04/23 | 01:31:26 - INFO - start of program - psvm - Main
+2022/04/23 | 01:31:30 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 01:31:32 - INFO - opened temporary scores in academic standing - connectListeners - gui.main.StudentMenu$4
+2022/04/23 | 01:31:37 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 01:31:37 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 01:31:46 - INFO - start of program - psvm - Main
+2022/04/23 | 01:31:51 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 01:31:52 - INFO - opened temporary scores in academic standing - connectListeners - gui.main.StudentMenu$4
+2022/04/23 | 01:32:01 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 01:32:01 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 01:33:07 - INFO - start of program - psvm - Main
+2022/04/23 | 01:33:12 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 01:33:14 - INFO - opened temporary scores in academic standing - connectListeners - gui.main.StudentMenu$4
+2022/04/23 | 01:33:16 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 01:33:16 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 01:34:10 - INFO - start of program - psvm - Main
+2022/04/23 | 01:34:16 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 01:34:19 - INFO - opened temporary scores in academic standing - connectListeners - gui.main.StudentMenu$4
+2022/04/23 | 01:34:24 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 01:34:24 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 01:34:40 - INFO - start of program - psvm - Main
+2022/04/23 | 01:34:40 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 01:34:58 - INFO - start of program - psvm - Main
+2022/04/23 | 01:35:02 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 01:35:04 - INFO - opened temporary scores in academic standing - connectListeners - gui.main.StudentMenu$4
+2022/04/23 | 01:35:13 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 01:35:25 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/23 | 01:35:27 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 01:35:27 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 01:59:11 - INFO - start of program - psvm - Main
+2022/04/23 | 01:59:15 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 01:59:18 - INFO - opened the courses list in educational services - connectListeners - gui.main.StudentMenu$2
+2022/04/23 | 01:59:21 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 01:59:23 - INFO - opened the professors list in educational services - connectListeners - gui.main.StudentMenu$3
+2022/04/23 | 01:59:25 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 01:59:26 - INFO - opened the courses list in educational services - connectListeners - gui.main.StudentMenu$2
+2022/04/23 | 01:59:27 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 01:59:30 - INFO - opened temporary scores in academic standing - connectListeners - gui.main.StudentMenu$4
+2022/04/23 | 01:59:31 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 01:59:36 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 01:59:36 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 02:00:50 - INFO - start of program - psvm - Main
+2022/04/23 | 02:00:55 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 02:00:58 - INFO - opened current academic standing in academic standing - connectListeners - gui.main.StudentMenu$5
+2022/04/23 | 02:02:07 - INFO - start of program - psvm - Main
+2022/04/23 | 02:02:11 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 02:02:16 - INFO - opened current academic standing in academic standing - connectListeners - gui.main.StudentMenu$5
+2022/04/23 | 02:02:16 - ERROR - no courses have been passed - getTotalGPA - logic.models.roles.Student
+2022/04/23 | 02:03:53 - INFO - start of program - psvm - Main
+2022/04/23 | 02:03:53 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 02:04:29 - INFO - start of program - psvm - Main
+2022/04/23 | 02:04:29 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 02:04:39 - INFO - start of program - psvm - Main
+2022/04/23 | 02:04:44 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 02:04:48 - INFO - opened current academic standing in academic standing - connectListeners - gui.main.StudentMenu$5
+2022/04/23 | 02:05:15 - INFO - start of program - psvm - Main
+2022/04/23 | 02:05:15 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 02:05:26 - INFO - start of program - psvm - Main
+2022/04/23 | 02:05:32 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 02:05:34 - INFO - opened current academic standing in academic standing - connectListeners - gui.main.StudentMenu$5
+2022/04/23 | 02:06:35 - INFO - start of program - psvm - Main
+2022/04/23 | 02:06:39 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 02:06:41 - INFO - opened current academic standing in academic standing - connectListeners - gui.main.StudentMenu$5
+2022/04/23 | 02:06:43 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 02:06:43 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 02:06:51 - INFO - start of program - psvm - Main
+2022/04/23 | 02:06:56 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 02:06:58 - INFO - opened current academic standing in academic standing - connectListeners - gui.main.StudentMenu$5
+2022/04/23 | 02:06:59 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 02:06:59 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 02:07:08 - INFO - start of program - psvm - Main
+2022/04/23 | 02:07:13 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 02:07:15 - INFO - opened temporary scores in academic standing - connectListeners - gui.main.StudentMenu$4
+2022/04/23 | 02:07:17 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 02:07:18 - INFO - opened temporary scores in academic standing - connectListeners - gui.main.StudentMenu$4
+2022/04/23 | 02:07:19 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 02:07:21 - INFO - opened the courses list in educational services - connectListeners - gui.main.StudentMenu$2
+2022/04/23 | 02:07:22 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 02:07:24 - INFO - opened current academic standing in academic standing - connectListeners - gui.main.StudentMenu$5
+2022/04/23 | 02:07:27 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 02:07:30 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 02:07:30 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 02:07:39 - INFO - start of program - psvm - Main
+2022/04/23 | 02:07:43 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 02:07:55 - INFO - opened current academic standing in academic standing - connectListeners - gui.main.StudentMenu$5
+2022/04/23 | 02:08:13 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 02:08:14 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 02:08:14 - INFO - end of program - connectToDatabase - gui.MainFrame$1

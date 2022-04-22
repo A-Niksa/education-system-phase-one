@@ -6,6 +6,7 @@ import gui.enrolment.FilterKey;
 import logic.models.abstractions.Course;
 import logic.models.abstractions.Department;
 import logic.models.roles.Student;
+import utils.logging.MasterLogger;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -86,8 +87,12 @@ public class CoursesDB extends ModelDB {
                 break;
             case NUMBER_OF_CREDITS:
                 for (Course course : coursesList) {
-                    if (course.getNumberOfCredits() == Integer.parseInt(filterTarget)) {
-                        filteredList.add(course);
+                    try {
+                        if (course.getNumberOfCredits() == Integer.parseInt(filterTarget)) {
+                            filteredList.add(course);
+                        }
+                    } catch (NumberFormatException e) {
+                        MasterLogger.fatal(filterTarget + " is not castable to int", getClass());
                     }
                 }
                 break;
@@ -101,6 +106,19 @@ public class CoursesDB extends ModelDB {
                 break;
         }
         return filteredList;
+    }
+
+    public static Course getCourseWithID(String courseID) {
+        return getInstance().getCourseWithIDByInstance(courseID);
+    }
+
+    private Course getCourseWithIDByInstance(String courseID) {
+        for (Course course : coursesList) {
+            if (course.getCourseID().equals(courseID)) {
+                return course;
+            }
+        }
+        return null;
     }
 
     public static void addListToJson(FileWriter writer, Gson gson) {
