@@ -6,12 +6,15 @@ import logic.models.roles.EducationDeputy;
 import logic.models.roles.Professor;
 import logic.models.roles.Student;
 import utils.database.tools.DatabaseWriter;
+import utils.logging.LogIdentifier;
+import utils.logging.MasterLogger;
 
 import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        createTestData();
+        MasterLogger.log("start of program", LogIdentifier.INFO, "psvm", "Main");
+//        createTestData();
 //        DatabaseWriter.updateDatabase();
         new MainFrame();
     }
@@ -32,8 +35,8 @@ public class Main {
         Course course = new Course("Complex Analysis", LocalDate.of(2022, 07, 22),
                 shahshahani);
         Student student = new Student("Ali", "Alizadeh", "0150332134", "09199921032",
-                "ali.alizadeh@sharif.edu", "400107123", "3231PLWS", 4.0, educationDeputy,
-                2021, Student.AcademicStatus.CURRENTLY_STUDYING);
+                "ali.alizadeh@sharif.edu", "1", "1", 4.0, educationDeputy,
+                2021, Student.AcademicStatus.CURRENTLY_STUDYING, Student.SoughtDegree.BACHELORS);
         mathDepartment.addStudent(student);
         course.addStudent(student);
     }

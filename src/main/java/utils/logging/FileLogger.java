@@ -2,7 +2,7 @@ package utils.logging;
 
 import java.io.*;
 
-import static utils.Timing.TimeManager.getTime;
+import static utils.timing.TimeManager.getTime;
 
 public class FileLogger extends StreamLogger {
     private static final String pathToLog = "src/main/resources/logs/master.log";

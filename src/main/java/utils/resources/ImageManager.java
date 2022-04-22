@@ -18,6 +18,14 @@ public class ImageManager {
         return imageManager;
     }
 
+    public static Image getImage(String fullPath) {
+        return getInstance().getImageByInstance(fullPath);
+    }
+
+    public Image getImageByInstance(String fullPath) {
+        return Toolkit.getDefaultToolkit().getImage(fullPath);
+    }
+
     public static Image getImage(ImageIdentifier imageIdentifier) {
         return getInstance().getImageByInstance(imageIdentifier);
     }

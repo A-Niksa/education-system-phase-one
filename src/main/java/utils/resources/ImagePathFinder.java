@@ -2,9 +2,11 @@ package utils.resources;
 
 public class ImagePathFinder {
     private final String captchaPath;
+    private final String profilePicturesPath;
 
     public ImagePathFinder() {
         captchaPath = "assets/captcha/";
+        profilePicturesPath = "assets/profilepictures/";
     }
 
     public String getPath(ImageIdentifier imageIdentifier) {
@@ -19,6 +21,8 @@ public class ImagePathFinder {
                 return captchaPath + "8947.jpg";
             case CAPTCHA_9125:
                 return captchaPath + "9125.jpg";
+            case DEFAULT_PROFILE_PICTURE:
+                return profilePicturesPath + "default.png";
             default:
                 return null; // makes catching invalid images easier
         }

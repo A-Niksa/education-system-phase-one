@@ -1,9 +1,14 @@
 package logic.models.roles;
 
+import utils.resources.ImageIdentifier;
+import utils.resources.ImageManager;
+
+import java.awt.*;
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
-abstract class User {
+public abstract class User {
     protected String firstName;
     protected String lastName;
     protected String nationalID;
@@ -11,7 +16,7 @@ abstract class User {
     protected String emailAddress;
     protected String password;
     protected LocalDateTime timeOfLastLogin;
-    // TODO: add image
+    protected ImageIdentifier profilePictureIdentifier;
 
     protected User(String firstName, String lastName, String nationalID, String phoneNumber, String emailAddress,
                    String password) {
@@ -21,6 +26,7 @@ abstract class User {
         this.phoneNumber = phoneNumber;
         this.emailAddress = emailAddress;
         this.password = password;
+        setDefaultProfilePictureIdentifier();
     }
 
     public boolean hasBeenThreeHoursSinceLastLogin() {
@@ -33,8 +39,25 @@ abstract class User {
         }
     }
 
+    public void setDefaultProfilePictureIdentifier() {
+        profilePictureIdentifier = ImageIdentifier.DEFAULT_PROFILE_PICTURE;
+    }
+
+    public void setProfilePictureIdentifier(ImageIdentifier profilePictureIdentifier) {
+        this.profilePictureIdentifier = profilePictureIdentifier;
+    }
+
+    public Image getProfilePicture() {
+        return ImageManager.getImage(profilePictureIdentifier);
+    }
+
     public void setTimeOfLastLoginToNow() {
         timeOfLastLogin = LocalDateTime.now();
+    }
+
+    public String getTimeOfLastLoginString() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd - HH:mm:ss");
+        return formatter.format(timeOfLastLogin);
     }
 
     public LocalDateTime getTimeOfLastLogin() {

@@ -19,6 +19,14 @@ public class MasterLogger {
     }
 
     //welp : not overriding
+    public static void log(String message, LogIdentifier logIdentifier, String methodName, String className) {
+        getInstance().logByInstance(message, logIdentifier, methodName, className);
+    }
+
+    private void logByInstance(String message, LogIdentifier logIdentifier, String methodName, String className) {
+        multiLogger.log(message, logIdentifier, methodName, className);
+    }
+
     public static void info(String message, Class<?> clazz) {
         getInstance().logInfoByInstance(message, clazz);
     }

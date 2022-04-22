@@ -9,35 +9,36 @@ import java.util.LinkedList;
 
 public class CredentialsVerifier {
     public static LoggedInAccount checkCredentials(String username, String password) {
-        boolean isValidStudentLogin = checkStudentCredentials(username, password);
-        boolean isValidProfessorLogin = checkProfessorCredentials(username, password);
-        if (isValidStudentLogin) {
-            return new LoggedInAccount(true, AccountType.STUDENT);
-        } else if (isValidProfessorLogin) {
-            return new LoggedInAccount(true, AccountType.PROFESSOR);
+        LoggedInAccount studentLoginAccount = checkStudentCredentials(username, password);
+        LoggedInAccount professorLoginAccount = checkProfessorCredentials(username, password);
+        if (studentLoginAccount.credentialsIsValid) {
+            return studentLoginAccount;
+        } else if (professorLoginAccount.credentialsIsValid) {
+            return professorLoginAccount;
         } else {
-            return new LoggedInAccount(false, AccountType.NONE);
+            return new LoggedInAccount(false, AccountType.NONE, null);
+            // ^ studentLoginAccount and professorLoginAccount are null by now
+            // however, for explicitness of the code, we recreated a null LoggedInAccount
         }
     }
 
-    private static boolean checkStudentCredentials(String username, String password) {
+    private static LoggedInAccount checkStudentCredentials(String username, String password) {
         LinkedList<Student> studentsList = StudentsDB.getList();
         for (Student student : studentsList) {
-            System.out.println(student.getStudentID() + " " + student.getPassword());
             if (username.equals(student.getStudentID()) && password.equals(student.getPassword())) {
-                return true;
+                return new LoggedInAccount(true, AccountType.STUDENT, student);
             }
         }
-        return false;
+        return new LoggedInAccount(false, AccountType.NONE, null);
     }
 
-    private static boolean checkProfessorCredentials(String username, String password) {
+    private static LoggedInAccount checkProfessorCredentials(String username, String password) {
         LinkedList<Professor> professorsList = ProfessorsDB.getList();
         for (Professor professor : professorsList) {
             if (username.equals(professor.getTeachingID()) && password.equals(professor.getPassword())) {
-                return true;
+                return new LoggedInAccount(true, AccountType.PROFESSOR, professor);
             }
         }
-        return false;
+        return new LoggedInAccount(false, AccountType.NONE, null);
     }
 }

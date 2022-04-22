@@ -18,7 +18,6 @@ public class MainFrame extends JFrame {
     private JPanel currentPanel;
 
     public MainFrame() {
-        MasterLogger.info("program has started", getClass());
         initializeObjects();
         LoginMenu loginMenu = new LoginMenu(this);
         setCurrentPanel(loginMenu);
@@ -29,7 +28,7 @@ public class MainFrame extends JFrame {
     public void setCurrentPanel(JPanel currentPanel) {
         this.currentPanel = currentPanel;
         getContentPane().removeAll();
-        setContentPane(this.currentPanel);
+        getContentPane().add(this.currentPanel);
         repaintFrame();
     }
 
@@ -44,7 +43,9 @@ public class MainFrame extends JFrame {
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
+                MasterLogger.info("updated json databases", getClass());
                 DatabaseWriter.updateDatabase();
+                MasterLogger.info("end of program", getClass());
                 e.getWindow().dispose();
             }
         });

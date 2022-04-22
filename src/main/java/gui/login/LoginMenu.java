@@ -108,10 +108,12 @@ public class LoginMenu extends JPanel {
 
                 if (loggedInAccount.accountType == AccountType.STUDENT) {
                     MasterLogger.info("logged in as student", getClass());
-                    mainFrame.setCurrentPanel(new StudentMenu(mainFrame));
-                } else { // would be AccountType.PROFESSOR by design
+                    loggedInAccount.user.setTimeOfLastLoginToNow();
+                    mainFrame.setCurrentPanel(new StudentMenu(mainFrame, loggedInAccount.user));
+                } else { // would necessarily be AccountType.PROFESSOR by design
                     MasterLogger.info("logged in as professor", getClass());
-                    mainFrame.setCurrentPanel(new ProfessorMenu(mainFrame));
+                    loggedInAccount.user.setTimeOfLastLoginToNow();
+                    mainFrame.setCurrentPanel(new ProfessorMenu(mainFrame, loggedInAccount.user));
                 }
             }
         });

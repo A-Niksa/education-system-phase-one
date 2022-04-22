@@ -17,6 +17,13 @@ public class MultiLogger implements Logger {
     }
 
     @Override
+    public void log(String message, LogIdentifier logIdentifier, String methodName, String className) {
+        for (Logger logger : loggersList) {
+            logger.log(message, logIdentifier, methodName, className);
+        }
+    }
+
+    @Override
     public void info(String message, Class<?> clazz) {
         for (Logger logger : loggersList) {
             logger.info(message, clazz);

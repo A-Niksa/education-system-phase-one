@@ -5,5 +5,6 @@ public enum ImageIdentifier {
     CAPTCHA_7447,
     CAPTCHA_8843,
     CAPTCHA_8947,
-    CAPTCHA_9125
+    CAPTCHA_9125,
+    DEFAULT_PROFILE_PICTURE
 }
