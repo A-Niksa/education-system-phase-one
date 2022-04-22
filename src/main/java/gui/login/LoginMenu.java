@@ -1,6 +1,7 @@
 package gui.login;
 
 import gui.MainFrame;
+import utils.logging.MasterLogger;
 
 import javax.swing.*;
 import java.awt.*;
@@ -88,6 +89,7 @@ public class LoginMenu extends JPanel {
                 String enteredCaptcha = captchaField.getText();
 
                 if (!CaptchaLoader.captchaNumberIsValid(enteredCaptcha)) {
+                    MasterLogger.error("wrong captcha entered by user", getClass());
                     JOptionPane.showMessageDialog(mainFrame, "The entered captcha number is invalid.");
                     return;
                 }

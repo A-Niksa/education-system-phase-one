@@ -1,7 +1,5 @@
 package utils.database.tools;
 
-import logic.models.roles.Student;
-import utils.database.data.CoursesDB;
 import utils.database.data.DepartmentsDB;
 import utils.database.data.ProfessorsDB;
 import utils.database.data.StudentsDB;
