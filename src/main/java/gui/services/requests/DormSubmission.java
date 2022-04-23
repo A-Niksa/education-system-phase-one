@@ -12,16 +12,15 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.concurrent.TimeUnit;
 
-public class DormSubmissions extends Template {
+public class DormSubmission extends Template {
     private Student student;
     private JLabel dormPrompt;
     private JButton submitRequest;
     private JSeparator separator;
     private JLabel resultText;
 
-    public DormSubmissions(MainFrame mainFrame, MainMenu mainMenu, User user) {
+    public DormSubmission(MainFrame mainFrame, MainMenu mainMenu, User user) {
         super(mainFrame, mainMenu);
         student = (Student) user;
         drawPanel();

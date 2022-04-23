@@ -1227,13 +1227,13 @@
 2022/04/23 | 23:41:05 - INFO - start of program - psvm - Main
 2022/04/23 | 23:41:14 - INFO - logged in as student (username: 2) - connectListeners - gui.login.LoginMenu$2
 2022/04/23 | 23:41:16 - INFO - opened dorm request subsection in academic requests - connectListeners - gui.main.StudentMenu$12
-2022/04/23 | 23:41:23 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:41:27 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
+2022/04/23 | 23:41:23 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:41:27 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmission$1
 2022/04/23 | 23:42:27 - INFO - start of program - psvm - Main
 2022/04/23 | 23:42:37 - INFO - logged in as student (username: 2) - connectListeners - gui.login.LoginMenu$2
 2022/04/23 | 23:42:42 - INFO - opened dorm request subsection in academic requests - connectListeners - gui.main.StudentMenu$12
-2022/04/23 | 23:42:44 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:42:48 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
+2022/04/23 | 23:42:44 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:42:48 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmission$1
 2022/04/23 | 23:43:42 - INFO - start of program - psvm - Main
 2022/04/23 | 23:43:48 - INFO - logged in as student (username: 2) - connectListeners - gui.login.LoginMenu$2
 2022/04/23 | 23:43:50 - INFO - opened dorm request subsection in academic requests - connectListeners - gui.main.StudentMenu$12
@@ -1241,106 +1241,106 @@
 2022/04/23 | 23:44:21 - INFO - start of program - psvm - Main
 2022/04/23 | 23:44:26 - INFO - logged in as student (username: 2) - connectListeners - gui.login.LoginMenu$2
 2022/04/23 | 23:44:30 - INFO - opened dorm request subsection in academic requests - connectListeners - gui.main.StudentMenu$12
-2022/04/23 | 23:44:31 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:44:35 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
+2022/04/23 | 23:44:31 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:44:35 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmission$1
 2022/04/23 | 23:46:50 - INFO - start of program - psvm - Main
 2022/04/23 | 23:46:57 - INFO - logged in as student (username: 2) - connectListeners - gui.login.LoginMenu$2
 2022/04/23 | 23:47:01 - INFO - opened dorm request subsection in academic requests - connectListeners - gui.main.StudentMenu$12
-2022/04/23 | 23:47:02 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:47:02 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:47:05 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:47:05 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:47:07 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:47:07 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
+2022/04/23 | 23:47:02 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:47:02 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:47:05 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:47:05 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:47:07 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:47:07 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmission$1
 2022/04/23 | 23:47:07 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
 2022/04/23 | 23:47:10 - INFO - opened dorm request subsection in academic requests - connectListeners - gui.main.StudentMenu$12
-2022/04/23 | 23:47:12 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:47:12 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
+2022/04/23 | 23:47:12 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:47:12 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmission$1
 2022/04/23 | 23:47:44 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
 2022/04/23 | 23:47:44 - INFO - end of program - connectToDatabase - gui.MainFrame$1
 2022/04/23 | 23:47:50 - INFO - start of program - psvm - Main
 2022/04/23 | 23:47:56 - INFO - logged in as student (username: 2) - connectListeners - gui.login.LoginMenu$2
 2022/04/23 | 23:47:59 - INFO - opened dorm request subsection in academic requests - connectListeners - gui.main.StudentMenu$12
-2022/04/23 | 23:48:00 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:48:00 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:48:01 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:48:01 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:48:02 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:48:02 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:48:03 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:48:03 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:48:18 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:48:18 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:48:19 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:48:19 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
+2022/04/23 | 23:48:00 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:48:00 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:48:01 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:48:01 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:48:02 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:48:02 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:48:03 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:48:03 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:48:18 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:48:18 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:48:19 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:48:19 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmission$1
 2022/04/23 | 23:48:20 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
 2022/04/23 | 23:48:24 - INFO - opened dorm request subsection in academic requests - connectListeners - gui.main.StudentMenu$12
-2022/04/23 | 23:48:25 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:48:25 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:48:28 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:48:28 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:48:30 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:48:30 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
+2022/04/23 | 23:48:25 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:48:25 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:48:28 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:48:28 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:48:30 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:48:30 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmission$1
 2022/04/23 | 23:48:55 - INFO - start of program - psvm - Main
 2022/04/23 | 23:49:38 - INFO - logged in as student (username: 2) - connectListeners - gui.login.LoginMenu$2
 2022/04/23 | 23:49:41 - INFO - opened dorm request subsection in academic requests - connectListeners - gui.main.StudentMenu$12
-2022/04/23 | 23:49:42 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:49:42 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
+2022/04/23 | 23:49:42 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:49:42 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmission$1
 2022/04/23 | 23:51:24 - INFO - start of program - psvm - Main
 2022/04/23 | 23:51:30 - INFO - logged in as student (username: 2) - connectListeners - gui.login.LoginMenu$2
 2022/04/23 | 23:51:32 - INFO - opened dorm request subsection in academic requests - connectListeners - gui.main.StudentMenu$12
-2022/04/23 | 23:51:32 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:51:32 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:51:37 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:51:37 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:51:38 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:51:38 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:51:57 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:51:57 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
+2022/04/23 | 23:51:32 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:51:32 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:51:37 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:51:37 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:51:38 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:51:38 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:51:57 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:51:57 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmission$1
 2022/04/23 | 23:52:00 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
 2022/04/23 | 23:52:02 - INFO - opened dorm request subsection in academic requests - connectListeners - gui.main.StudentMenu$12
-2022/04/23 | 23:52:04 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:52:04 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
+2022/04/23 | 23:52:04 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:52:04 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmission$1
 2022/04/23 | 23:52:32 - INFO - start of program - psvm - Main
 2022/04/23 | 23:52:51 - INFO - logged in as student (username: 2) - connectListeners - gui.login.LoginMenu$2
 2022/04/23 | 23:52:54 - INFO - opened dorm request subsection in academic requests - connectListeners - gui.main.StudentMenu$12
-2022/04/23 | 23:52:55 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:52:55 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:55:17 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:55:17 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:55:18 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:55:18 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:55:20 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:55:20 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
+2022/04/23 | 23:52:55 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:52:55 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:55:17 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:55:17 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:55:18 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:55:18 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:55:20 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:55:20 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmission$1
 2022/04/23 | 23:55:22 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
 2022/04/23 | 23:55:22 - INFO - end of program - connectToDatabase - gui.MainFrame$1
 2022/04/23 | 23:55:32 - INFO - start of program - psvm - Main
 2022/04/23 | 23:55:38 - INFO - logged in as student (username: 2) - connectListeners - gui.login.LoginMenu$2
 2022/04/23 | 23:55:51 - INFO - opened dorm request subsection in academic requests - connectListeners - gui.main.StudentMenu$12
-2022/04/23 | 23:55:54 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:55:54 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:56:08 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:56:08 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:56:15 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:56:15 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
+2022/04/23 | 23:55:54 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:55:54 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:56:08 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:56:08 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:56:15 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:56:15 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmission$1
 2022/04/23 | 23:58:12 - INFO - start of program - psvm - Main
 2022/04/23 | 23:58:17 - INFO - logged in as student (username: 2) - connectListeners - gui.login.LoginMenu$2
 2022/04/23 | 23:58:19 - INFO - opened dorm request subsection in academic requests - connectListeners - gui.main.StudentMenu$12
-2022/04/23 | 23:58:20 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/23 | 23:58:20 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
+2022/04/23 | 23:58:20 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/23 | 23:58:20 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmission$1
 2022/04/23 | 23:58:29 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
 2022/04/23 | 23:58:29 - INFO - end of program - connectToDatabase - gui.MainFrame$1
 2022/04/24 | 00:00:52 - INFO - start of program - psvm - Main
 2022/04/24 | 00:01:01 - INFO - logged in as student (username: 2) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 00:01:03 - INFO - opened dorm request subsection in academic requests - connectListeners - gui.main.StudentMenu$12
-2022/04/24 | 00:01:04 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/24 | 00:01:04 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/24 | 00:01:04 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
+2022/04/24 | 00:01:04 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/24 | 00:01:04 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/24 | 00:01:04 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmission$1
 2022/04/24 | 00:01:09 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
 2022/04/24 | 00:01:12 - INFO - opened dorm request subsection in academic requests - connectListeners - gui.main.StudentMenu$12
-2022/04/24 | 00:01:12 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/24 | 00:01:12 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
-2022/04/24 | 00:01:12 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
+2022/04/24 | 00:01:12 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/24 | 00:01:12 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmission$1
+2022/04/24 | 00:01:12 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmission$1
 2022/04/24 | 00:01:19 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
 2022/04/24 | 00:01:19 - INFO - end of program - connectToDatabase - gui.MainFrame$1
 2022/04/24 | 00:08:36 - INFO - start of program - psvm - Main
@@ -1429,3 +1429,101 @@
 2022/04/24 | 02:26:10 - INFO - logged out - connectListeners - gui.main.MainMenu$1
 2022/04/24 | 02:26:12 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
 2022/04/24 | 02:26:12 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 02:50:00 - INFO - start of program - psvm - Main
+2022/04/24 | 02:50:04 - INFO - logged in as student (username: 3) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 02:50:07 - INFO - opened defense slot selection in academic requests - connectListeners - gui.main.StudentMenu$13
+2022/04/24 | 02:50:38 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 02:50:38 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 02:51:02 - INFO - start of program - psvm - Main
+2022/04/24 | 02:51:08 - INFO - logged in as student (username: 3) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 02:51:11 - INFO - opened defense slot selection in academic requests - connectListeners - gui.main.StudentMenu$13
+2022/04/24 | 02:51:46 - INFO - start of program - psvm - Main
+2022/04/24 | 02:51:50 - INFO - logged in as student (username: 3) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 02:51:53 - INFO - opened defense slot selection in academic requests - connectListeners - gui.main.StudentMenu$13
+2022/04/24 | 02:51:56 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 02:51:56 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 02:52:10 - INFO - start of program - psvm - Main
+2022/04/24 | 02:52:20 - INFO - start of program - psvm - Main
+2022/04/24 | 02:52:28 - INFO - logged in as student (username: 3) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 02:52:29 - INFO - opened defense slot selection in academic requests - connectListeners - gui.main.StudentMenu$13
+2022/04/24 | 02:52:41 - INFO - start of program - psvm - Main
+2022/04/24 | 02:52:47 - INFO - logged in as student (username: 3) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 02:52:48 - INFO - opened defense slot selection in academic requests - connectListeners - gui.main.StudentMenu$13
+2022/04/24 | 02:52:52 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 02:52:52 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 02:53:01 - INFO - start of program - psvm - Main
+2022/04/24 | 02:53:05 - INFO - logged in as student (username: 3) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 02:53:07 - INFO - opened defense slot selection in academic requests - connectListeners - gui.main.StudentMenu$13
+2022/04/24 | 02:53:12 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 02:53:12 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 02:56:47 - INFO - start of program - psvm - Main
+2022/04/24 | 02:56:54 - INFO - logged in as student (username: 3) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 02:56:57 - INFO - opened defense slot selection in academic requests - connectListeners - gui.main.StudentMenu$13
+2022/04/24 | 02:57:03 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 02:57:03 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 02:57:26 - INFO - start of program - psvm - Main
+2022/04/24 | 02:57:31 - INFO - logged in as student (username: 3) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 02:57:34 - INFO - opened defense slot selection in academic requests - connectListeners - gui.main.StudentMenu$13
+2022/04/24 | 02:57:45 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 02:57:45 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 02:57:58 - INFO - start of program - psvm - Main
+2022/04/24 | 02:58:02 - INFO - logged in as student (username: 3) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 02:58:05 - INFO - opened defense slot selection in academic requests - connectListeners - gui.main.StudentMenu$13
+2022/04/24 | 02:58:18 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 02:58:18 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 02:58:29 - INFO - start of program - psvm - Main
+2022/04/24 | 02:58:37 - INFO - logged in as student (username: 3) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 02:58:43 - INFO - opened defense slot selection in academic requests - connectListeners - gui.main.StudentMenu$13
+2022/04/24 | 02:58:49 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 02:58:49 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 03:30:48 - INFO - start of program - psvm - Main
+2022/04/24 | 03:31:25 - INFO - start of program - psvm - Main
+2022/04/24 | 03:31:36 - INFO - start of program - psvm - Main
+2022/04/24 | 03:31:42 - INFO - logged in as student (username: 3) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 03:31:44 - INFO - opened defense slot selection in academic requests - connectListeners - gui.main.StudentMenu$13
+2022/04/24 | 03:32:03 - INFO - start of program - psvm - Main
+2022/04/24 | 03:32:38 - INFO - start of program - psvm - Main
+2022/04/24 | 03:33:56 - INFO - start of program - psvm - Main
+2022/04/24 | 03:34:03 - INFO - logged in as student (username: 3) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 03:34:08 - INFO - opened defense slot selection in academic requests - connectListeners - gui.main.StudentMenu$13
+2022/04/24 | 03:34:14 - INFO - submitted thesis defense time - connectListeners - gui.services.requests.DefenseSubmission$1
+2022/04/24 | 03:34:14 - ERROR - thesis time selected to be earlier than now - connectListeners - gui.services.requests.DefenseSubmission$1
+2022/04/24 | 03:34:17 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 03:34:17 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 03:34:36 - INFO - start of program - psvm - Main
+2022/04/24 | 03:34:45 - INFO - logged in as student (username: 3) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 03:34:46 - INFO - opened defense slot selection in academic requests - connectListeners - gui.main.StudentMenu$13
+2022/04/24 | 03:34:57 - INFO - submitted thesis defense time - connectListeners - gui.services.requests.DefenseSubmission$1
+2022/04/24 | 03:34:57 - ERROR - thesis time selected to be earlier than now - connectListeners - gui.services.requests.DefenseSubmission$1
+2022/04/24 | 03:35:01 - INFO - submitted thesis defense time - connectListeners - gui.services.requests.DefenseSubmission$1
+2022/04/24 | 03:35:01 - INFO - thesis defense time has been successfully set - connectListeners - gui.services.requests.DefenseSubmission$1
+2022/04/24 | 03:36:00 - INFO - start of program - psvm - Main
+2022/04/24 | 03:36:06 - INFO - logged in as student (username: 3) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 03:36:07 - INFO - opened defense slot selection in academic requests - connectListeners - gui.main.StudentMenu$13
+2022/04/24 | 03:36:13 - INFO - submitted thesis defense time - connectListeners - gui.services.requests.DefenseSubmission$1
+2022/04/24 | 03:36:13 - INFO - thesis defense time has been successfully set - connectListeners - gui.services.requests.DefenseSubmission$1
+2022/04/24 | 03:36:35 - INFO - start of program - psvm - Main
+2022/04/24 | 03:36:40 - INFO - logged in as student (username: 3) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 03:36:44 - INFO - opened defense slot selection in academic requests - connectListeners - gui.main.StudentMenu$13
+2022/04/24 | 03:36:49 - INFO - submitted thesis defense time - connectListeners - gui.services.requests.DefenseSubmission$1
+2022/04/24 | 03:36:49 - INFO - thesis defense time has been successfully set - connectListeners - gui.services.requests.DefenseSubmission$1
+2022/04/24 | 03:37:07 - INFO - start of program - psvm - Main
+2022/04/24 | 03:37:13 - INFO - logged in as student (username: 3) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 03:37:15 - INFO - opened defense slot selection in academic requests - connectListeners - gui.main.StudentMenu$13
+2022/04/24 | 03:37:34 - INFO - submitted thesis defense time - connectListeners - gui.services.requests.DefenseSubmission$1
+2022/04/24 | 03:37:34 - ERROR - thesis time selected to be earlier than now - connectListeners - gui.services.requests.DefenseSubmission$1
+2022/04/24 | 03:37:37 - INFO - submitted thesis defense time - connectListeners - gui.services.requests.DefenseSubmission$1
+2022/04/24 | 03:37:37 - INFO - thesis defense time has been successfully set - connectListeners - gui.services.requests.DefenseSubmission$1
+2022/04/24 | 03:39:26 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 03:39:28 - INFO - opened defense slot selection in academic requests - connectListeners - gui.main.StudentMenu$13
+2022/04/24 | 03:39:30 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 03:39:30 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/24 | 03:39:32 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 03:39:32 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 03:39:59 - INFO - start of program - psvm - Main
+2022/04/24 | 03:40:05 - INFO - logged in as student (username: 3) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 03:40:07 - INFO - opened defense slot selection in academic requests - connectListeners - gui.main.StudentMenu$13
+2022/04/24 | 03:40:09 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 03:40:10 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/24 | 03:40:12 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 03:40:12 - INFO - end of program - connectToDatabase - gui.MainFrame$1

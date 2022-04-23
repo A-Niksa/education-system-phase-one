@@ -10,7 +10,8 @@ public class Request {
         CERTIFICATE,
         RECOMMENDATION,
         MINOR,
-        DORM
+        DORM,
+        DEFENSE
     }
 
     private static int idEnumeration = 1;

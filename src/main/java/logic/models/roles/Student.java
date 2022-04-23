@@ -10,6 +10,8 @@ import utils.database.data.StudentsDB;
 import utils.logging.LogIdentifier;
 import utils.logging.MasterLogger;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.LinkedList;
 
 public class Student extends User {
@@ -28,6 +30,7 @@ public class Student extends User {
     private AcademicStatus academicStatus;
     private SoughtDegree soughtDegree;
     private Transcript transcript;
+    private LocalDateTime defenseTime;
 
     public Student(String firstName, String lastName, String nationalID, String phoneNumber, String emailAddress,
                    String studentID, String password, Professor advisingProfessor, int yearOfEntry,
@@ -182,5 +185,22 @@ public class Student extends User {
             }
         }
         return temporaryAcademicStatuses;
+    }
+
+    public void setTranscript(Transcript transcript) {
+        this.transcript = transcript;
+    }
+    
+    public String getDefenseTimeString() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd - hh:mm"); //welp : reversing yyyy/MM/dd
+        return formatter.format(defenseTime);
+    }
+
+    public LocalDateTime getDefenseTime() {
+        return defenseTime;
+    }
+
+    public void setDefenseTime(LocalDateTime defenseTime) {
+        this.defenseTime = defenseTime;
     }
 }

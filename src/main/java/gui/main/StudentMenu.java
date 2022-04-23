@@ -3,7 +3,6 @@ package gui.main;
 import gui.MainFrame;
 import gui.enrolment.CoursesListView;
 import gui.enrolment.ProfessorsListView;
-import gui.main.MainMenu;
 import gui.profile.StudentProfile;
 import gui.services.ExamsListView;
 import gui.services.WeeklySchedule;
@@ -229,7 +228,16 @@ public class StudentMenu extends MainMenu {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 MasterLogger.info("opened dorm request subsection in academic requests", getClass());
-                mainFrame.setCurrentPanel(new DormSubmissions(mainFrame, mainMenu, user));
+                mainFrame.setCurrentPanel(new DormSubmission(mainFrame, mainMenu, user));
+            }
+        });
+
+        defenseSlot.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                MasterLogger.info("opened defense slot selection in academic requests", getClass());
+                mainFrame.setCurrentPanel(new DefenseSubmission(mainFrame, mainMenu, user));
             }
         });
     }
