@@ -4,6 +4,7 @@ import logic.models.roles.Professor;
 import logic.models.roles.Student;
 import utils.database.data.CoursesDB;
 import utils.database.data.DepartmentsDB;
+import utils.timing.WeeklyDate;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -27,15 +28,17 @@ public class Course {
     private String courseID;
     private LinkedList<Student> listOfStudents;
     private LinkedList<StudentStatus> studentScores;
+    private LinkedList<WeeklyDate> classDatesInWeek;
 
     public Course(String courseName, LocalDateTime examTime, int numberOfCredits, CourseLevel courseLevel,
-                  String courseID, Professor teachingProfessor) {
+                  String courseID, Professor teachingProfessor, LinkedList<WeeklyDate> classDatesInWeek) {
         this.courseName = courseName;
         this.examTime = examTime;
         this.numberOfCredits = numberOfCredits;
         this.courseLevel = courseLevel;
         this.courseID = courseID;
         this.teachingProfessor = teachingProfessor;
+        this.classDatesInWeek = classDatesInWeek;
         listOfStudents = new LinkedList<>();
         studentScores = new LinkedList<>();
         CoursesDB.addToDatabase(this);
@@ -136,5 +139,13 @@ public class Course {
     public String getDepartmentName() {
         Department department = DepartmentsDB.getCoursesDepartment(this);
         return department.getDepartmentName();
+    }
+
+    public LinkedList<Student> getListOfStudents() {
+        return listOfStudents;
+    }
+
+    public LinkedList<WeeklyDate> getClassDatesInWeek() {
+        return classDatesInWeek;
     }
 }

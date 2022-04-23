@@ -5,6 +5,7 @@ import gui.enrolment.CoursesListView;
 import gui.enrolment.ProfessorsListView;
 import gui.main.MainMenu;
 import gui.profile.StudentProfile;
+import gui.services.WeeklySchedule;
 import gui.standing.CurrentStanding;
 import gui.standing.TemporaryStanding;
 import logic.models.roles.Professor;
@@ -171,6 +172,14 @@ public class StudentMenu extends MainMenu {
             public void actionPerformed(ActionEvent actionEvent) {
                 MasterLogger.info("opened current academic standing in academic standing", getClass());
                 mainFrame.setCurrentPanel(new CurrentStanding(mainFrame, mainMenu, user));
+            }
+        });
+
+        weeklySchedule.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                MasterLogger.info("opened weekly schedule in academic services", getClass());
+                mainFrame.setCurrentPanel(new WeeklySchedule(mainFrame, mainMenu, user));
             }
         });
     }
