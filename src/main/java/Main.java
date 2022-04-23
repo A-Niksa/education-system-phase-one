@@ -42,7 +42,7 @@ public class Main {
         complexAnalysisDates.add(new WeeklyDate(Weekday.MONDAY, new TimeInDay(9, 30, 0),
                 new TimeInDay(12, 30, 0), "Complex Analysis", "Siavash Shahshahani"));
         Course complexAnalysis = new Course("Complex Analysis",
-                LocalDateTime.of(2022, 7, 22, 9, 0, 0),
+                LocalDateTime.of(2022, 7, 22, 11, 0, 0),
                 3, Course.CourseLevel.BACHELORS, "12341", shahshahani,
                 complexAnalysisDates);
         mathDepartment.addCourse(complexAnalysis);
@@ -52,7 +52,7 @@ public class Main {
         realAnalysisDates.add(new WeeklyDate(Weekday.TUESDAY, new TimeInDay(15, 0, 0),
                 new TimeInDay(17, 0, 0), "Real Analysis", "Ali Safdari"));
         Course realAnalysis = new Course("Real Analysis",
-                LocalDateTime.of(2022, 7, 23, 10, 30, 0), 2,
+                LocalDateTime.of(2022, 7, 22, 10, 30, 0), 2,
                 Course.CourseLevel.GRADUATE, "32134", educationDeputy, realAnalysisDates);
         mathDepartment.addCourse(realAnalysis);
         LinkedList<WeeklyDate> partialDiffEquationsDates = new LinkedList<>();

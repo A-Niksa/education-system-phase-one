@@ -120,7 +120,5 @@ public class WeeklySchedule extends Template {
     }
 
     @Override
-    protected void connectListeners() {
-
-    }
+    protected void connectListeners() {}
 }

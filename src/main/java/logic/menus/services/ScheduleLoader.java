@@ -24,7 +24,7 @@ public class ScheduleLoader {
         return studentsCoursesInfoPerDay;
     }
 
-    private static LinkedList<Course> getStudentsCourses(Student targetStudent) {
+    public static LinkedList<Course> getStudentsCourses(Student targetStudent) {
         LinkedList<Course> coursesList = CoursesDB.getList();
         LinkedList<Course> coursesPerTargetStudent = new LinkedList<>();
         for (Course course : coursesList) {

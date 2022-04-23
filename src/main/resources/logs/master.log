@@ -810,3 +810,30 @@
 2022/04/23 | 13:19:44 - INFO - logged out - connectListeners - gui.main.MainMenu$1
 2022/04/23 | 13:19:45 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
 2022/04/23 | 13:19:45 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 14:28:12 - INFO - start of program - psvm - Main
+2022/04/23 | 14:28:17 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 14:28:19 - INFO - opened weekly schedule in academic services - connectListeners - gui.main.StudentMenu$6
+2022/04/23 | 14:28:21 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 14:28:22 - INFO - opened list of exams in academic services - connectListeners - gui.main.StudentMenu$7
+2022/04/23 | 14:28:32 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 14:28:32 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 14:29:06 - INFO - start of program - psvm - Main
+2022/04/23 | 14:29:08 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 14:29:08 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 14:29:18 - INFO - start of program - psvm - Main
+2022/04/23 | 14:29:18 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 14:29:28 - INFO - start of program - psvm - Main
+2022/04/23 | 14:29:33 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 14:29:35 - INFO - opened list of exams in academic services - connectListeners - gui.main.StudentMenu$7
+2022/04/23 | 14:29:40 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 14:29:40 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 14:30:17 - INFO - start of program - psvm - Main
+2022/04/23 | 14:30:17 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 14:30:34 - INFO - start of program - psvm - Main
+2022/04/23 | 14:30:38 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 14:30:43 - INFO - opened list of exams in academic services - connectListeners - gui.main.StudentMenu$7
+2022/04/23 | 14:30:57 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 14:31:00 - INFO - opened the professors list in educational services - connectListeners - gui.main.StudentMenu$3
+2022/04/23 | 14:31:10 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 14:31:16 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 14:31:16 - INFO - end of program - connectToDatabase - gui.MainFrame$1

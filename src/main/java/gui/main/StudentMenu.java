@@ -5,6 +5,7 @@ import gui.enrolment.CoursesListView;
 import gui.enrolment.ProfessorsListView;
 import gui.main.MainMenu;
 import gui.profile.StudentProfile;
+import gui.services.ExamsListView;
 import gui.services.WeeklySchedule;
 import gui.standing.CurrentStanding;
 import gui.standing.TemporaryStanding;
@@ -180,6 +181,14 @@ public class StudentMenu extends MainMenu {
             public void actionPerformed(ActionEvent actionEvent) {
                 MasterLogger.info("opened weekly schedule in academic services", getClass());
                 mainFrame.setCurrentPanel(new WeeklySchedule(mainFrame, mainMenu, user));
+            }
+        });
+
+        listOfExams.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                MasterLogger.info("opened list of exams in academic services", getClass());
+                mainFrame.setCurrentPanel(new ExamsListView(mainFrame, mainMenu, user));
             }
         });
     }
