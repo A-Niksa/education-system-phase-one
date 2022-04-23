@@ -1,9 +1,6 @@
 package utils.database.tools;
 
-import utils.database.data.CoursesDB;
-import utils.database.data.DepartmentsDB;
-import utils.database.data.ProfessorsDB;
-import utils.database.data.StudentsDB;
+import utils.database.data.*;
 
 import java.io.IOException;
 
@@ -40,6 +37,8 @@ public class DatabaseReader extends DatabaseManager {
             case COURSES:
                 CoursesDB.setDatabase(gson.fromJson(reader, CoursesDB.getListType()));
                 break;
+            case REQUESTS:
+                RequestsDB.setDatabase(gson.fromJson(reader, RequestsDB.getListType()));
             default:
                 return;
         }

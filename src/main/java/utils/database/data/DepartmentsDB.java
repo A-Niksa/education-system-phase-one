@@ -50,7 +50,9 @@ public class DepartmentsDB extends ModelDB {
     }
 
     public static void setDatabase(LinkedList<Department> departmentsList) {
-        getInstance().setDatabaseByInstance(departmentsList);
+        if (departmentsList != null) {
+            getInstance().setDatabaseByInstance(departmentsList);
+        }
     }
 
     private void setDatabaseByInstance(LinkedList<Department> departmentsList) {

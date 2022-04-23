@@ -52,7 +52,9 @@ public class CoursesDB extends ModelDB {
     }
 
     public static void setDatabase(LinkedList<Course> coursesList) {
-        getInstance().setDatabaseByInstance(coursesList);
+        if (coursesList != null) {
+            getInstance().setDatabaseByInstance(coursesList);
+        }
     }
 
     private void setDatabaseByInstance(LinkedList<Course> coursesList) {

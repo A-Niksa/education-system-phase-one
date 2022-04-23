@@ -15,7 +15,7 @@ public class StudentsDB extends ModelDB {
     private LinkedList<Student> studentsList;
 
     private StudentsDB() {
-        studentsList = new LinkedList<Student>();
+        studentsList = new LinkedList<>();
         listType = new TypeToken<LinkedList<Student>>(){}.getType();
     }
 
@@ -48,7 +48,9 @@ public class StudentsDB extends ModelDB {
     }
 
     public static void setDatabase(LinkedList<Student> studentsList) {
-        getInstance().setDatabaseByInstance(studentsList);
+        if (studentsList != null) {
+            getInstance().setDatabaseByInstance(studentsList);
+        }
     }
 
     private void setDatabaseByInstance(LinkedList<Student> studentsList) {

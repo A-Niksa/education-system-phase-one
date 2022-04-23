@@ -7,6 +7,7 @@ import gui.main.MainMenu;
 import gui.profile.StudentProfile;
 import gui.services.ExamsListView;
 import gui.services.WeeklySchedule;
+import gui.services.requests.DroppingOutSubmission;
 import gui.standing.CurrentStanding;
 import gui.standing.TemporaryStanding;
 import logic.models.roles.Professor;
@@ -189,6 +190,14 @@ public class StudentMenu extends MainMenu {
             public void actionPerformed(ActionEvent actionEvent) {
                 MasterLogger.info("opened list of exams in academic services", getClass());
                 mainFrame.setCurrentPanel(new ExamsListView(mainFrame, mainMenu, user));
+            }
+        });
+
+        droppingOut.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                MasterLogger.info("opened the dropping out subsection in academic requests", getClass());
+                mainFrame.setCurrentPanel(new DroppingOutSubmission(mainFrame, mainMenu, user));
             }
         });
     }

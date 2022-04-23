@@ -49,7 +49,9 @@ public class ProfessorsDB extends ModelDB {
     }
 
     public static void setDatabase(LinkedList<Professor> professorsList) {
-        getInstance().setDatabaseByInstance(professorsList);
+        if (professorsList != null) {
+            getInstance().setDatabaseByInstance(professorsList);
+        }
     }
 
     private void setDatabaseByInstance(LinkedList<Professor> professorsList) {
