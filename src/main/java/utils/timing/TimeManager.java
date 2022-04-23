@@ -9,4 +9,10 @@ public class TimeManager {
         LocalDateTime currentTime = LocalDateTime.now();
         return dateTimeFormatter.format(currentTime);
     }
+
+    public static String getDate() {
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+        LocalDateTime currentTime = LocalDateTime.now();
+        return dateTimeFormatter.format(currentTime);
+    }
 }

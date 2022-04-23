@@ -914,3 +914,34 @@
 2022/04/23 | 15:12:14 - INFO - opened the profile editor in the user profile - connectListeners - gui.main.StudentMenu$1
 2022/04/23 | 15:12:15 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
 2022/04/23 | 15:12:15 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 15:25:20 - INFO - start of program - psvm - Main
+2022/04/23 | 15:25:25 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 15:25:28 - INFO - opened the enrolment cerificate subsection in academic requests - connectListeners - gui.main.StudentMenu$9
+2022/04/23 | 15:27:01 - INFO - start of program - psvm - Main
+2022/04/23 | 15:27:24 - INFO - start of program - psvm - Main
+2022/04/23 | 15:27:28 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 15:27:31 - INFO - opened the enrolment cerificate subsection in academic requests - connectListeners - gui.main.StudentMenu$9
+2022/04/23 | 15:27:52 - INFO - start of program - psvm - Main
+2022/04/23 | 15:27:56 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 15:27:58 - INFO - opened the enrolment cerificate subsection in academic requests - connectListeners - gui.main.StudentMenu$9
+2022/04/23 | 15:28:17 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 15:28:17 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 15:40:56 - INFO - start of program - psvm - Main
+2022/04/23 | 15:41:00 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 15:41:10 - INFO - opened the enrolment cerificate subsection in academic requests - connectListeners - gui.main.StudentMenu$9
+2022/04/23 | 15:41:11 - INFO - received an enrolment certificate - connectListeners - gui.services.requests.CertificateSubmission$1
+2022/04/23 | 15:41:16 - INFO - received an enrolment certificate - connectListeners - gui.services.requests.CertificateSubmission$1
+2022/04/23 | 15:44:06 - INFO - start of program - psvm - Main
+2022/04/23 | 15:44:11 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 15:44:15 - INFO - opened the enrolment cerificate subsection in academic requests - connectListeners - gui.main.StudentMenu$9
+2022/04/23 | 15:44:16 - INFO - received an enrolment certificate - connectListeners - gui.services.requests.CertificateSubmission$1
+2022/04/23 | 15:45:16 - INFO - start of program - psvm - Main
+2022/04/23 | 15:45:21 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 15:45:26 - INFO - opened the enrolment cerificate subsection in academic requests - connectListeners - gui.main.StudentMenu$9
+2022/04/23 | 15:45:27 - INFO - received an enrolment certificate - connectListeners - gui.services.requests.CertificateSubmission$1
+2022/04/23 | 15:46:01 - INFO - start of program - psvm - Main
+2022/04/23 | 15:46:05 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 15:46:11 - INFO - opened the enrolment cerificate subsection in academic requests - connectListeners - gui.main.StudentMenu$9
+2022/04/23 | 15:46:12 - INFO - received an enrolment certificate - connectListeners - gui.services.requests.CertificateSubmission$1
+2022/04/23 | 15:46:21 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 15:46:21 - INFO - end of program - connectToDatabase - gui.MainFrame$1
