@@ -48,9 +48,9 @@ public class MainMenu extends JPanel {
     private void alignComponents() {
         profilePicture.setBounds(15, 15, 60, 60);
         add(profilePicture);
-        nameLabel.setBounds(100, 20, 150, 20);
+        nameLabel.setBounds(100, 20, 400, 20);
         add(nameLabel);
-        emailAddressLabel.setBounds(100, 45, 150, 20);
+        emailAddressLabel.setBounds(100, 45, 400, 20);
         add(emailAddressLabel);
         logOutButton.setBounds(15, 622, 80, 30);
         add(logOutButton);

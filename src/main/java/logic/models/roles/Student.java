@@ -30,11 +30,10 @@ public class Student extends User {
     private Transcript transcript;
 
     public Student(String firstName, String lastName, String nationalID, String phoneNumber, String emailAddress,
-                   String studentID, String password, double totalGPA, Professor advisingProfessor, int yearOfEntry,
+                   String studentID, String password, Professor advisingProfessor, int yearOfEntry,
                    AcademicStatus academicStatus, SoughtDegree soughtDegree) {
         super(firstName, lastName, nationalID, phoneNumber, emailAddress, password);
         this.studentID = studentID;
-        this.totalGPA = totalGPA;
         this.advisingProfessor = advisingProfessor;
         this.yearOfEntry = yearOfEntry;
         this.academicStatus = academicStatus;

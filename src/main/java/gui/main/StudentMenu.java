@@ -7,10 +7,7 @@ import gui.main.MainMenu;
 import gui.profile.StudentProfile;
 import gui.services.ExamsListView;
 import gui.services.WeeklySchedule;
-import gui.services.requests.CertificateSubmission;
-import gui.services.requests.DroppingOutSubmission;
-import gui.services.requests.MinorSubmission;
-import gui.services.requests.RecommendationSubmission;
+import gui.services.requests.*;
 import gui.standing.CurrentStanding;
 import gui.standing.TemporaryStanding;
 import logic.models.roles.Professor;
@@ -225,6 +222,14 @@ public class StudentMenu extends MainMenu {
             public void actionPerformed(ActionEvent actionEvent) {
                 MasterLogger.info("opened minor request subsection in academic requests", getClass());
                 mainFrame.setCurrentPanel(new MinorSubmission(mainFrame, mainMenu, user));
+            }
+        });
+
+        dormitory.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                MasterLogger.info("opened dorm request subsection in academic requests", getClass());
+                mainFrame.setCurrentPanel(new DormSubmissions(mainFrame, mainMenu, user));
             }
         });
     }

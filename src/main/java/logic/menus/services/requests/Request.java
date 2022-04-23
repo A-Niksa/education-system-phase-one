@@ -9,7 +9,8 @@ public class Request {
         DROPPING_OUT,
         CERTIFICATE,
         RECOMMENDATION,
-        MINOR
+        MINOR,
+        DORM
     }
 
     private static int idEnumeration = 1;

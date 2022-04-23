@@ -6,6 +6,8 @@ import gui.main.StudentMenu;
 import logic.menus.login.AccountType;
 import logic.menus.login.CredentialsVerifier;
 import logic.menus.login.LoggedInAccount;
+import logic.models.roles.Professor;
+import logic.models.roles.Student;
 import utils.logging.MasterLogger;
 
 import javax.swing.*;
@@ -107,11 +109,13 @@ public class LoginMenu extends JPanel {
                 }
 
                 if (loggedInAccount.accountType == AccountType.STUDENT) {
-                    MasterLogger.info("logged in as student", getClass());
+                    Student student = (Student) loggedInAccount.user;
+                    MasterLogger.info("logged in as student (username: " + student.getStudentID() + ")", getClass());
                     loggedInAccount.user.setTimeOfLastLoginToNow();
                     mainFrame.setCurrentPanel(new StudentMenu(mainFrame, loggedInAccount.user));
                 } else { // would necessarily be AccountType.PROFESSOR by design
-                    MasterLogger.info("logged in as professor", getClass());
+                    Professor professor = (Professor) loggedInAccount.user;
+                    MasterLogger.info("logged in as professor (username: " + professor.getTeachingID() + ")", getClass());
                     loggedInAccount.user.setTimeOfLastLoginToNow();
                     mainFrame.setCurrentPanel(new ProfessorMenu(mainFrame, loggedInAccount.user));
                 }

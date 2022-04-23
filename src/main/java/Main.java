@@ -67,16 +67,34 @@ public class Main {
                                 partialDiffEquationsDates);
         mathDepartment.addCourse(partialDiffEquations);
         Student student = new Student("Ali", "Alizadeh", "0150332134", "09199921032",
-                "ali.alizadeh@sharif.edu", "1", "1", 4.0, educationDeputy,
+                "ali.alizadeh@sharif.edu", "1", "1", educationDeputy,
                 2021, Student.AcademicStatus.CURRENTLY_STUDYING, Student.SoughtDegree.BACHELORS);
+        Student graduateStudent = new Student("Mohammad", "Rezaeinia", "0150239522", "09329210134",
+                "mohammad.reza@sharif.edu", "2", "2", shahshahani, 2019, Student.AcademicStatus.CURRENTLY_STUDYING,
+                Student.SoughtDegree.GRADUATE);
+        Student beyrami = new Student("Ali", "Beyrami", "0922134290", "09129002314",
+                "aminlooue@sharif.edu", "3", "3", mathDean, 2016, Student.AcademicStatus.CURRENTLY_STUDYING,
+                Student.SoughtDegree.PHD);
         mathDepartment.addStudent(student);
+        mathDepartment.addStudent(graduateStudent);
+        mathDepartment.addStudent(beyrami);
         complexAnalysis.addStudent(student);
+        complexAnalysis.addStudent(graduateStudent);
         complexAnalysis.mapStudentToScore(student, 20.0);
+        complexAnalysis.mapStudentToScore(graduateStudent, 19.75);
+        complexAnalysis.finalizeScore(student);
         complexAnalysis.finalizeScore(student);
         realAnalysis.addStudent(student);
         realAnalysis.mapStudentToScore(student, 18.5);
-        realAnalysis.finalizeScore(student);
+        realAnalysis.addStudent(beyrami);
+        realAnalysis.mapStudentToScore(beyrami, 20.0);
+        realAnalysis.addStudent(graduateStudent);
+        realAnalysis.mapStudentToScore(graduateStudent, 17.0);
+        realAnalysis.finalizeScore(graduateStudent);
         partialDiffEquations.addStudent(student);
+        partialDiffEquations.addStudent(beyrami);
+        partialDiffEquations.mapStudentToScore(beyrami, 20.0);
+        partialDiffEquations.finalizeScore(beyrami);
         partialDiffEquations.mapStudentToScore(student, 19.75);
 
         Dean physicsDean = new Dean("Sohrab", "Rahvar", "0150987612", "09129202019",
