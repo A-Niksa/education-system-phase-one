@@ -83,4 +83,17 @@ public class ProfessorsDB extends ModelDB {
             e.printStackTrace();
         }
     }
+
+    public static Professor getProfessorWithID(String teachingID) {
+        return getInstance().getProfessorWithIDByInstance(teachingID);
+    }
+
+    private Professor getProfessorWithIDByInstance(String teachingID) {
+        for (Professor professor : professorsList) {
+            if (professor.getTeachingID().equals(teachingID)) {
+                return professor;
+            }
+        }
+        return null;
+    }
 }

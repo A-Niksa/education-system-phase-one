@@ -118,4 +118,17 @@ public class DepartmentsDB extends ModelDB {
         }
         return null;
     }
+
+    public static Department getDepartmentWithName(String departmentName) {
+        return getInstance().getDepartmentWithNameByInstance(departmentName);
+    }
+
+    private Department getDepartmentWithNameByInstance(String departmentName) {
+        for (Department department : departmentsList) {
+            if (department.getDepartmentName().equals(departmentName)) {
+                return department;
+            }
+        }
+        return null;
+    }
 }

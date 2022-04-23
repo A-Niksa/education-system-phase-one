@@ -64,6 +64,14 @@ public class Department {
         }
     }
 
+    public Dean getDean() {
+        return dean;
+    }
+
+    public EducationDeputy getEducationDeputy() {
+        return educationDeputy;
+    }
+
     public void setEducationDeputy(EducationDeputy educationDeputy) {
         this.educationDeputy = educationDeputy;
     }

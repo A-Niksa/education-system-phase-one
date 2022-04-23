@@ -1,6 +1,7 @@
 import gui.MainFrame;
 import logic.models.abstractions.Course;
 import logic.models.abstractions.Department;
+import logic.models.abstractions.University;
 import logic.models.roles.Dean;
 import logic.models.roles.EducationDeputy;
 import logic.models.roles.Professor;
@@ -77,5 +78,27 @@ public class Main {
         realAnalysis.finalizeScore(student);
         partialDiffEquations.addStudent(student);
         partialDiffEquations.mapStudentToScore(student, 19.75);
+
+        Dean physicsDean = new Dean("Sohrab", "Rahvar", "0150987612", "09129202019",
+                "rahvar@sharif.edu", "rahvarrahvar", "2350", 404, Professor.AcademicRank.FULL);
+        Department physicsDepartment = new Department("Physics", physicsDean);
+        EducationDeputy phyiscsDeputy = new EducationDeputy("Mahmoud", "Bahmanabadi", "0150908124",
+                "09121078923", "bahmanabadi@sharif.edu", "bahman1234", "3200",
+                313, Professor.AcademicRank.FULL);
+        physicsDepartment.setEducationDeputy(phyiscsDeputy);
+
+        LinkedList<WeeklyDate> physicsTwoDates = new LinkedList<>();
+        physicsTwoDates.add(new WeeklyDate(Weekday.SUNDAY, new TimeInDay(15, 0, 0),
+                new TimeInDay(17, 0, 0), "Real Analysis", "Ali Safdari"));
+        physicsTwoDates.add(new WeeklyDate(Weekday.TUESDAY, new TimeInDay(15, 0, 0),
+                new TimeInDay(17, 0, 0), "Real Analysis", "Ali Safdari"));
+        Course course = new Course("Phyiscs 2", LocalDateTime.of(2022, 8, 29, 9, 0, 0),
+                3, Course.CourseLevel.BACHELORS, "32145", phyiscsDeputy, physicsTwoDates);
+        physicsDepartment.addCourse(course);
+        course.addStudent(student);
+
+        University sharif = new University();
+        sharif.addDepartment(mathDepartment);
+        sharif.addDepartment(physicsDepartment);
     }
 }

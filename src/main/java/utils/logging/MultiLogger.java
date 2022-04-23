@@ -33,14 +33,14 @@ public class MultiLogger implements Logger {
     @Override
     public void error(String message, Class<?> clazz) {
         for (Logger logger : loggersList) {
-            logger.info(message, clazz);
+            logger.error(message, clazz);
         }
     }
 
     @Override
     public void fatal(String message, Class<?> clazz) {
         for (Logger logger : loggersList) {
-            logger.info(message, clazz);
+            logger.fatal(message, clazz);
         }
     }
 }

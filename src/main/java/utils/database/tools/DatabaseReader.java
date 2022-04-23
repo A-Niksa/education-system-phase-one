@@ -37,6 +37,9 @@ public class DatabaseReader extends DatabaseManager {
             case COURSES:
                 CoursesDB.setDatabase(gson.fromJson(reader, CoursesDB.getListType()));
                 break;
+            case UNIVERSITY:
+                UniversityDB.setDatabase(gson.fromJson(reader, UniversityDB.getListType()));
+                break;
             case REQUESTS:
                 RequestsDB.setDatabase(gson.fromJson(reader, RequestsDB.getListType()));
             default:

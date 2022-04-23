@@ -939,3 +939,206 @@
 2022/04/23 | 15:45:21 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
 2022/04/23 | 15:45:26 - INFO - opened the enrolment cerificate subsection in academic requests - connectListeners - gui.main.StudentMenu$9
 2022/04/23 | 15:45:27 - INFO - received an enrolment certificate - connectListeners - gui.services.requests.CertificateSubmission$1
+2022/04/23 | 15:46:01 - INFO - start of program - psvm - Main
+2022/04/23 | 15:46:05 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 15:46:11 - INFO - opened the enrolment cerificate subsection in academic requests - connectListeners - gui.main.StudentMenu$9
+2022/04/23 | 15:46:12 - INFO - received an enrolment certificate - connectListeners - gui.services.requests.CertificateSubmission$1
+2022/04/23 | 15:46:21 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 15:46:21 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 19:01:58 - INFO - start of program - psvm - Main
+2022/04/23 | 19:02:04 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 19:02:08 - INFO - opened the dropping out subsection in academic requests - connectListeners - gui.main.StudentMenu$8
+2022/04/23 | 19:02:10 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 19:02:12 - INFO - opened the enrolment certificate subsection in academic requests - connectListeners - gui.main.StudentMenu$9
+2022/04/23 | 19:02:14 - INFO - received an enrolment certificate - connectListeners - gui.services.requests.CertificateSubmission$1
+2022/04/23 | 19:02:20 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 19:02:33 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 19:05:58 - INFO - start of program - psvm - Main
+2022/04/23 | 19:06:04 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 19:06:07 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 19:07:03 - INFO - start of program - psvm - Main
+2022/04/23 | 19:07:07 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 19:07:15 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 19:08:06 - INFO - start of program - psvm - Main
+2022/04/23 | 19:08:09 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 19:08:12 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 19:08:40 - INFO - start of program - psvm - Main
+2022/04/23 | 19:08:44 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 19:08:46 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 19:09:27 - INFO - start of program - psvm - Main
+2022/04/23 | 19:09:32 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 19:09:35 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 19:09:56 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 19:09:56 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 19:19:37 - INFO - start of program - psvm - Main
+2022/04/23 | 19:19:41 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 19:19:45 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 19:19:51 - INFO - no professor with an ID of 2312331 exists - connectListeners - gui.services.requests.RecommendationSubmission$1
+2022/04/23 | 19:19:58 - INFO - recommendation letter request submitted - connectListeners - gui.services.requests.RecommendationSubmission$1
+2022/04/23 | 19:20:02 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 19:20:02 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 19:37:46 - INFO - start of program - psvm - Main
+2022/04/23 | 19:37:51 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 19:37:54 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 19:38:00 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 19:38:00 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 19:38:15 - INFO - start of program - psvm - Main
+2022/04/23 | 19:38:17 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 19:38:17 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 19:38:35 - INFO - start of program - psvm - Main
+2022/04/23 | 19:38:40 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 19:38:45 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 19:38:50 - INFO - recommendation letter request submitted - connectListeners - gui.services.requests.RecommendationSubmission$1
+2022/04/23 | 19:38:52 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 19:38:53 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/23 | 19:38:54 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 19:38:54 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 19:39:33 - INFO - start of program - psvm - Main
+2022/04/23 | 19:39:37 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 19:39:40 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 19:39:42 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 19:39:42 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 19:39:42 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 19:39:55 - INFO - start of program - psvm - Main
+2022/04/23 | 19:39:59 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 19:40:32 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 19:40:39 - INFO - recommendation letter request submitted - connectListeners - gui.services.requests.RecommendationSubmission$1
+2022/04/23 | 19:41:03 - INFO - start of program - psvm - Main
+2022/04/23 | 19:41:07 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 19:41:10 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 19:41:15 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 19:41:15 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 19:41:32 - INFO - start of program - psvm - Main
+2022/04/23 | 19:41:37 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 19:41:40 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 19:41:47 - INFO - recommendation letter request submitted - connectListeners - gui.services.requests.RecommendationSubmission$1
+2022/04/23 | 19:41:54 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 19:41:54 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 19:42:30 - INFO - start of program - psvm - Main
+2022/04/23 | 19:42:35 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 19:42:42 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 19:42:46 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 19:42:46 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 19:43:35 - INFO - start of program - psvm - Main
+2022/04/23 | 19:43:39 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 19:43:43 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 19:43:47 - INFO - recommendation letter request submitted - connectListeners - gui.services.requests.RecommendationSubmission$1
+2022/04/23 | 19:43:52 - INFO - recommendation letter request submitted - connectListeners - gui.services.requests.RecommendationSubmission$1
+2022/04/23 | 19:43:54 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 19:43:55 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 19:43:55 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 19:44:29 - INFO - start of program - psvm - Main
+2022/04/23 | 19:44:33 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 19:44:36 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 19:49:07 - INFO - start of program - psvm - Main
+2022/04/23 | 19:49:11 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 19:49:13 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 19:49:42 - INFO - start of program - psvm - Main
+2022/04/23 | 19:49:47 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 19:49:51 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 19:54:21 - INFO - start of program - psvm - Main
+2022/04/23 | 19:54:25 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 19:54:25 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 19:58:04 - INFO - start of program - psvm - Main
+2022/04/23 | 19:58:08 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 19:58:16 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 19:58:20 - INFO - recommendation letter request submitted - connectListeners - gui.services.requests.RecommendationSubmission$1
+2022/04/23 | 19:58:24 - INFO - recommendation letter request submitted - connectListeners - gui.services.requests.RecommendationSubmission$1
+2022/04/23 | 19:58:26 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 19:58:27 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 19:58:27 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 19:58:58 - INFO - start of program - psvm - Main
+2022/04/23 | 19:59:02 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 19:59:04 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 20:00:07 - INFO - start of program - psvm - Main
+2022/04/23 | 20:00:14 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 20:00:17 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 20:00:45 - INFO - start of program - psvm - Main
+2022/04/23 | 20:00:52 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 20:00:54 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 20:01:43 - INFO - start of program - psvm - Main
+2022/04/23 | 20:01:47 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 20:01:49 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 20:02:11 - INFO - start of program - psvm - Main
+2022/04/23 | 20:02:14 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 20:02:16 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 20:02:18 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 20:02:18 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 20:02:30 - INFO - start of program - psvm - Main
+2022/04/23 | 20:02:34 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 20:02:36 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 20:03:16 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 20:03:16 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 20:15:03 - INFO - start of program - psvm - Main
+2022/04/23 | 20:15:11 - INFO - start of program - psvm - Main
+2022/04/23 | 20:15:19 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 20:15:21 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 20:17:04 - INFO - start of program - psvm - Main
+2022/04/23 | 20:17:08 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 20:17:11 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 20:17:36 - INFO - start of program - psvm - Main
+2022/04/23 | 20:17:41 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 20:17:44 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 20:18:11 - INFO - start of program - psvm - Main
+2022/04/23 | 20:18:18 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 20:18:20 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 20:18:38 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 20:18:41 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 20:18:41 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 20:51:36 - INFO - start of program - psvm - Main
+2022/04/23 | 20:51:36 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 20:53:59 - INFO - start of program - psvm - Main
+2022/04/23 | 20:53:59 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 20:54:12 - INFO - start of program - psvm - Main
+2022/04/23 | 20:54:12 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 21:36:32 - INFO - start of program - psvm - Main
+2022/04/23 | 21:36:32 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 21:36:45 - INFO - start of program - psvm - Main
+2022/04/23 | 21:37:03 - INFO - start of program - psvm - Main
+2022/04/23 | 21:37:08 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 21:37:11 - INFO - opened minor request subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/23 | 21:38:02 - INFO - start of program - psvm - Main
+2022/04/23 | 21:38:07 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 21:38:09 - INFO - opened minor request subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/23 | 22:20:51 - INFO - start of program - psvm - Main
+2022/04/23 | 22:20:56 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 22:20:59 - INFO - opened minor request subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/23 | 22:21:35 - INFO - start of program - psvm - Main
+2022/04/23 | 22:21:44 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 22:21:51 - INFO - opened minor request subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/23 | 22:22:00 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 22:22:00 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 22:23:29 - INFO - start of program - psvm - Main
+2022/04/23 | 22:23:34 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 22:23:37 - INFO - opened minor request subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/23 | 22:24:17 - INFO - start of program - psvm - Main
+2022/04/23 | 22:24:23 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 22:24:28 - INFO - opened minor request subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/23 | 22:24:44 - INFO - start of program - psvm - Main
+2022/04/23 | 22:24:51 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 22:24:55 - INFO - opened minor request subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/23 | 22:25:03 - INFO - cannot request minor for the current department - connectListeners - gui.services.requests.MinorSubmission$1
+2022/04/23 | 22:25:20 - INFO - submitted a minor request to minor at Physics - connectListeners - gui.services.requests.MinorSubmission$1
+2022/04/23 | 22:25:22 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 22:25:28 - INFO - opened minor request subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/23 | 22:31:38 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 22:31:38 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/23 | 22:33:11 - INFO - start of program - psvm - Main
+2022/04/23 | 22:33:11 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 22:33:59 - INFO - start of program - psvm - Main
+2022/04/23 | 22:34:10 - INFO - logged in as student - connectListeners - gui.login.LoginMenu$2
+2022/04/23 | 22:34:16 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 22:34:23 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 22:34:26 - INFO - opened minor request subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/23 | 22:34:35 - ERROR - student's GPA is not high enough (lower than 17) - connectListeners - gui.services.requests.MinorSubmission$1
+2022/04/23 | 22:34:41 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 22:34:43 - INFO - opened the profile editor in the user profile - connectListeners - gui.main.StudentMenu$1
+2022/04/23 | 22:34:45 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 22:34:48 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 22:34:50 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 22:34:53 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/23 | 22:34:55 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 22:34:58 - INFO - opened minor request subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/23 | 22:35:06 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/23 | 22:35:08 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/23 | 22:35:08 - INFO - end of program - connectToDatabase - gui.MainFrame$1

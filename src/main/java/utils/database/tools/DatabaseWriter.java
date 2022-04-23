@@ -3,6 +3,7 @@ package utils.database.tools;
 import logic.menus.services.requests.Request;
 import logic.models.abstractions.Course;
 import logic.models.abstractions.Department;
+import logic.models.abstractions.University;
 import logic.models.roles.Professor;
 import logic.models.roles.Student;
 import utils.database.data.*;
@@ -42,6 +43,9 @@ public class DatabaseWriter extends DatabaseManager {
             case COURSES:
                 CoursesDB.addToDatabase((Course) objectToAdd);
                 return;
+            case UNIVERSITY:
+                UniversityDB.addToDatabase((University) objectToAdd);
+                return;
             case REQUESTS:
                 RequestsDB.addToDatabase((Request) objectToAdd);
         }
@@ -66,6 +70,9 @@ public class DatabaseWriter extends DatabaseManager {
             case COURSES:
                 CoursesDB.removeFromDatabase((Course) objectToRemove);
                 return;
+            case UNIVERSITY:
+                UniversityDB.removeFromDatabase((University) objectToRemove);
+                return;
             case REQUESTS:
                 RequestsDB.removeFromDatabase((Request) objectToRemove);
         }
@@ -86,6 +93,8 @@ public class DatabaseWriter extends DatabaseManager {
         CoursesDB.addListToJson(writer, gson);
         initializeWritingTools(DatabaseIdentifier.DEPARTMENTS);
         DepartmentsDB.addListToJson(writer, gson);
+        initializeWritingTools(DatabaseIdentifier.UNIVERSITY);
+        UniversityDB.addListToJson(writer, gson);
         initializeWritingTools(DatabaseIdentifier.REQUESTS);
         RequestsDB.addListToJson(writer, gson);
     }

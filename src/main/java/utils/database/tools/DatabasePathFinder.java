@@ -17,6 +17,8 @@ public class DatabasePathFinder {
                 return databasesPath + "departments.json";
             case COURSES:
                 return databasesPath + "courses.json";
+            case UNIVERSITY:
+                return databasesPath + "university.json";
             case REQUESTS:
                 return databasesPath + "requests.json";
             default:

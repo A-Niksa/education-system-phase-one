@@ -33,10 +33,11 @@ public class MainFrame extends JFrame {
     }
 
     private void initializeObjects() {
-        DatabaseReader.constructFromDatabase(DatabaseIdentifier.STUDENTS);
-        DatabaseReader.constructFromDatabase(DatabaseIdentifier.PROFESSORS);
+        DatabaseReader.constructFromDatabase(DatabaseIdentifier.UNIVERSITY);
         DatabaseReader.constructFromDatabase(DatabaseIdentifier.DEPARTMENTS);
         DatabaseReader.constructFromDatabase(DatabaseIdentifier.COURSES);
+        DatabaseReader.constructFromDatabase(DatabaseIdentifier.STUDENTS);
+        DatabaseReader.constructFromDatabase(DatabaseIdentifier.PROFESSORS);
         DatabaseReader.constructFromDatabase(DatabaseIdentifier.REQUESTS);
     }
 

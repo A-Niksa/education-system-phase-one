@@ -2,7 +2,9 @@ package utils.database.data;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import logic.menus.services.requests.MinorRequest;
 import logic.menus.services.requests.Request;
+import logic.models.roles.Student;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -39,8 +41,11 @@ public class RequestsDB extends ModelDB {
     }
 
     private void removeFromDatabaseByInstance(Request request) {
+        String targetRequestID = request.getRequestID();
+        Request potentialRequest;
         for (int i = 0; i < requestsList.size(); i++) {
-            if (request == requestsList.get(i)) {
+            potentialRequest = requestsList.get(i);
+            if (targetRequestID.equals(potentialRequest.getRequestID())) {
                 requestsList.remove(i);
                 return;
             }
@@ -81,5 +86,41 @@ public class RequestsDB extends ModelDB {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static LinkedList<Request> getStudentsRecommendations(Student targetStudent) {
+        return getInstance().getStudentsRecommendationsByInstance(targetStudent);
+    }
+
+    private LinkedList<Request> getStudentsRecommendationsByInstance(Student targetStudent) {
+        LinkedList<Request> recommendationRequests = new LinkedList<>();
+        Student potentialStudent;
+        String targetStudentID = targetStudent.getStudentID();
+        for (Request request : requestsList) {
+            potentialStudent = request.getRequestingStudent();
+            if (potentialStudent.getStudentID().equals(targetStudentID) &&
+                    request.getRequestType() == Request.RequestType.RECOMMENDATION) {
+                recommendationRequests.add(request);
+            }
+        }
+        return recommendationRequests;
+    }
+
+    public static LinkedList<MinorRequest> getStudentsMinorRequests(Student targetStudent) {
+        return getInstance().getStudentsMinorRequestsByInstance(targetStudent);
+    }
+
+    private LinkedList<MinorRequest> getStudentsMinorRequestsByInstance(Student targetStudent) {
+        LinkedList<MinorRequest> minorRequests = new LinkedList<>();
+        Student potentialStudent;
+        String targetStudentID = targetStudent.getStudentID();
+        for (Request request : requestsList) {
+            potentialStudent = request.getRequestingStudent();
+            if (potentialStudent.getStudentID().equals(targetStudentID) &&
+                    request.getRequestType() == Request.RequestType.MINOR) {
+                minorRequests.add((MinorRequest) request);
+            }
+        }
+        return minorRequests;
     }
 }

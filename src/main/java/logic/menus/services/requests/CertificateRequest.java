@@ -8,6 +8,7 @@ import utils.timing.TimeManager;
 public class CertificateRequest extends Request {
     public CertificateRequest(Student requestingStudent) {
         super(requestingStudent);
+        requestType = RequestType.CERTIFICATE;
     }
 
     public String getCertificateText() {
@@ -20,6 +21,7 @@ public class CertificateRequest extends Request {
         String certificateText = "It is hereby certified that " + nameAndSurname + " (student ID: " + studentID +
                 ") is currently a student of Sharif University of Technology and is majoring in " + majorName + "." +
                 "\nDate of Certification: " + currentDate;
+        setResponseMessage(certificateText);
 
         return convertToHTMLFormat(certificateText);
     }
