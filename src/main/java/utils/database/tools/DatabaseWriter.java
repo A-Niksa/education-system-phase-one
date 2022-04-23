@@ -1,5 +1,7 @@
 package utils.database.tools;
 
+import logic.menus.services.requests.MinorRequest;
+import logic.menus.services.requests.RecommendationRequest;
 import logic.menus.services.requests.Request;
 import logic.models.abstractions.Course;
 import logic.models.abstractions.Department;
@@ -48,6 +50,13 @@ public class DatabaseWriter extends DatabaseManager {
                 return;
             case REQUESTS:
                 RequestsDB.addToDatabase((Request) objectToAdd);
+                return;
+            case MINORS:
+                MinorsDB.addToDatabase((MinorRequest) objectToAdd);
+                return;
+            case RECOMMENDATIONS:
+                RecommendationsDB.addToDatabase((RecommendationRequest) objectToAdd);
+                return;
         }
     }
 
@@ -75,6 +84,13 @@ public class DatabaseWriter extends DatabaseManager {
                 return;
             case REQUESTS:
                 RequestsDB.removeFromDatabase((Request) objectToRemove);
+                return;
+            case MINORS:
+                MinorsDB.removeFromDatabase((MinorRequest) objectToRemove);
+                return;
+            case RECOMMENDATIONS:
+                RecommendationsDB.removeFromDatabase((RecommendationRequest) objectToRemove);
+                return;
         }
     }
 
@@ -97,5 +113,9 @@ public class DatabaseWriter extends DatabaseManager {
         UniversityDB.addListToJson(writer, gson);
         initializeWritingTools(DatabaseIdentifier.REQUESTS);
         RequestsDB.addListToJson(writer, gson);
+        initializeWritingTools(DatabaseIdentifier.MINORS);
+        MinorsDB.addListToJson(writer, gson);
+        initializeWritingTools(DatabaseIdentifier.RECOMMENDATIONS);
+        RecommendationsDB.addListToJson(writer, gson);
     }
 }

@@ -1330,3 +1330,95 @@
 2022/04/23 | 23:58:20 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
 2022/04/23 | 23:58:29 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
 2022/04/23 | 23:58:29 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 00:00:52 - INFO - start of program - psvm - Main
+2022/04/24 | 00:01:01 - INFO - logged in as student (username: 2) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 00:01:03 - INFO - opened dorm request subsection in academic requests - connectListeners - gui.main.StudentMenu$12
+2022/04/24 | 00:01:04 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
+2022/04/24 | 00:01:04 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
+2022/04/24 | 00:01:04 - INFO - student was not able to get a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
+2022/04/24 | 00:01:09 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 00:01:12 - INFO - opened dorm request subsection in academic requests - connectListeners - gui.main.StudentMenu$12
+2022/04/24 | 00:01:12 - INFO - requested a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
+2022/04/24 | 00:01:12 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
+2022/04/24 | 00:01:12 - INFO - student has been assigned a dorm room - connectListeners - gui.services.requests.DormSubmissions$1
+2022/04/24 | 00:01:19 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 00:01:19 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 00:08:36 - INFO - start of program - psvm - Main
+2022/04/24 | 00:08:41 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 00:08:44 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/24 | 00:08:50 - ERROR - recommendation letter request submitted - connectListeners - gui.services.requests.RecommendationSubmission$1
+2022/04/24 | 00:08:52 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 00:08:52 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 00:09:22 - INFO - start of program - psvm - Main
+2022/04/24 | 00:09:30 - INFO - logged in as student (username: 2) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 00:09:33 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/24 | 00:09:36 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 00:09:42 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/24 | 00:10:22 - INFO - start of program - psvm - Main
+2022/04/24 | 00:10:27 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 00:10:30 - INFO - opened minor request subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/24 | 00:10:31 - ERROR - cannot request minor for the current department - connectListeners - gui.services.requests.MinorSubmission$1
+2022/04/24 | 00:10:34 - INFO - submitted a minor request to minor at Physics - connectListeners - gui.services.requests.MinorSubmission$1
+2022/04/24 | 00:10:36 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 00:10:38 - INFO - opened minor request subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/24 | 00:10:41 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 00:10:41 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 00:12:24 - INFO - start of program - psvm - Main
+2022/04/24 | 00:12:29 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 00:12:31 - INFO - opened minor request subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/24 | 02:11:52 - INFO - start of program - psvm - Main
+2022/04/24 | 02:11:59 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 02:12:02 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/24 | 02:12:05 - ERROR - recommendation letter request submitted - connectListeners - gui.services.requests.RecommendationSubmission$1
+2022/04/24 | 02:12:11 - ERROR - recommendation letter request submitted - connectListeners - gui.services.requests.RecommendationSubmission$1
+2022/04/24 | 02:12:13 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 02:12:15 - INFO - opened minor request subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/24 | 02:12:17 - INFO - submitted a minor request to minor at Physics - connectListeners - gui.services.requests.MinorSubmission$1
+2022/04/24 | 02:12:20 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 02:12:21 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/24 | 02:12:25 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 02:12:25 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 02:13:32 - INFO - start of program - psvm - Main
+2022/04/24 | 02:13:34 - INFO - start of program - psvm - Main
+2022/04/24 | 02:13:34 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 02:13:34 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 02:14:29 - INFO - start of program - psvm - Main
+2022/04/24 | 02:14:35 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 02:14:37 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/24 | 02:14:39 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 02:14:41 - INFO - opened minor request subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/24 | 02:14:43 - ERROR - cannot request minor for the current department - connectListeners - gui.services.requests.MinorSubmission$1
+2022/04/24 | 02:14:46 - INFO - submitted a minor request to minor at Physics - connectListeners - gui.services.requests.MinorSubmission$1
+2022/04/24 | 02:14:48 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 02:14:51 - INFO - opened minor request subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/24 | 02:14:53 - INFO - submitted a minor request to minor at Physics - connectListeners - gui.services.requests.MinorSubmission$1
+2022/04/24 | 02:14:54 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 02:14:57 - INFO - opened minor request subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/24 | 02:15:03 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 02:15:03 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 02:15:52 - INFO - start of program - psvm - Main
+2022/04/24 | 02:15:56 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 02:15:56 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 02:17:24 - INFO - start of program - psvm - Main
+2022/04/24 | 02:17:29 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 02:17:32 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/24 | 02:17:36 - ERROR - recommendation letter request submitted - connectListeners - gui.services.requests.RecommendationSubmission$1
+2022/04/24 | 02:17:40 - ERROR - recommendation letter request submitted - connectListeners - gui.services.requests.RecommendationSubmission$1
+2022/04/24 | 02:17:45 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 02:17:47 - INFO - opened minor request subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/24 | 02:17:50 - INFO - submitted a minor request to minor at Physics - connectListeners - gui.services.requests.MinorSubmission$1
+2022/04/24 | 02:18:12 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 02:18:14 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/24 | 02:18:16 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 02:18:16 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 02:18:53 - INFO - start of program - psvm - Main
+2022/04/24 | 02:19:01 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 02:19:04 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/24 | 02:19:07 - INFO - opened minor request subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/24 | 02:19:10 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 02:21:16 - INFO - start of program - psvm - Main
+2022/04/24 | 02:21:21 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 02:21:24 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/24 | 02:23:35 - INFO - start of program - psvm - Main
+2022/04/24 | 02:23:40 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 02:23:42 - INFO - opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10

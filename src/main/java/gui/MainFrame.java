@@ -39,6 +39,8 @@ public class MainFrame extends JFrame {
         DatabaseReader.constructFromDatabase(DatabaseIdentifier.STUDENTS);
         DatabaseReader.constructFromDatabase(DatabaseIdentifier.PROFESSORS);
         DatabaseReader.constructFromDatabase(DatabaseIdentifier.REQUESTS);
+        DatabaseReader.constructFromDatabase(DatabaseIdentifier.MINORS);
+        DatabaseReader.constructFromDatabase(DatabaseIdentifier.RECOMMENDATIONS);
     }
 
     private void connectToDatabase() {

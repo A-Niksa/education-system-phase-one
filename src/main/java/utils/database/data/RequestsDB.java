@@ -87,40 +87,4 @@ public class RequestsDB extends ModelDB {
             e.printStackTrace();
         }
     }
-
-    public static LinkedList<Request> getStudentsRecommendations(Student targetStudent) {
-        return getInstance().getStudentsRecommendationsByInstance(targetStudent);
-    }
-
-    private LinkedList<Request> getStudentsRecommendationsByInstance(Student targetStudent) {
-        LinkedList<Request> recommendationRequests = new LinkedList<>();
-        Student potentialStudent;
-        String targetStudentID = targetStudent.getStudentID();
-        for (Request request : requestsList) {
-            potentialStudent = request.getRequestingStudent();
-            if (potentialStudent.getStudentID().equals(targetStudentID) &&
-                    request.getRequestType() == Request.RequestType.RECOMMENDATION) {
-                recommendationRequests.add(request);
-            }
-        }
-        return recommendationRequests;
-    }
-
-    public static LinkedList<MinorRequest> getStudentsMinorRequests(Student targetStudent) {
-        return getInstance().getStudentsMinorRequestsByInstance(targetStudent);
-    }
-
-    private LinkedList<MinorRequest> getStudentsMinorRequestsByInstance(Student targetStudent) {
-        LinkedList<MinorRequest> minorRequests = new LinkedList<>();
-        Student potentialStudent;
-        String targetStudentID = targetStudent.getStudentID();
-        for (Request request : requestsList) {
-            potentialStudent = request.getRequestingStudent();
-            if (potentialStudent.getStudentID().equals(targetStudentID) &&
-                    request.getRequestType() == Request.RequestType.MINOR) {
-                minorRequests.add((MinorRequest) request);
-            }
-        }
-        return minorRequests;
-    }
 }

@@ -21,6 +21,10 @@ public class DatabasePathFinder {
                 return databasesPath + "university.json";
             case REQUESTS:
                 return databasesPath + "requests.json";
+            case MINORS:
+                return databasesPath + "minors.json";
+            case RECOMMENDATIONS:
+                return databasesPath + "recommendations.json";
             default:
                 return null;
         }

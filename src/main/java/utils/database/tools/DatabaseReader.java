@@ -42,6 +42,12 @@ public class DatabaseReader extends DatabaseManager {
                 break;
             case REQUESTS:
                 RequestsDB.setDatabase(gson.fromJson(reader, RequestsDB.getListType()));
+                break;
+            case MINORS:
+                MinorsDB.setDatabase(gson.fromJson(reader, MinorsDB.getListType()));
+                break;
+            case RECOMMENDATIONS:
+                RecommendationsDB.setDatabase(gson.fromJson(reader, RecommendationsDB.getListType()));
             default:
                 return;
         }

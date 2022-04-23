@@ -10,11 +10,13 @@ import logic.models.roles.Professor;
 import logic.models.roles.Student;
 import logic.models.roles.User;
 import utils.database.data.DepartmentsDB;
+import utils.database.data.MinorsDB;
 import utils.database.data.ProfessorsDB;
 import utils.database.data.RequestsDB;
 import utils.logging.MasterLogger;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.LinkedList;
@@ -49,7 +51,7 @@ public class MinorSubmission extends Template {
     }
 
     private void setTableData() {
-        LinkedList<MinorRequest> minorRequestsList = RequestsDB.getStudentsMinorRequests(student);
+        LinkedList<MinorRequest> minorRequestsList = MinorsDB.getStudentsMinorRequests(student);
         data = new String[minorRequestsList.size()][];
         MinorRequest request;
         for (int i = 0; i < minorRequestsList.size(); i++) {
@@ -102,6 +104,10 @@ public class MinorSubmission extends Template {
 
                 MinorRequest request = new MinorRequest(student, targetDepartmentName);
                 MasterLogger.info("submitted a minor request to minor at " + targetDepartmentName, getClass());
+
+                setTableData();
+                DefaultTableModel tableModel = new DefaultTableModel(data, columns);
+                requestsTable.setModel(tableModel);
             }
         });
     }

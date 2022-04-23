@@ -3,6 +3,7 @@ package gui.services.requests;
 import logic.menus.services.requests.RecommendationRequest;
 import logic.menus.services.requests.Request;
 import logic.models.roles.Student;
+import utils.database.data.RecommendationsDB;
 import utils.database.data.RequestsDB;
 
 import javax.swing.*;
@@ -28,12 +29,11 @@ public class RecommendationDisplayer {
     }
 
     private void updateRecommendations() {
-        LinkedList<Request> recommendationRequestsList = RequestsDB.getStudentsRecommendations(student);
+        LinkedList<RecommendationRequest> recommendationRequestsList = RecommendationsDB.getStudentsRecommendations(student);
         RecommendationRequest recommendationRequest;
-        for (Request request : recommendationRequestsList) {
+        for (RecommendationRequest request : recommendationRequestsList) {
             if (request.requestWasSuccessful()) {
-                recommendationRequest = specialCastToRecommendationRequest(request);
-                JLabel recommendationText = new JLabel(recommendationRequest.getRecommendationText());
+                JLabel recommendationText = new JLabel(request.getRecommendationText());
                 currentRecommendations.add(recommendationText);
             }
         }
@@ -47,18 +47,5 @@ public class RecommendationDisplayer {
             panel.add(recommendationTextLabel);
             currentY += height;
         }
-    }
-
-    private RecommendationRequest specialCastToRecommendationRequest(Request request) {
-        RecommendationRequest recommendationRequest = new RecommendationRequest(request.getRequestingStudent(),
-                request.getRequestRecipient());
-        recommendationRequest.setRequestHasBeenRespondedTo(request.requestHasBeenRespondedTo());
-        recommendationRequest.setRequestWasSuccessful(request.requestWasSuccessful());
-        recommendationRequest.setRequestMessage(request.getRequestMessage());
-        recommendationRequest.setResponseMessage(request.getResponseMessage());
-
-        RequestsDB.removeFromDatabase(request);
-
-        return recommendationRequest;
     }
 }

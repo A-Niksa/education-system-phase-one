@@ -4,6 +4,7 @@ import logic.models.abstractions.Department;
 import logic.models.roles.Professor;
 import logic.models.roles.Student;
 import utils.database.data.DepartmentsDB;
+import utils.database.data.MinorsDB;
 
 public class MinorRequest extends Request {
     public enum MinorStatus {
@@ -28,6 +29,7 @@ public class MinorRequest extends Request {
         targetDepartmentAccepted = false;
         status = MinorStatus.SUBMITTED;
         setRequestRecipients();
+        MinorsDB.addToDatabase(this);
     }
 
     public static boolean studentHasSufficientlyHighGPA(Student student) {

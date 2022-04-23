@@ -2,12 +2,14 @@ package logic.menus.services.requests;
 
 import logic.models.roles.Professor;
 import logic.models.roles.Student;
+import utils.database.data.RecommendationsDB;
 
 public class RecommendationRequest extends Request {
     public RecommendationRequest(Student requestingStudent, Professor professor) {
         super(requestingStudent);
         requestType = RequestType.RECOMMENDATION;
         requestRecipient = professor;
+        RecommendationsDB.addToDatabase(this);
     }
 
     public String getRecommendationText() { //welp

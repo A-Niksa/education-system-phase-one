@@ -6,5 +6,7 @@ public enum DatabaseIdentifier {
     DEPARTMENTS,
     COURSES,
     UNIVERSITY,
-    REQUESTS
+    REQUESTS,
+    MINORS,
+    RECOMMENDATIONS
 }
