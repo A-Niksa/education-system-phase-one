@@ -53,7 +53,7 @@ public class StudentMenu extends MainMenu {
     }
 
     private void initializeComponents() {
-        Student studentUser = (Student) user;
+        Student studentUser = (Student) user; //welp
         academicStatusLabel = new JLabel("Academic Status: " + studentUser.getAcademicStatusString());
         Professor advisingProfessor = studentUser.getAdvisingProfessor();
         advisingProfessorName = new JLabel("Advising Professor: " +

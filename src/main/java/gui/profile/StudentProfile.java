@@ -15,7 +15,7 @@ import java.awt.event.ActionListener;
 import java.util.LinkedList;
 
 public class StudentProfile extends Template {
-    private User user;
+    private Student student;
     private JLabel profilePicture;
     private JLabel name;
     private JLabel nationalID;
@@ -28,7 +28,7 @@ public class StudentProfile extends Template {
     private JLabel yearOfEntry;
     private JLabel soughtDegree;
     private JLabel academicStatus;
-    private LinkedList<JLabel> lablesList;
+    private LinkedList<JLabel> labelsList;
     private JSeparator separator;
     private JLabel enterNewEmailAddress;
     private JTextField newEmailAddress;
@@ -39,41 +39,39 @@ public class StudentProfile extends Template {
 
     public StudentProfile(MainFrame mainFrame, MainMenu mainMenu, User user) {
         super(mainFrame, mainMenu);
-        this.user = user;
-        lablesList = new LinkedList<>();
+        student = (Student) user;
+        labelsList = new LinkedList<>();
         drawPanel();
     }
 
     @Override
     protected void initializeComponents() {
-        Student student = (Student) user;
-
         ImageIcon profilePictureIcon = new ImageIcon(student.getProfilePicture());
         profilePicture = new JLabel(profilePictureIcon);
         name = new JLabel("Name and Surname: " + student.getFirstName() + " " + student.getLastName());
-        lablesList.add(name);
+        labelsList.add(name);
         nationalID = new JLabel("National ID: " + student.getNationalID());
-        lablesList.add(nationalID);
+        labelsList.add(nationalID);
         studentID = new JLabel("Student ID: " + student.getStudentID());
-        lablesList.add(studentID);
+        labelsList.add(studentID);
         phoneNumber = new JLabel("Phone Number: " + student.getPhoneNumber());
-        lablesList.add(phoneNumber);
+        labelsList.add(phoneNumber);
         emailAddress = new JLabel("Email Address " + student.getEmailAddress());
-        lablesList.add(emailAddress);
+        labelsList.add(emailAddress);
         totalGPA = new JLabel("Total GPA: " + student.getTotalGPA());
-        lablesList.add(totalGPA);
+        labelsList.add(totalGPA);
         department = new JLabel("Department: " + student.getDepartmentName());
-        lablesList.add(department);
+        labelsList.add(department);
         Professor advisingProfessorObject = student.getAdvisingProfessor();
         advisingProfessor = new JLabel("Advising Professor: " +
                 advisingProfessorObject.getFirstName() + " " + advisingProfessorObject.getLastName());
-        lablesList.add(advisingProfessor);
+        labelsList.add(advisingProfessor);
         yearOfEntry = new JLabel("Year of Entry: " + student.getYearOfEntry());
-        lablesList.add(yearOfEntry);
+        labelsList.add(yearOfEntry);
         soughtDegree = new JLabel("Sought Degree: " + student.getSoughtDegreeString());
-        lablesList.add(soughtDegree);
+        labelsList.add(soughtDegree);
         academicStatus = new JLabel("Academic Status: " + student.getAcademicStatusString());
-        lablesList.add(academicStatus);
+        labelsList.add(academicStatus);
         separator = new JSeparator();
         enterNewEmailAddress = new JLabel("New Email Address:");
         newEmailAddress = new JTextField();
@@ -90,7 +88,7 @@ public class StudentProfile extends Template {
 
         int currentX = 20, currentY = 52;
         int increment = 40;
-        for (JLabel label : lablesList) {
+        for (JLabel label : labelsList) {
             label.setBounds(currentX, currentY, 350, 220);
             add(label);
             currentY += increment;
@@ -120,18 +118,20 @@ public class StudentProfile extends Template {
         changePhoneNumber.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("student changed phone number", getClass());
-                user.setPhoneNumber(newPhoneNumber.getText());
-                phoneNumber.setText("Phone Number: " + newPhoneNumber.getText());
+                String newPhoneNumberText = newPhoneNumber.getText();
+                MasterLogger.info("student changed phone number to " + newPhoneNumberText, getClass());
+                student.setPhoneNumber(newPhoneNumberText);
+                phoneNumber.setText("Phone Number: " + newPhoneNumberText);
             }
         });
 
         changeEmailAddress.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("student changed email address", getClass());
-                user.setEmailAddress(newEmailAddress.getText());
-                emailAddress.setText("Email Address: " + newEmailAddress.getText());
+                String newEmailAddressText = newEmailAddress.getText();
+                MasterLogger.info("student changed email address to " + newEmailAddressText, getClass());
+                student.setEmailAddress(newEmailAddressText);
+                emailAddress.setText("Email Address: " + newEmailAddressText);
             }
         });
     }

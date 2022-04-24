@@ -22,6 +22,7 @@ public class Department {
         listOfProfessors = new LinkedList<>();
         listOfStudents = new LinkedList<>();
         listOfCourses = new LinkedList<>();
+        addProfessor(dean);
         DepartmentsDB.addToDatabase(this); // TODO: updating DB
     }
 
@@ -73,6 +74,7 @@ public class Department {
     }
 
     public void setEducationDeputy(EducationDeputy educationDeputy) {
+        addProfessor(educationDeputy);
         this.educationDeputy = educationDeputy;
     }
 
@@ -86,5 +88,9 @@ public class Department {
 
     public LinkedList<Course> getListOfCourses() {
         return listOfCourses;
+    }
+
+    public LinkedList<Professor> getListOfProfessors() {
+        return listOfProfessors;
     }
 }

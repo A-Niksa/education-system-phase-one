@@ -26,15 +26,15 @@ public class Main {
 
     private static void createTestData() {
         Dean mathDean = new Dean("Hamidreza", "Fanaei", "0150347982", "09121329090",
-                                "fana@sharif.edu", "12345678", "1329", 707,
+                                "fana@sharif.edu", "4", "4", 707,
                 Professor.AcademicRank.FULL);
         Department mathDepartment = new Department("Mathematics", mathDean);
         EducationDeputy educationDeputy = new EducationDeputy("Ali", "Safdari", "004482133",
-                "09129022310", "safdari@sharif.edu", "12904212", "3214", 302,
+                "09129022310", "safdari@sharif.edu", "5", "5", 302,
                 Professor.AcademicRank.ASSOCIATE);
         mathDepartment.setEducationDeputy(educationDeputy);
         Professor shahshahani = new Professor("Siavash", "Shahshahani", "9999999999",
-                "09120000000", "shahshah@sharif.edu", "12349876", "0101", 103,
+                "09120000000", "shahshah@sharif.edu", "6", "6", 103,
                 Professor.AcademicRank.FULL, Professor.AdministrativeRole.NORMAL);
         mathDepartment.addProfessor(shahshahani);
         LinkedList<WeeklyDate> complexAnalysisDates = new LinkedList<>();

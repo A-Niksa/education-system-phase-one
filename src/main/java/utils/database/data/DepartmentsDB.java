@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import logic.models.abstractions.Course;
 import logic.models.abstractions.Department;
+import logic.models.roles.Professor;
 import logic.models.roles.Student;
 
 import java.io.FileWriter;
@@ -91,10 +92,29 @@ public class DepartmentsDB extends ModelDB {
 
     private Department getStudentsDepartmentByInstance(Student targetStudent) {
         LinkedList<Student> studentsPerDepartment;
+        String targetStudentID = targetStudent.getStudentID();
         for (Department department : departmentsList) {
             studentsPerDepartment = department.getListOfStudents();
             for (Student student : studentsPerDepartment) {
-                if (student.getStudentID().equals(targetStudent.getStudentID())) {
+                if (student.getStudentID().equals(targetStudentID)) {
+                    return department;
+                }
+            }
+        }
+        return null;
+    }
+
+    public static Department getProfessorsDepartment(Professor targetProfessor) {
+        return getInstance().getProfessorsDepartmentByInstance(targetProfessor);
+    }
+
+    private Department getProfessorsDepartmentByInstance(Professor targetProfessor) {
+        LinkedList<Professor> professorsPerDepartment;
+        String targetTeachingID = targetProfessor.getTeachingID();
+        for (Department department : departmentsList) {
+            professorsPerDepartment = department.getListOfProfessors();
+            for (Professor professor : professorsPerDepartment) {
+                if (professor.getTeachingID().equals(targetTeachingID)) {
                     return department;
                 }
             }

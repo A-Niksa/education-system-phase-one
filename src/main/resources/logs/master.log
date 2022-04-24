@@ -1527,3 +1527,73 @@
 2022/04/24 | 03:40:10 - INFO - logged out - connectListeners - gui.main.MainMenu$1
 2022/04/24 | 03:40:12 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
 2022/04/24 | 03:40:12 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 12:53:24 - INFO - start of program - psvm - Main
+2022/04/24 | 12:53:24 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 12:53:38 - INFO - start of program - psvm - Main
+2022/04/24 | 12:53:48 - INFO - logged in as professor (username: 6) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 12:53:50 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 12:53:50 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 13:10:05 - INFO - start of program - psvm - Main
+2022/04/24 | 13:10:09 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 13:10:30 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/24 | 13:10:34 - ERROR - wrong captcha entered by user - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 13:10:39 - INFO - logged in as professor (username: 6) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 13:10:43 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/24 | 13:10:48 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 13:12:08 - INFO - start of program - psvm - Main
+2022/04/24 | 13:12:14 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 13:12:32 - INFO - start of program - psvm - Main
+2022/04/24 | 13:12:39 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 13:12:50 - INFO - start of program - psvm - Main
+2022/04/24 | 13:12:54 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 13:13:14 - INFO - start of program - psvm - Main
+2022/04/24 | 13:13:18 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 13:13:51 - INFO - start of program - psvm - Main
+2022/04/24 | 13:13:56 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 13:14:05 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 13:14:05 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 13:20:26 - INFO - start of program - psvm - Main
+2022/04/24 | 13:20:30 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 13:20:31 - INFO - opened the profile editor in the user profile - connectListeners - gui.main.StudentMenu$1
+2022/04/24 | 13:20:50 - INFO - student changed phone number - connectListeners - gui.profile.StudentProfile$1
+2022/04/24 | 13:20:53 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 13:20:55 - INFO - opened the profile editor in the user profile - connectListeners - gui.main.StudentMenu$1
+2022/04/24 | 13:20:57 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 13:20:57 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 13:21:20 - INFO - start of program - psvm - Main
+2022/04/24 | 13:21:24 - INFO - logged in as student (username: 2) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 13:21:25 - INFO - opened the profile editor in the user profile - connectListeners - gui.main.StudentMenu$1
+2022/04/24 | 13:21:31 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 13:21:31 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 13:30:56 - INFO - start of program - psvm - Main
+2022/04/24 | 13:31:02 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 13:31:04 - INFO - opened the profile editor in the user profile - connectListeners - gui.main.ProfessorMenu$1
+2022/04/24 | 13:31:37 - INFO - start of program - psvm - Main
+2022/04/24 | 13:31:43 - INFO - start of program - psvm - Main
+2022/04/24 | 13:31:47 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 13:31:49 - INFO - opened the profile editor in the user profile - connectListeners - gui.main.ProfessorMenu$1
+2022/04/24 | 13:32:54 - INFO - start of program - psvm - Main
+2022/04/24 | 13:32:58 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 13:32:59 - INFO - opened the profile editor in the user profile - connectListeners - gui.main.ProfessorMenu$1
+2022/04/24 | 13:33:38 - INFO - start of program - psvm - Main
+2022/04/24 | 13:33:51 - INFO - start of program - psvm - Main
+2022/04/24 | 13:34:08 - INFO - start of program - psvm - Main
+2022/04/24 | 13:34:08 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 13:34:19 - INFO - start of program - psvm - Main
+2022/04/24 | 13:34:24 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 13:34:25 - INFO - opened the profile editor in the user profile - connectListeners - gui.main.ProfessorMenu$1
+2022/04/24 | 13:35:07 - INFO - start of program - psvm - Main
+2022/04/24 | 13:35:14 - INFO - logged in as professor (username: 6) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 13:35:17 - INFO - opened the profile editor in the user profile - connectListeners - gui.main.ProfessorMenu$1
+2022/04/24 | 13:35:26 - INFO - professor changed phone number to javax.swing.JTextField[,500,240,250x30,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@985547b,flags=296,maximumSize=,minimumSize=,preferredSize=,caretColor=sun.swing.PrintColorUIResource[r=51,g=51,b=51],disabledTextColor=javax.swing.plaf.ColorUIResource[r=184,g=207,b=229],editable=true,margin=javax.swing.plaf.InsetsUIResource[top=0,left=0,bottom=0,right=0],selectedTextColor=sun.swing.PrintColorUIResource[r=51,g=51,b=51],selectionColor=javax.swing.plaf.ColorUIResource[r=184,g=207,b=229],columns=0,columnWidth=0,command=,horizontalAlignment=LEADING] - connectListeners - gui.profile.ProfessorProfile$1
+2022/04/24 | 13:35:55 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 13:35:55 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 13:37:46 - INFO - start of program - psvm - Main
+2022/04/24 | 13:37:52 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 13:37:53 - INFO - opened the profile editor in the user profile - connectListeners - gui.main.ProfessorMenu$1
+2022/04/24 | 13:38:00 - INFO - professor changed phone number to 09192350239 - connectListeners - gui.profile.ProfessorProfile$1
+2022/04/24 | 13:38:14 - INFO - professor changed email address to a.safdari@sharif.edu - connectListeners - gui.profile.ProfessorProfile$2
+2022/04/24 | 13:38:19 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 13:38:21 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/24 | 13:38:22 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 13:38:22 - INFO - end of program - connectToDatabase - gui.MainFrame$1

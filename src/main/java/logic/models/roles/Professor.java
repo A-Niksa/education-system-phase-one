@@ -1,6 +1,7 @@
 package logic.models.roles;
 
 import logic.models.abstractions.Department;
+import utils.database.data.DepartmentsDB;
 import utils.database.data.ProfessorsDB;
 
 public class Professor extends User {
@@ -27,6 +28,11 @@ public class Professor extends User {
         this.academicRank = academicRank;
         this.administrativeRole = administrativeRole;
         ProfessorsDB.addToDatabase(this);
+    }
+
+    public String getDepartmentName() {
+        Department department = DepartmentsDB.getProfessorsDepartment(this);
+        return department.getDepartmentName();
     }
 
     public String getTeachingID() {
@@ -63,5 +69,9 @@ public class Professor extends User {
 
     public void setAcademicRank(AcademicRank academicRank) {
         this.academicRank = academicRank;
+    }
+
+    public AdministrativeRole getAdministrativeRole() {
+        return administrativeRole;
     }
 }
