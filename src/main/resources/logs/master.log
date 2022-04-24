@@ -1597,3 +1597,8 @@
 2022/04/24 | 13:38:21 - INFO - logged out - connectListeners - gui.main.MainMenu$1
 2022/04/24 | 13:38:22 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
 2022/04/24 | 13:38:22 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 13:38:56 - INFO - start of program - psvm - Main
+2022/04/24 | 13:39:02 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 13:39:03 - INFO - opened the profile editor in the user profile - connectListeners - gui.main.ProfessorMenu$1
+2022/04/24 | 13:39:44 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 13:39:44 - INFO - end of program - connectToDatabase - gui.MainFrame$1

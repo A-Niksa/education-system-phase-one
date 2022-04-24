@@ -49,7 +49,7 @@ public class ProfessorProfile extends Template {
         labelsList.add(name);
         nationalID = new JLabel("National ID: " + professor.getNationalID());
         labelsList.add(nationalID);
-        teachingID = new JLabel("Student ID: " + professor.getTeachingID());
+        teachingID = new JLabel("Teaching ID: " + professor.getTeachingID());
         labelsList.add(teachingID);
         phoneNumber = new JLabel("Phone Number: " + professor.getPhoneNumber());
         labelsList.add(phoneNumber);
@@ -57,7 +57,7 @@ public class ProfessorProfile extends Template {
         labelsList.add(emailAddress);
         department = new JLabel("Department: " + professor.getDepartmentName());
         labelsList.add(department);
-        officeNumber = new JLabel("Office Number:" + professor.getOfficeNumber());
+        officeNumber = new JLabel("Office Number: " + professor.getOfficeNumber());
         labelsList.add(officeNumber);
         academicRank = new JLabel("Academic Status: " + professor.getAcademicRankString());
         labelsList.add(academicRank);
