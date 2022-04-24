@@ -4,6 +4,7 @@ import gui.MainFrame;
 import gui.Template;
 import gui.main.MainMenu;
 import logic.models.roles.Professor;
+import logic.models.roles.User;
 import utils.database.data.ProfessorsDB;
 
 import javax.swing.*;

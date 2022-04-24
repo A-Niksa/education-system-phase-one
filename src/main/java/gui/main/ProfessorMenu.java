@@ -1,8 +1,12 @@
 package gui.main;
 
 import gui.MainFrame;
+import gui.addition.ProfessorAdder;
+import gui.addition.StudentAdder;
+import gui.enrolment.CoursesListView;
+import gui.enrolment.ProfessorsListManager;
+import gui.enrolment.ProfessorsListView;
 import gui.profile.ProfessorProfile;
-import gui.profile.StudentProfile;
 import logic.models.roles.Professor;
 import logic.models.roles.User;
 import utils.logging.MasterLogger;
@@ -13,6 +17,7 @@ import java.awt.event.ActionListener;
 
 public class ProfessorMenu extends MainMenu {
     private Professor professorUser;
+    private Professor.AdministrativeRole role;
     private JMenuBar menuBar;
     private JMenu registrationAffairs;
     private JMenu academicServices;
@@ -35,6 +40,7 @@ public class ProfessorMenu extends MainMenu {
     public ProfessorMenu(MainFrame mainFrame, User user) {
         super(mainFrame, user);
         professorUser = (Professor) user;
+        role = professorUser.getAdministrativeRole();
         initializeComponents();
         alignComponents();
         connectListeners();
@@ -81,7 +87,7 @@ public class ProfessorMenu extends MainMenu {
     }
 
     private void addUserAdditionButtons() {
-        if (professorUser.getAdministrativeRole() == Professor.AdministrativeRole.EDUCATION_DEPUTY) {
+        if (role == Professor.AdministrativeRole.EDUCATION_DEPUTY) {
             addStudent.setBounds(340, 400, 150, 40);
             add(addStudent);
             addProfessor.setBounds(505, 400, 150, 40);
@@ -92,7 +98,7 @@ public class ProfessorMenu extends MainMenu {
     private void alignRequestsSubMenu() {
         studentRequestsSubMenu.add(recommendationLetter);
 
-        if (professorUser.getAdministrativeRole() == Professor.AdministrativeRole.EDUCATION_DEPUTY) {
+        if (role == Professor.AdministrativeRole.EDUCATION_DEPUTY) {
             studentRequestsSubMenu.add(droppingOut);
             studentRequestsSubMenu.add(minor);
         }
@@ -106,6 +112,46 @@ public class ProfessorMenu extends MainMenu {
             public void actionPerformed(ActionEvent actionEvent) {
                 MasterLogger.info("opened the profile editor in the user profile", getClass());
                 mainFrame.setCurrentPanel(new ProfessorProfile(mainFrame, mainMenu, user));
+            }
+        });
+
+        listOfCourses.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                MasterLogger.info("opened the courses list in educational services", getClass());
+                if (role == Professor.AdministrativeRole.EDUCATION_DEPUTY) {
+
+                } else {
+                    mainFrame.setCurrentPanel(new CoursesListView(mainFrame, mainMenu));
+                }
+            }
+        });
+
+        listOfProfessors.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                MasterLogger.info("opened the professors list in educational services", getClass());
+                if (role == Professor.AdministrativeRole.DEAN) {
+                    mainFrame.setCurrentPanel(new ProfessorsListManager(mainFrame, mainMenu, professorUser));
+                } else {
+                    mainFrame.setCurrentPanel(new ProfessorsListView(mainFrame, mainMenu));
+                }
+            }
+        });
+
+        addStudent.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                MasterLogger.info("deputy opened the student addition section", getClass());
+                mainFrame.setCurrentPanel(new StudentAdder(mainFrame, mainMenu, professorUser));
+            }
+        });
+
+        addProfessor.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                MasterLogger.info("deputy opened the professor addition section", getClass());
+                mainFrame.setCurrentPanel(new ProfessorAdder(mainFrame, mainMenu, professorUser));
             }
         });
     }

@@ -10,8 +10,8 @@ import java.util.LinkedList;
 
 public class Department {
     private String departmentName;
-    private Dean dean;
-    private EducationDeputy educationDeputy;
+    private Professor dean;
+    private Professor educationDeputy;
     private LinkedList<Professor> listOfProfessors;
     private LinkedList<Course> listOfCourses;
     private LinkedList<Student> listOfStudents;
@@ -30,9 +30,12 @@ public class Department {
         listOfProfessors.add(professor);
     }
 
-    public void removeStudent(Professor professor) {
+    public void removeProfessor(Professor professor) {
+        String professorID = professor.getTeachingID();
+        String eachProfessorsID;
         for (int i = 0; i < listOfProfessors.size(); i++) {
-            if (professor == listOfProfessors.get(i)) {
+            eachProfessorsID = listOfProfessors.get(i).getTeachingID();
+            if (professorID.equals(eachProfessorsID)) {
                 listOfProfessors.remove(i);
                 return;
             }
@@ -65,16 +68,26 @@ public class Department {
         }
     }
 
-    public Dean getDean() {
+    public Professor getDean() {
         return dean;
     }
 
-    public EducationDeputy getEducationDeputy() {
+    public Professor getEducationDeputy() {
         return educationDeputy;
     }
 
-    public void setEducationDeputy(EducationDeputy educationDeputy) {
+    public void setEducationDeputyForFirstTime(Professor educationDeputy) {
+        this.educationDeputy = educationDeputy;
         addProfessor(educationDeputy);
+    }
+
+    public void setEducationDeputy(Professor educationDeputy) {
+//        if (educationDeputy == null) {
+//            DepartmentsDB.nullifyDepartmentDeputy(this);
+//        }
+        if (educationDeputy != null) {
+            educationDeputy.setAdministrativeRole(Professor.AdministrativeRole.EDUCATION_DEPUTY);
+        }
         this.educationDeputy = educationDeputy;
     }
 

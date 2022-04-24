@@ -20,7 +20,7 @@ public class Professor extends User {
     private AdministrativeRole administrativeRole;
 
     public Professor(String firstName, String lastName, String nationalID, String phoneNumber, String emailAddress,
-                     String password, String teachingID, int officeNumber,AcademicRank academicRank,
+                     String password, String teachingID, int officeNumber, AcademicRank academicRank,
                      AdministrativeRole administrativeRole) {
         super(firstName, lastName, nationalID, phoneNumber, emailAddress, password);
         this.teachingID = teachingID;
@@ -71,7 +71,21 @@ public class Professor extends User {
         this.academicRank = academicRank;
     }
 
+    public String getAdministrativeRoleString() {
+        switch (administrativeRole) {
+            case NORMAL:
+                return "Normal Professor";
+            case EDUCATION_DEPUTY:
+                return "Education Deputy";
+        }
+        return "";
+    }
+
     public AdministrativeRole getAdministrativeRole() {
         return administrativeRole;
+    }
+
+    public void setAdministrativeRole(AdministrativeRole administrativeRole) {
+        this.administrativeRole = administrativeRole;
     }
 }

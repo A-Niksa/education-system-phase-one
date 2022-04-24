@@ -32,7 +32,7 @@ public class Main {
         EducationDeputy educationDeputy = new EducationDeputy("Ali", "Safdari", "004482133",
                 "09129022310", "safdari@sharif.edu", "5", "5", 302,
                 Professor.AcademicRank.ASSOCIATE);
-        mathDepartment.setEducationDeputy(educationDeputy);
+        mathDepartment.setEducationDeputyForFirstTime(educationDeputy);
         Professor shahshahani = new Professor("Siavash", "Shahshahani", "9999999999",
                 "09120000000", "shahshah@sharif.edu", "6", "6", 103,
                 Professor.AcademicRank.FULL, Professor.AdministrativeRole.NORMAL);
@@ -103,7 +103,7 @@ public class Main {
         EducationDeputy phyiscsDeputy = new EducationDeputy("Mahmoud", "Bahmanabadi", "0150908124",
                 "09121078923", "bahmanabadi@sharif.edu", "bahman1234", "3200",
                 313, Professor.AcademicRank.FULL);
-        physicsDepartment.setEducationDeputy(phyiscsDeputy);
+        physicsDepartment.setEducationDeputyForFirstTime(phyiscsDeputy);
 
         LinkedList<WeeklyDate> physicsTwoDates = new LinkedList<>();
         physicsTwoDates.add(new WeeklyDate(Weekday.SUNDAY, new TimeInDay(15, 0, 0),

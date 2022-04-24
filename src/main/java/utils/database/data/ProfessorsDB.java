@@ -40,8 +40,11 @@ public class ProfessorsDB extends ModelDB {
     }
 
     private void removeFromDatabaseByInstance(Professor professor) {
+        String professorID = professor.getTeachingID();
+        String eachProfessorsID;
         for (int i = 0; i < professorsList.size(); i++) {
-            if (professor == professorsList.get(i)) {
+            eachProfessorsID = professorsList.get(i).getTeachingID();
+            if (professorID.equals(eachProfessorsID)) {
                 professorsList.remove(i);
                 return;
             }
@@ -91,6 +94,21 @@ public class ProfessorsDB extends ModelDB {
     private Professor getProfessorWithIDByInstance(String teachingID) {
         for (Professor professor : professorsList) {
             if (professor.getTeachingID().equals(teachingID)) {
+                return professor;
+            }
+        }
+        return null;
+    }
+
+    public static Professor getProfessorWithName(String name) {
+        return getInstance().getProfessorWithNameByInstance(name);
+    }
+
+    private Professor getProfessorWithNameByInstance(String name) {
+        String potentialProfessorName;
+        for (Professor professor : professorsList) {
+            potentialProfessorName = professor.getFirstName() + " " + professor.getLastName();
+            if (potentialProfessorName.equals(name)) {
                 return professor;
             }
         }

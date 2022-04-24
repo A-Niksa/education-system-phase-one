@@ -50,6 +50,19 @@ public class DepartmentsDB extends ModelDB {
         }
     }
 
+//    public static void nullifyDepartmentDeputy(Department targetDepartment) {
+//        getInstance().nullifyDepartmentDeputyByInstance(department);
+//    }
+//
+//    private void nullifyDepartmentDeputyByInstance(Department targetDepartment) {
+//        String targetDepartmentName = targetDepartment.getDepartmentName();
+//        for (Department department : departmentsList) {
+//            if (department.getDepartmentName().equals(targetDepartmentName)) {
+//                department.setEducationDeputy(null);
+//            }
+//        }
+//    }
+
     public static void setDatabase(LinkedList<Department> departmentsList) {
         if (departmentsList != null) {
             getInstance().setDatabaseByInstance(departmentsList);

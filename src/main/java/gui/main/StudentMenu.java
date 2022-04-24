@@ -20,6 +20,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class StudentMenu extends MainMenu {
+    private User user;
     private JLabel academicStatusLabel;
     private JLabel advisingProfessorName;
     private JLabel isAllowedToEnrol;
@@ -47,6 +48,7 @@ public class StudentMenu extends MainMenu {
 
     public StudentMenu(MainFrame mainFrame, User user) {
         super(mainFrame, user);
+        this.user = user;
         initializeComponents();
         alignComponents();
         connectListeners();
