@@ -14,7 +14,7 @@ import java.awt.event.ActionListener;
 import java.util.LinkedList;
 
 public class ProfessorsListEditor extends Template {
-    private Professor professor;
+    private Professor operatingProfessor;
     private JButton goBackButton;
     private JButton addProfessorButton;
     private JTable professorsTable;
@@ -23,11 +23,11 @@ public class ProfessorsListEditor extends Template {
     private LinkedList<Professor> professorsList;
     private LinkedList<JButton> editButtonsList;
 
-    public ProfessorsListEditor(MainFrame mainFrame, MainMenu mainMenu, Professor professor) {
+    public ProfessorsListEditor(MainFrame mainFrame, MainMenu mainMenu, Professor operatingProfessor) {
         super(mainFrame, mainMenu);
-        this.professor = professor;
+        this.operatingProfessor = operatingProfessor;
         columns = new String[] {"Name and Surname", "Academic Rank", "Administrative Role", "Office Number", "Email Address"};
-        professorsList = DepartmentListManager.getProfessorsListBarDean(professor);
+        professorsList = DepartmentListManager.getProfessorsListBarDean(operatingProfessor);
         setTableData();
         drawPanel();
     }
@@ -87,7 +87,7 @@ public class ProfessorsListEditor extends Template {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 MasterLogger.info("went back to professors list view", getClass());
-                mainFrame.setCurrentPanel(new ProfessorsListManager(mainFrame, mainMenu, professor));
+                mainFrame.setCurrentPanel(new ProfessorsListManager(mainFrame, mainMenu, operatingProfessor));
             }
         });
 
@@ -95,7 +95,7 @@ public class ProfessorsListEditor extends Template {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 MasterLogger.info("dean opened the professor addition section", getClass());
-                mainFrame.setCurrentPanel(new ProfessorAdderOfDean(mainFrame, mainMenu, professor));
+                mainFrame.setCurrentPanel(new ProfessorAdderOfDean(mainFrame, mainMenu, operatingProfessor));
             }
         });
 
@@ -104,7 +104,7 @@ public class ProfessorsListEditor extends Template {
         for (int i = 0; i < editButtonsList.size(); i++) {
             editButton = editButtonsList.get(i);
             editableProfessor = professorsList.get(i);
-            editButton.addActionListener(new EditHandler(mainFrame, mainMenu, professor, editableProfessor));
+            editButton.addActionListener(new ProfessorEditHandler(mainFrame, mainMenu, operatingProfessor, editableProfessor));
         }
     }
 }

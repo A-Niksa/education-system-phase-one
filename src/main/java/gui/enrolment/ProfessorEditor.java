@@ -97,6 +97,7 @@ public class ProfessorEditor extends Template {
                 } else { // "Full Professor" by design
                     professor.setAcademicRank(Professor.AcademicRank.FULL);
                 }
+                professor.updateInDatabase();
                 MasterLogger.info(professorName.getText() + "'s rank set to " + selectedRank, getClass());
             }
         });
@@ -106,6 +107,7 @@ public class ProfessorEditor extends Template {
             public void actionPerformed(ActionEvent actionEvent) {
                 int newOfficeNumberInteger = Integer.parseInt(newOfficeNumber.getText());
                 professor.setOfficeNumber(newOfficeNumberInteger);
+                professor.updateInDatabase();
                 MasterLogger.info(professorName.getText() + "'s room set to " + newOfficeNumberInteger, getClass());
             }
         });

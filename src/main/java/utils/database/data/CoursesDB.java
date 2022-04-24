@@ -43,8 +43,11 @@ public class CoursesDB extends ModelDB {
     }
 
     private void removeFromDatabaseByInstance(Course course) {
+        String targetID = course.getCourseID();
+        String potentialCourseID;
         for (int i = 0; i < coursesList.size(); i++) {
-            if (course == coursesList.get(i)) {
+            potentialCourseID = coursesList.get(i).getCourseID();
+            if (targetID.equals(potentialCourseID)) {
                 coursesList.remove(i);
                 return;
             }

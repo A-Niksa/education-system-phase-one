@@ -1,5 +1,6 @@
 package logic.menus.enrolment;
 
+import logic.models.abstractions.Course;
 import logic.models.abstractions.Department;
 import logic.models.roles.Professor;
 import utils.database.data.DepartmentsDB;
@@ -7,6 +8,12 @@ import utils.database.data.DepartmentsDB;
 import java.util.LinkedList;
 
 public class DepartmentListManager {
+    public static LinkedList<Course> getDepartmentCourses(Professor oneDepartmentProfessor) {
+        Department department = DepartmentsDB.getProfessorsDepartment(oneDepartmentProfessor);
+        LinkedList<Course> coursesList = (LinkedList<Course>) department.getListOfCourses().clone();
+        return coursesList;
+    }
+
     public static String[] getProfessorsNames(Professor oneDepartmentProfessor) {
         Department department = DepartmentsDB.getProfessorsDepartment(oneDepartmentProfessor);
         LinkedList<Professor> professorsList = department.getListOfProfessors();

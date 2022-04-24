@@ -8,12 +8,9 @@ import utils.timing.WeeklyDate;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.Map;
 
 public class Course {
-
     public enum CourseLevel {
         BACHELORS,
         GRADUATE,
@@ -147,5 +144,30 @@ public class Course {
 
     public LinkedList<WeeklyDate> getClassDatesInWeek() {
         return classDatesInWeek;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public void setTeachingProfessor(Professor teachingProfessor) {
+        this.teachingProfessor = teachingProfessor;
+    }
+
+    public void setNumberOfCredits(int numberOfCredits) {
+        this.numberOfCredits = numberOfCredits;
+    }
+
+    public void setCourseLevel(CourseLevel courseLevel) {
+        this.courseLevel = courseLevel;
+    }
+
+    public void setCourseID(String courseID) {
+        this.courseID = courseID;
+    }
+
+    public void updateInDatabase() {
+        CoursesDB.removeFromDatabase(this);
+        CoursesDB.addToDatabase(this);
     }
 }

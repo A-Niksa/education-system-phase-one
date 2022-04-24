@@ -2,9 +2,7 @@ package gui.enrolment;
 
 import gui.MainFrame;
 import gui.main.MainMenu;
-import logic.models.roles.Dean;
 import logic.models.roles.Professor;
-import logic.models.roles.User;
 import utils.logging.MasterLogger;
 
 import javax.swing.*;
@@ -30,7 +28,6 @@ public class ProfessorsListManager extends ProfessorsListView {
     }
 
     private void connectEditor() {
-        ProfessorsListManager thisPanel = this;
         openEditor.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {

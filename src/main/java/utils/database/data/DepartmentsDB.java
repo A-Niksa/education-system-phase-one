@@ -37,6 +37,16 @@ public class DepartmentsDB extends ModelDB {
         departmentsList.add(department);
     }
 
+//    public static void removeCourseFromDatabase(Course course) {
+//        getInstance().removeCourseFromDatabaseByInstance(course);
+//    }
+//
+//    private void removeCourseFromDatabaseByInstance(Course course) {
+//        for (Department department : departmentsList) {
+//
+//        }
+//    }
+
     public static void removeFromDatabase(Department department) {
         getInstance().removeFromDatabaseByInstance(department);
     }

@@ -88,4 +88,9 @@ public class Professor extends User {
     public void setAdministrativeRole(AdministrativeRole administrativeRole) {
         this.administrativeRole = administrativeRole;
     }
+
+    public void updateInDatabase() {
+        ProfessorsDB.removeFromDatabase(this);
+        ProfessorsDB.addToDatabase(this);
+    }
 }

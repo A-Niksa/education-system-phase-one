@@ -3,9 +3,7 @@ package gui.main;
 import gui.MainFrame;
 import gui.addition.ProfessorAdder;
 import gui.addition.StudentAdder;
-import gui.enrolment.CoursesListView;
-import gui.enrolment.ProfessorsListManager;
-import gui.enrolment.ProfessorsListView;
+import gui.enrolment.*;
 import gui.profile.ProfessorProfile;
 import logic.models.roles.Professor;
 import logic.models.roles.User;
@@ -120,7 +118,7 @@ public class ProfessorMenu extends MainMenu {
             public void actionPerformed(ActionEvent actionEvent) {
                 MasterLogger.info("opened the courses list in educational services", getClass());
                 if (role == Professor.AdministrativeRole.EDUCATION_DEPUTY) {
-
+                    mainFrame.setCurrentPanel(new CoursesListManager(mainFrame, mainMenu, professorUser));
                 } else {
                     mainFrame.setCurrentPanel(new CoursesListView(mainFrame, mainMenu));
                 }

@@ -1719,17 +1719,17 @@
 2022/04/24 | 15:21:19 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 15:21:21 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 15:21:22 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 15:21:26 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 15:21:26 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 15:22:48 - INFO - start of program - psvm - Main
 2022/04/24 | 15:22:54 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 15:22:56 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 15:22:57 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 15:22:58 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 15:22:58 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 15:23:21 - INFO - start of program - psvm - Main
 2022/04/24 | 15:23:26 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 15:23:27 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 15:23:28 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 15:23:29 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 15:23:29 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 15:23:34 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
 2022/04/24 | 15:23:34 - INFO - end of program - connectToDatabase - gui.MainFrame$1
 2022/04/24 | 15:24:27 - INFO - start of program - psvm - Main
@@ -1744,12 +1744,12 @@
 2022/04/24 | 15:25:07 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 15:25:09 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 15:25:10 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 15:25:11 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 15:25:11 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 15:27:02 - INFO - start of program - psvm - Main
 2022/04/24 | 15:27:06 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 15:27:08 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 15:27:09 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 15:27:11 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 15:27:11 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 15:27:19 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
 2022/04/24 | 15:27:28 - INFO - went back to professors list view - connectListeners - gui.enrolment.ProfessorsListEditor$1
 2022/04/24 | 15:27:30 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
@@ -1762,47 +1762,47 @@
 2022/04/24 | 15:31:10 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 15:31:13 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 15:31:14 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 15:31:16 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 15:31:16 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 15:31:17 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
-2022/04/24 | 15:31:18 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 15:31:18 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 15:31:19 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
-2022/04/24 | 15:31:21 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 15:31:21 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 15:31:23 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
 2022/04/24 | 15:31:23 - INFO - end of program - connectToDatabase - gui.MainFrame$1
 2022/04/24 | 15:41:38 - INFO - start of program - psvm - Main
 2022/04/24 | 15:41:42 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 15:41:44 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 15:41:45 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 15:41:47 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 15:41:47 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 15:41:50 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
-2022/04/24 | 15:41:52 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 15:41:52 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 15:41:55 - INFO - Ali Safdari's rank set to Full Professor - connectListeners - gui.enrolment.ProfessorEditor$2
 2022/04/24 | 15:41:56 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
-2022/04/24 | 15:41:58 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 15:41:58 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 15:42:01 - INFO - Ali Safdari's room set to 10 - connectListeners - gui.enrolment.ProfessorEditor$3
 2022/04/24 | 15:42:01 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
-2022/04/24 | 15:42:04 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 15:42:04 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 15:42:08 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
 2022/04/24 | 15:42:08 - INFO - end of program - connectToDatabase - gui.MainFrame$1
 2022/04/24 | 15:58:37 - INFO - start of program - psvm - Main
 2022/04/24 | 15:58:41 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 15:58:44 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 15:58:46 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 15:58:47 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 15:58:47 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 15:58:50 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
-2022/04/24 | 15:58:51 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 15:58:51 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 15:58:54 - ERROR - cannot add a new deputy; department already has one - connectListeners - gui.enrolment.ProfessorEditor$5
 2022/04/24 | 15:58:56 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
-2022/04/24 | 15:58:56 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 15:58:56 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 15:58:59 - ERROR - professor selected for demotion to a normal professor is not a deputy - connectListeners - gui.enrolment.ProfessorEditor$4
 2022/04/24 | 15:59:18 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
-2022/04/24 | 15:59:20 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 15:59:20 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 15:59:29 - ERROR - professor selected for demotion to a normal professor is not a deputy - connectListeners - gui.enrolment.ProfessorEditor$4
 2022/04/24 | 15:59:30 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
-2022/04/24 | 15:59:33 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 15:59:33 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 15:59:35 - ERROR - cannot add a new deputy; department already has one - connectListeners - gui.enrolment.ProfessorEditor$5
 2022/04/24 | 15:59:36 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
-2022/04/24 | 15:59:37 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 15:59:37 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 15:59:40 - ERROR - professor selected for demotion to a normal professor is not a deputy - connectListeners - gui.enrolment.ProfessorEditor$4
 2022/04/24 | 15:59:41 - ERROR - cannot add a new deputy; department already has one - connectListeners - gui.enrolment.ProfessorEditor$5
 2022/04/24 | 15:59:42 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
@@ -1820,31 +1820,31 @@
 2022/04/24 | 16:04:57 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 16:04:59 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 16:05:00 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 16:05:03 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 16:05:03 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 16:05:07 - ERROR - professor selected for demotion to a normal professor is not a deputy - connectListeners - gui.enrolment.ProfessorEditor$4
 2022/04/24 | 16:05:07 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
 2022/04/24 | 16:05:50 - INFO - start of program - psvm - Main
 2022/04/24 | 16:06:02 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 16:06:19 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 16:06:20 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 16:06:21 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 16:06:21 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 16:06:27 - ERROR - professor selected for demotion to a normal professor is not a deputy - connectListeners - gui.enrolment.ProfessorEditor$4
 2022/04/24 | 16:06:30 - ERROR - professor selected for demotion to a normal professor is not a deputy - connectListeners - gui.enrolment.ProfessorEditor$4
 2022/04/24 | 16:06:49 - INFO - start of program - psvm - Main
 2022/04/24 | 16:06:53 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 16:06:55 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 16:06:55 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 16:06:57 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 16:06:57 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 16:07:00 - ERROR - professor selected for demotion to a normal professor is not a deputy - connectListeners - gui.enrolment.ProfessorEditor$4
 2022/04/24 | 16:07:01 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
-2022/04/24 | 16:07:02 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 16:07:02 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 16:07:04 - INFO - professor demoted to normal professor - connectListeners - gui.enrolment.ProfessorEditor$4
 2022/04/24 | 16:07:06 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
 2022/04/24 | 16:07:55 - INFO - start of program - psvm - Main
 2022/04/24 | 16:08:00 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 16:08:01 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 16:08:06 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 16:08:16 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 16:08:16 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 16:08:18 - INFO - professor demoted to normal professor - connectListeners - gui.enrolment.ProfessorEditor$4
 2022/04/24 | 16:08:19 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
 2022/04/24 | 16:08:21 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
@@ -1855,14 +1855,14 @@
 2022/04/24 | 16:09:11 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 16:09:17 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 16:09:18 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 16:09:25 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 16:09:25 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 16:09:27 - INFO - professor demoted to normal professor - connectListeners - gui.enrolment.ProfessorEditor$4
 2022/04/24 | 16:09:28 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
 2022/04/24 | 16:10:53 - INFO - start of program - psvm - Main
 2022/04/24 | 16:10:59 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 16:11:01 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 16:11:02 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 16:11:04 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 16:11:04 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 16:11:06 - INFO - professor demoted to normal professor - connectListeners - gui.enrolment.ProfessorEditor$4
 2022/04/24 | 16:11:07 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
 2022/04/24 | 16:11:09 - INFO - went back to professors list view - connectListeners - gui.enrolment.ProfessorsListEditor$1
@@ -1873,9 +1873,9 @@
 2022/04/24 | 16:11:23 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 16:11:24 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 16:11:26 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 16:11:29 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 16:11:29 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 16:11:31 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
-2022/04/24 | 16:11:36 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 16:11:36 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 16:11:38 - ERROR - cannot add a new deputy; department already has one - connectListeners - gui.enrolment.ProfessorEditor$5
 2022/04/24 | 16:11:38 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
 2022/04/24 | 16:11:40 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
@@ -1888,7 +1888,7 @@
 2022/04/24 | 16:15:10 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 16:15:15 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 16:15:17 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 16:15:20 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 16:15:20 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 16:15:22 - ERROR - cannot add a new deputy; department already has one - connectListeners - gui.enrolment.ProfessorEditor$5
 2022/04/24 | 16:15:23 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
 2022/04/24 | 16:18:40 - INFO - start of program - psvm - Main
@@ -1897,7 +1897,7 @@
 2022/04/24 | 16:18:54 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 16:18:55 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 16:18:56 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 16:18:59 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 16:18:59 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 16:19:02 - ERROR - cannot add a new deputy; department already has one - connectListeners - gui.enrolment.ProfessorEditor$5
 2022/04/24 | 16:19:26 - INFO - start of program - psvm - Main
 2022/04/24 | 16:19:26 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
@@ -1905,10 +1905,10 @@
 2022/04/24 | 16:19:41 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 16:19:43 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 16:19:44 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 16:19:46 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 16:19:46 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 16:19:48 - INFO - professor demoted to normal professor - connectListeners - gui.enrolment.ProfessorEditor$4
 2022/04/24 | 16:19:50 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
-2022/04/24 | 16:19:52 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 16:19:52 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 16:19:55 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
 2022/04/24 | 16:19:56 - INFO - went back to professors list view - connectListeners - gui.enrolment.ProfessorsListEditor$1
 2022/04/24 | 16:19:57 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
@@ -1918,7 +1918,7 @@
 2022/04/24 | 16:20:11 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 16:20:13 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 16:20:14 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 16:20:15 - INFO - opened professor editor - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 16:20:15 - INFO - opened professor editor - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 16:20:18 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
 2022/04/24 | 16:20:19 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
 2022/04/24 | 16:20:19 - INFO - end of program - connectToDatabase - gui.MainFrame$1
@@ -1926,14 +1926,14 @@
 2022/04/24 | 16:29:27 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 16:29:31 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 16:29:32 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 16:29:34 - INFO - opened professor editor for Siavash Shahshahani - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 16:29:34 - INFO - opened professor editor for Siavash Shahshahani - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 16:29:35 - INFO - removed the selected professor - connectListeners - gui.enrolment.ProfessorEditor$6
 2022/04/24 | 16:29:36 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
 2022/04/24 | 16:31:21 - INFO - start of program - psvm - Main
 2022/04/24 | 16:31:25 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 16:31:27 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 16:31:28 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 16:31:32 - INFO - opened professor editor for Siavash Shahshahani - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 16:31:32 - INFO - opened professor editor for Siavash Shahshahani - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 16:31:33 - INFO - removed the selected professor - connectListeners - gui.enrolment.ProfessorEditor$6
 2022/04/24 | 16:31:34 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
 2022/04/24 | 16:31:35 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
@@ -1947,7 +1947,7 @@
 2022/04/24 | 16:34:22 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 16:34:23 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 16:34:25 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 16:34:26 - INFO - opened professor editor for Ali Safdari - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 16:34:26 - INFO - opened professor editor for Ali Safdari - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 16:34:27 - INFO - removed the selected professor - connectListeners - gui.enrolment.ProfessorEditor$6
 2022/04/24 | 16:34:28 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
 2022/04/24 | 16:34:30 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
@@ -1956,7 +1956,7 @@
 2022/04/24 | 16:36:46 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 16:36:48 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 16:36:49 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 16:36:51 - INFO - opened professor editor for Ali Safdari - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 16:36:51 - INFO - opened professor editor for Ali Safdari - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 16:36:52 - INFO - removed the selected professor - connectListeners - gui.enrolment.ProfessorEditor$6
 2022/04/24 | 16:36:53 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
 2022/04/24 | 16:36:55 - INFO - went back to professors list view - connectListeners - gui.enrolment.ProfessorsListEditor$1
@@ -1981,9 +1981,9 @@
 2022/04/24 | 21:34:32 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 21:34:34 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 21:34:38 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 21:34:39 - INFO - opened professor editor for Siavash Shahshahani - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 21:34:39 - INFO - opened professor editor for Siavash Shahshahani - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 21:34:42 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
-2022/04/24 | 21:34:43 - INFO - opened professor editor for Ali Safdari - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 21:34:43 - INFO - opened professor editor for Ali Safdari - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 21:34:44 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
 2022/04/24 | 21:34:45 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
 2022/04/24 | 21:34:45 - INFO - end of program - connectToDatabase - gui.MainFrame$1
@@ -1991,38 +1991,38 @@
 2022/04/24 | 21:35:12 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 21:35:14 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 21:35:16 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 21:35:16 - INFO - opened professor editor for Ali Safdari - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 21:35:16 - INFO - opened professor editor for Ali Safdari - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 21:35:37 - INFO - start of program - psvm - Main
 2022/04/24 | 21:35:41 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 21:35:42 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 21:35:44 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 21:35:45 - INFO - opened professor editor for Siavash Shahshahani - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 21:35:45 - INFO - opened professor editor for Siavash Shahshahani - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 21:36:01 - INFO - start of program - psvm - Main
 2022/04/24 | 21:36:07 - INFO - start of program - psvm - Main
 2022/04/24 | 21:36:12 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 21:36:14 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 21:36:15 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 21:36:16 - INFO - opened professor editor for Siavash Shahshahani - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 21:36:16 - INFO - opened professor editor for Siavash Shahshahani - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 21:36:18 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
-2022/04/24 | 21:36:19 - INFO - opened professor editor for Ali Safdari - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 21:36:19 - INFO - opened professor editor for Ali Safdari - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 21:36:21 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
-2022/04/24 | 21:37:05 - INFO - opened professor editor for Siavash Shahshahani - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 21:37:05 - INFO - opened professor editor for Siavash Shahshahani - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 21:37:08 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
-2022/04/24 | 21:37:09 - INFO - opened professor editor for Ali Safdari - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 21:37:09 - INFO - opened professor editor for Ali Safdari - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 21:37:21 - INFO - start of program - psvm - Main
 2022/04/24 | 21:37:27 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 21:37:38 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 21:37:39 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 21:37:40 - INFO - opened professor editor for Siavash Shahshahani - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 21:37:40 - INFO - opened professor editor for Siavash Shahshahani - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 21:37:42 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
-2022/04/24 | 21:37:43 - INFO - opened professor editor for Ali Safdari - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 21:37:43 - INFO - opened professor editor for Ali Safdari - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 21:37:54 - INFO - start of program - psvm - Main
 2022/04/24 | 21:38:39 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
 2022/04/24 | 21:38:42 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
 2022/04/24 | 21:38:44 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
-2022/04/24 | 21:38:44 - INFO - opened professor editor for Siavash Shahshahani - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 21:38:44 - INFO - opened professor editor for Siavash Shahshahani - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 21:38:46 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
-2022/04/24 | 21:38:47 - INFO - opened professor editor for Ali Safdari - actionPerformed - gui.enrolment.EditHandler
+2022/04/24 | 21:38:47 - INFO - opened professor editor for Ali Safdari - actionPerformed - gui.enrolment.ProfessorEditHandler
 2022/04/24 | 21:38:50 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
 2022/04/24 | 21:38:50 - INFO - end of program - connectToDatabase - gui.MainFrame$1
 2022/04/24 | 21:48:45 - INFO - start of program - psvm - Main
@@ -2113,3 +2113,310 @@
 2022/04/24 | 23:19:16 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
 2022/04/24 | 23:19:18 - INFO - dean opened the professor addition section - connectListeners - gui.enrolment.ProfessorsListEditor$2
 2022/04/24 | 23:19:50 - INFO - added professor (ID: 12) to the system - connectListeners - gui.addition.ProfessorAdder$1
+2022/04/24 | 23:20:15 - INFO - start of program - psvm - Main
+2022/04/24 | 23:20:19 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 23:20:21 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
+2022/04/24 | 23:20:22 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
+2022/04/24 | 23:20:25 - INFO - dean opened the professor addition section - connectListeners - gui.enrolment.ProfessorsListEditor$2
+2022/04/24 | 23:20:48 - INFO - went back to professors list editor - connectBackListener - gui.addition.ProfessorAdderOfDean$1
+2022/04/24 | 23:20:51 - INFO - dean opened the professor addition section - connectListeners - gui.enrolment.ProfessorsListEditor$2
+2022/04/24 | 23:21:15 - INFO - added professor (ID: 12) to the system - connectListeners - gui.addition.ProfessorAdder$1
+2022/04/24 | 23:21:21 - INFO - went back to professors list editor - connectBackListener - gui.addition.ProfessorAdderOfDean$1
+2022/04/24 | 23:21:24 - INFO - went back to professors list view - connectListeners - gui.enrolment.ProfessorsListEditor$1
+2022/04/24 | 23:21:26 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 23:21:27 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 23:21:27 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 23:49:58 - INFO - start of program - psvm - Main
+2022/04/24 | 23:50:03 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 23:50:16 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
+2022/04/24 | 23:50:17 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 23:50:19 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/24 | 23:50:22 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 23:50:22 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 23:51:58 - INFO - start of program - psvm - Main
+2022/04/24 | 23:52:02 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 23:52:05 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
+2022/04/24 | 23:52:06 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 23:52:07 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/24 | 23:52:10 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 23:52:10 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 23:52:27 - INFO - start of program - psvm - Main
+2022/04/24 | 23:52:27 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 23:52:35 - INFO - start of program - psvm - Main
+2022/04/24 | 23:52:43 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 23:52:48 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
+2022/04/24 | 23:52:49 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 23:52:50 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/24 | 23:53:14 - INFO - start of program - psvm - Main
+2022/04/24 | 23:53:21 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 23:53:24 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/24 | 23:53:24 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/24 | 23:53:31 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 23:53:31 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/24 | 23:53:40 - INFO - start of program - psvm - Main
+2022/04/24 | 23:53:45 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/24 | 23:53:47 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
+2022/04/24 | 23:53:48 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 23:53:49 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/24 | 23:53:52 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/24 | 23:53:55 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 23:54:02 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
+2022/04/24 | 23:54:03 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/24 | 23:54:04 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/24 | 23:54:07 - INFO - filtered courses based on course level: Graduate - connectListeners - gui.enrolment.CoursesListView$3
+2022/04/24 | 23:54:11 - INFO - filtered courses based on number of credits: 3 - connectListeners - gui.enrolment.CoursesListView$2
+2022/04/24 | 23:54:12 - INFO - filters were reset - connectListeners - gui.enrolment.CoursesListView$4
+2022/04/24 | 23:54:32 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/24 | 23:54:32 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 00:30:02 - INFO - start of program - psvm - Main
+2022/04/25 | 00:30:11 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 00:30:13 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 00:30:14 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 00:30:15 - INFO - deputy opened the course addition section - connectListeners - gui.enrolment.CoursesListEditor$2
+2022/04/25 | 00:30:17 - INFO - went back to professors list editor - connectBackListener - gui.addition.ProfessorAdderOfDean$1
+2022/04/25 | 00:30:20 - INFO - went back to professors list view - connectListeners - gui.enrolment.ProfessorsListEditor$1
+2022/04/25 | 00:30:23 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 00:30:24 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 00:30:24 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 00:31:37 - INFO - start of program - psvm - Main
+2022/04/25 | 00:31:42 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 00:31:43 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
+2022/04/25 | 00:31:44 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
+2022/04/25 | 00:31:45 - INFO - dean opened the professor addition section - connectListeners - gui.enrolment.ProfessorsListEditor$2
+2022/04/25 | 00:31:46 - INFO - went back to professors list editor - connectBackListener - gui.addition.ProfessorAdderOfDean$1
+2022/04/25 | 00:31:48 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 00:31:48 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 00:32:59 - INFO - start of program - psvm - Main
+2022/04/25 | 00:33:03 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 00:33:08 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
+2022/04/25 | 00:33:09 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 00:33:10 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 00:33:11 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 00:33:12 - INFO - deputy opened the course addition section - connectListeners - gui.enrolment.CoursesListEditor$2
+2022/04/25 | 00:33:58 - INFO - start of program - psvm - Main
+2022/04/25 | 00:36:41 - INFO - start of program - psvm - Main
+2022/04/25 | 00:36:47 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 00:36:52 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 00:36:53 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 00:36:54 - INFO - deputy opened the course addition section - connectListeners - gui.enrolment.CoursesListEditor$2
+2022/04/25 | 00:37:11 - INFO - start of program - psvm - Main
+2022/04/25 | 00:37:15 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 00:37:18 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 00:37:19 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 00:37:20 - INFO - deputy opened the course addition section - connectListeners - gui.enrolment.CoursesListEditor$2
+2022/04/25 | 00:37:38 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 00:37:38 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 01:31:05 - INFO - start of program - psvm - Main
+2022/04/25 | 01:31:10 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 01:31:12 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 01:31:12 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 01:31:13 - INFO - deputy opened the course addition section - connectListeners - gui.enrolment.CoursesListEditor$2
+2022/04/25 | 01:31:55 - INFO - start of program - psvm - Main
+2022/04/25 | 01:32:01 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 01:32:05 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 01:32:06 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 01:32:07 - INFO - deputy opened the course addition section - connectListeners - gui.enrolment.CoursesListEditor$2
+2022/04/25 | 01:33:51 - INFO - start of program - psvm - Main
+2022/04/25 | 01:33:56 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 01:33:58 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 01:33:59 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 01:34:00 - INFO - deputy opened the course addition section - connectListeners - gui.enrolment.CoursesListEditor$2
+2022/04/25 | 01:34:06 - INFO - went back to courses list editor - connectListeners - gui.addition.CourseAdder$2
+2022/04/25 | 01:34:07 - INFO - went back to courses list view - connectListeners - gui.enrolment.CoursesListEditor$1
+2022/04/25 | 01:34:08 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 01:34:08 - INFO - deputy opened the course addition section - connectListeners - gui.enrolment.CoursesListEditor$2
+2022/04/25 | 01:36:08 - INFO - start of program - psvm - Main
+2022/04/25 | 01:36:14 - INFO - start of program - psvm - Main
+2022/04/25 | 01:36:20 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 01:36:22 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 01:36:23 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 01:36:24 - INFO - deputy opened the course addition section - connectListeners - gui.enrolment.CoursesListEditor$2
+2022/04/25 | 01:36:36 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 01:36:36 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 01:36:47 - INFO - start of program - psvm - Main
+2022/04/25 | 01:36:52 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 01:36:57 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/25 | 01:37:05 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 01:37:07 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 01:37:08 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 01:37:09 - INFO - deputy opened the course addition section - connectListeners - gui.enrolment.CoursesListEditor$2
+2022/04/25 | 01:38:07 - INFO - start of program - psvm - Main
+2022/04/25 | 01:38:12 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 01:38:16 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 01:38:16 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 01:38:17 - INFO - deputy opened the course addition section - connectListeners - gui.enrolment.CoursesListEditor$2
+2022/04/25 | 01:39:00 - INFO - added course (ID: 2314) to the system - connectListeners - gui.addition.CourseAdder$1
+2022/04/25 | 01:39:06 - INFO - went back to courses list editor - connectListeners - gui.addition.CourseAdder$2
+2022/04/25 | 01:39:07 - INFO - went back to courses list view - connectListeners - gui.enrolment.CoursesListEditor$1
+2022/04/25 | 01:39:31 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 01:39:32 - INFO - went back to courses list view - connectListeners - gui.enrolment.CoursesListEditor$1
+2022/04/25 | 01:41:52 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 01:41:52 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 01:52:05 - INFO - start of program - psvm - Main
+2022/04/25 | 01:52:13 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 01:52:14 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 01:52:15 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 01:55:08 - INFO - start of program - psvm - Main
+2022/04/25 | 01:55:08 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 01:55:18 - INFO - start of program - psvm - Main
+2022/04/25 | 01:55:24 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 01:55:54 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 01:55:55 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 01:56:41 - INFO - start of program - psvm - Main
+2022/04/25 | 01:56:47 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 01:56:49 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 01:56:50 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 01:57:10 - INFO - start of program - psvm - Main
+2022/04/25 | 01:57:21 - INFO - start of program - psvm - Main
+2022/04/25 | 01:57:33 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 01:57:35 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 01:57:36 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 01:57:58 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 01:57:59 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 01:59:14 - INFO - start of program - psvm - Main
+2022/04/25 | 01:59:21 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 01:59:23 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
+2022/04/25 | 01:59:24 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
+2022/04/25 | 01:59:25 - INFO - opened professor editor for Ali Safdari - actionPerformed - gui.enrolment.EditHandler
+2022/04/25 | 01:59:26 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
+2022/04/25 | 01:59:27 - INFO - dean opened the professor addition section - connectListeners - gui.enrolment.ProfessorsListEditor$2
+2022/04/25 | 01:59:28 - INFO - went back to professors list editor - connectBackListener - gui.addition.ProfessorAdderOfDean$1
+2022/04/25 | 01:59:29 - INFO - went back to professors list view - connectListeners - gui.enrolment.ProfessorsListEditor$1
+2022/04/25 | 01:59:30 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 01:59:35 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 01:59:35 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 02:20:14 - INFO - start of program - psvm - Main
+2022/04/25 | 02:20:23 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 02:20:25 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 02:20:26 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 02:20:28 - INFO - opened course editor for Complex Analysis - actionPerformed - gui.enrolment.CourseEditHandler
+2022/04/25 | 02:20:32 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 02:20:32 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 02:21:09 - INFO - start of program - psvm - Main
+2022/04/25 | 02:21:14 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 02:21:27 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 02:21:28 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 02:21:31 - INFO - opened course editor for Real Analysis - actionPerformed - gui.enrolment.CourseEditHandler
+2022/04/25 | 02:21:43 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 02:21:43 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 02:37:39 - INFO - start of program - psvm - Main
+2022/04/25 | 02:37:45 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 02:37:47 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 02:37:48 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 02:37:49 - INFO - deputy opened the course addition section - connectListeners - gui.enrolment.CoursesListEditor$2
+2022/04/25 | 02:37:50 - INFO - went back to courses list editor - connectListeners - gui.addition.CourseAdder$2
+2022/04/25 | 02:37:52 - INFO - opened course editor for Real Analysis - actionPerformed - gui.enrolment.CourseEditHandler
+2022/04/25 | 02:38:01 - ERROR - entered non-existent professor name - connectListeners - gui.enrolment.CourseEditor$4
+2022/04/25 | 02:38:08 - INFO - Real Analysis's instructor changed to Siavash Shahshahani - connectListeners - gui.enrolment.CourseEditor$4
+2022/04/25 | 02:38:12 - INFO - Real Analysis's level changed to PhD - connectListeners - gui.enrolment.CourseEditor$6
+2022/04/25 | 02:38:13 - INFO - went back to courses list editor - connectListeners - gui.enrolment.CourseEditor$1
+2022/04/25 | 02:38:25 - INFO - opened course editor for Real Analysis - actionPerformed - gui.enrolment.CourseEditHandler
+2022/04/25 | 02:38:29 - INFO - removed the selected course - connectListeners - gui.enrolment.CourseEditor$7
+2022/04/25 | 02:38:30 - INFO - went back to courses list editor - connectListeners - gui.enrolment.CourseEditor$1
+2022/04/25 | 02:38:31 - INFO - opened course editor for PDE - actionPerformed - gui.enrolment.CourseEditHandler
+2022/04/25 | 02:38:42 - INFO - PDE's number of credits changed to 1 - connectListeners - gui.enrolment.CourseEditor$5
+2022/04/25 | 02:38:43 - INFO - went back to courses list editor - connectListeners - gui.enrolment.CourseEditor$1
+2022/04/25 | 02:38:46 - INFO - opened course editor for PDE - actionPerformed - gui.enrolment.CourseEditHandler
+2022/04/25 | 02:38:53 - INFO - PDE's instructor changed to Siavash Shahshahani - connectListeners - gui.enrolment.CourseEditor$4
+2022/04/25 | 02:38:55 - INFO - went back to courses list editor - connectListeners - gui.enrolment.CourseEditor$1
+2022/04/25 | 02:39:54 - INFO - start of program - psvm - Main
+2022/04/25 | 02:40:00 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 02:40:02 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 02:40:03 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 02:40:04 - INFO - opened course editor for Real Analysis - actionPerformed - gui.enrolment.CourseEditHandler
+2022/04/25 | 02:40:12 - INFO - Real Analysis's instructor changed to Siavash Shahshahani - connectListeners - gui.enrolment.CourseEditor$4
+2022/04/25 | 02:40:13 - INFO - went back to courses list editor - connectListeners - gui.enrolment.CourseEditor$1
+2022/04/25 | 02:40:19 - INFO - opened course editor for PDE - actionPerformed - gui.enrolment.CourseEditHandler
+2022/04/25 | 02:40:20 - INFO - removed the selected course - connectListeners - gui.enrolment.CourseEditor$7
+2022/04/25 | 02:40:21 - INFO - went back to courses list editor - connectListeners - gui.enrolment.CourseEditor$1
+2022/04/25 | 02:40:24 - INFO - opened course editor for Real Analysis - actionPerformed - gui.enrolment.CourseEditHandler
+2022/04/25 | 02:40:26 - INFO - Real Analysis's level changed to PhD - connectListeners - gui.enrolment.CourseEditor$6
+2022/04/25 | 02:40:27 - INFO - went back to courses list editor - connectListeners - gui.enrolment.CourseEditor$1
+2022/04/25 | 02:40:28 - INFO - opened course editor for Complex Analysis - actionPerformed - gui.enrolment.CourseEditHandler
+2022/04/25 | 02:40:31 - INFO - Complex Analysis's ID changed to 231 - connectListeners - gui.enrolment.CourseEditor$3
+2022/04/25 | 02:40:33 - INFO - went back to courses list editor - connectListeners - gui.enrolment.CourseEditor$1
+2022/04/25 | 02:40:34 - INFO - opened course editor for Complex Analysis - actionPerformed - gui.enrolment.CourseEditHandler
+2022/04/25 | 02:40:45 - INFO - course name changed from Complex Analysis to Complex Analysis 2 - connectListeners - gui.enrolment.CourseEditor$2
+2022/04/25 | 02:40:46 - INFO - went back to courses list editor - connectListeners - gui.enrolment.CourseEditor$1
+2022/04/25 | 02:40:49 - INFO - went back to courses list view - connectListeners - gui.enrolment.CoursesListEditor$1
+2022/04/25 | 02:40:50 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 02:44:57 - INFO - start of program - psvm - Main
+2022/04/25 | 02:45:05 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 02:45:07 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 02:45:08 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 02:45:09 - INFO - opened course editor for Complex Analysis - actionPerformed - gui.enrolment.CourseEditHandler
+2022/04/25 | 02:45:11 - INFO - removed the selected course - connectListeners - gui.enrolment.CourseEditor$7
+2022/04/25 | 02:45:12 - INFO - went back to courses list editor - connectListeners - gui.enrolment.CourseEditor$1
+2022/04/25 | 02:45:13 - INFO - opened course editor for PDE - actionPerformed - gui.enrolment.CourseEditHandler
+2022/04/25 | 02:45:22 - INFO - PDE's instructor changed to Siavash Shahshahani - connectListeners - gui.enrolment.CourseEditor$4
+2022/04/25 | 02:45:23 - INFO - went back to courses list editor - connectListeners - gui.enrolment.CourseEditor$1
+2022/04/25 | 02:45:27 - INFO - went back to courses list view - connectListeners - gui.enrolment.CoursesListEditor$1
+2022/04/25 | 02:45:54 - INFO - start of program - psvm - Main
+2022/04/25 | 02:45:59 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 02:46:00 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 02:46:01 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 02:46:03 - INFO - opened course editor for PDE - actionPerformed - gui.enrolment.CourseEditHandler
+2022/04/25 | 02:46:04 - INFO - removed the selected course - connectListeners - gui.enrolment.CourseEditor$7
+2022/04/25 | 02:46:05 - INFO - went back to courses list editor - connectListeners - gui.enrolment.CourseEditor$1
+2022/04/25 | 02:46:06 - INFO - opened course editor for Real Analysis - actionPerformed - gui.enrolment.CourseEditHandler
+2022/04/25 | 02:46:15 - INFO - Real Analysis's instructor changed to Siavash Shahshahani - connectListeners - gui.enrolment.CourseEditor$4
+2022/04/25 | 02:46:16 - INFO - went back to courses list editor - connectListeners - gui.enrolment.CourseEditor$1
+2022/04/25 | 02:46:18 - INFO - went back to courses list view - connectListeners - gui.enrolment.CoursesListEditor$1
+2022/04/25 | 02:46:28 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 02:46:30 - INFO - went back to courses list view - connectListeners - gui.enrolment.CoursesListEditor$1
+2022/04/25 | 02:47:42 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 02:47:42 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 02:48:02 - INFO - start of program - psvm - Main
+2022/04/25 | 02:48:09 - INFO - start of program - psvm - Main
+2022/04/25 | 02:48:09 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 02:48:18 - INFO - start of program - psvm - Main
+2022/04/25 | 02:48:24 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 02:48:27 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 02:48:28 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 02:48:31 - INFO - opened course editor for Real Analysis - actionPerformed - gui.enrolment.CourseEditHandler
+2022/04/25 | 02:48:32 - INFO - removed the selected course - connectListeners - gui.enrolment.CourseEditor$7
+2022/04/25 | 02:48:33 - INFO - went back to courses list editor - connectListeners - gui.enrolment.CourseEditor$1
+2022/04/25 | 02:48:34 - INFO - went back to courses list view - connectListeners - gui.enrolment.CoursesListEditor$1
+2022/04/25 | 02:48:37 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 02:48:39 - INFO - opened course editor for PDE - actionPerformed - gui.enrolment.CourseEditHandler
+2022/04/25 | 02:48:42 - INFO - course name changed from PDE to New Course Name... - connectListeners - gui.enrolment.CourseEditor$2
+2022/04/25 | 02:48:48 - INFO - course name changed from New Course Name... to Partial - connectListeners - gui.enrolment.CourseEditor$2
+2022/04/25 | 02:48:55 - INFO - Partial's instructor changed to Siavash Shahshahani - connectListeners - gui.enrolment.CourseEditor$4
+2022/04/25 | 02:49:00 - INFO - Partial's level changed to Bachelors - connectListeners - gui.enrolment.CourseEditor$6
+2022/04/25 | 02:49:01 - INFO - went back to courses list editor - connectListeners - gui.enrolment.CourseEditor$1
+2022/04/25 | 02:49:04 - INFO - went back to courses list view - connectListeners - gui.enrolment.CoursesListEditor$1
+2022/04/25 | 02:49:48 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 02:49:49 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/25 | 02:49:53 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 02:50:10 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
+2022/04/25 | 02:50:11 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
+2022/04/25 | 02:50:13 - INFO - opened professor editor for Ali Safdari - actionPerformed - gui.enrolment.ProfessorEditHandler
+2022/04/25 | 02:50:17 - INFO - Ali Safdari's room set to 10 - connectListeners - gui.enrolment.ProfessorEditor$3
+2022/04/25 | 02:50:18 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
+2022/04/25 | 02:50:21 - INFO - went back to professors list view - connectListeners - gui.enrolment.ProfessorsListEditor$1
+2022/04/25 | 02:50:23 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 02:50:23 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 02:53:47 - INFO - start of program - psvm - Main
+2022/04/25 | 02:53:53 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 02:53:55 - INFO - opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
+2022/04/25 | 02:53:56 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
+2022/04/25 | 02:53:58 - INFO - opened professor editor for Ali Safdari - actionPerformed - gui.enrolment.ProfessorEditHandler
+2022/04/25 | 02:54:01 - INFO - Ali Safdari's room set to 19 - connectListeners - gui.enrolment.ProfessorEditor$3
+2022/04/25 | 02:54:02 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
+2022/04/25 | 02:54:03 - INFO - went back to professors list view - connectListeners - gui.enrolment.ProfessorsListEditor$1
+2022/04/25 | 02:54:05 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 02:54:07 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/25 | 02:54:10 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 02:54:14 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 02:54:15 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 02:54:18 - INFO - opened course editor for Complex Analysis - actionPerformed - gui.enrolment.CourseEditHandler
+2022/04/25 | 02:54:22 - INFO - Complex Analysis's number of credits changed to 5 - connectListeners - gui.enrolment.CourseEditor$5
+2022/04/25 | 02:54:25 - INFO - Complex Analysis's level changed to PhD - connectListeners - gui.enrolment.CourseEditor$6
+2022/04/25 | 02:54:29 - INFO - went back to courses list editor - connectListeners - gui.enrolment.CourseEditor$1
+2022/04/25 | 02:54:33 - INFO - went back to courses list view - connectListeners - gui.enrolment.CoursesListEditor$1
+2022/04/25 | 02:54:37 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 02:54:37 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/25 | 02:54:40 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 02:54:40 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 02:54:55 - INFO - start of program - psvm - Main
+2022/04/25 | 02:54:55 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
