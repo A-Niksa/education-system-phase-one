@@ -1,10 +1,8 @@
-package gui.services.requests;
+package gui.services.requests.submission;
 
 import logic.menus.services.requests.RecommendationRequest;
-import logic.menus.services.requests.Request;
 import logic.models.roles.Student;
 import utils.database.data.RecommendationsDB;
-import utils.database.data.RequestsDB;
 
 import javax.swing.*;
 import java.util.LinkedList;

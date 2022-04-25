@@ -1,4 +1,4 @@
-package gui.services.requests;
+package gui.services.requests.submission;
 
 import gui.MainFrame;
 import gui.Template;

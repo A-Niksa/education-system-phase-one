@@ -6,7 +6,7 @@ import gui.enrolment.ProfessorsListView;
 import gui.profile.StudentProfile;
 import gui.services.StudentExamsList;
 import gui.services.StudentWeeklySchedule;
-import gui.services.requests.*;
+import gui.services.requests.submission.*;
 import gui.standing.CurrentStanding;
 import gui.standing.TemporaryStanding;
 import logic.models.roles.Professor;
