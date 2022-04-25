@@ -6,6 +6,7 @@ import logic.models.abstractions.StudentStatus;
 import logic.models.abstractions.Transcript;
 import utils.database.data.CoursesDB;
 import utils.database.data.DepartmentsDB;
+import utils.database.data.RecommendationsDB;
 import utils.database.data.StudentsDB;
 import utils.logging.LogIdentifier;
 import utils.logging.MasterLogger;
@@ -202,5 +203,10 @@ public class Student extends User {
 
     public void setDefenseTime(LocalDateTime defenseTime) {
         this.defenseTime = defenseTime;
+    }
+
+    public void updateInDatabase() {
+        StudentsDB.removeFromDatabase(this);
+        StudentsDB.addToDatabase(this);
     }
 }

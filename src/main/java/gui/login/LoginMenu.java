@@ -110,6 +110,13 @@ public class LoginMenu extends JPanel {
 
                 if (loggedInAccount.accountType == AccountType.STUDENT) {
                     Student student = (Student) loggedInAccount.user;
+
+                    if (student.getAcademicStatus() == Student.AcademicStatus.DROPPED_OUT) {
+                        MasterLogger.error("student has dropped out, so the student cannot login", getClass());
+                        JOptionPane.showMessageDialog(mainFrame, "You have dropped out. You cannot log in.");
+                        return;
+                    }
+
                     MasterLogger.info("logged in as student (username: " + student.getStudentID() + ")", getClass());
                     loggedInAccount.user.setTimeOfLastLoginToNow();
                     mainFrame.setCurrentPanel(new StudentMenu(mainFrame, loggedInAccount.user));

@@ -3,6 +3,8 @@ package utils.database.data;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import logic.menus.services.requests.RecommendationRequest;
+import logic.menus.services.requests.Request;
+import logic.models.roles.Professor;
 import logic.models.roles.Student;
 
 import java.io.FileWriter;
@@ -99,5 +101,24 @@ public class RecommendationsDB extends ModelDB {
             }
         }
         return recommendationRequests;
+    }
+
+    public static LinkedList<Request> getRecommendationRequests(Professor targetProfessor) {
+        return getInstance().getRecommendationRequestsByInstance(targetProfessor);
+    }
+
+    private LinkedList<Request> getRecommendationRequestsByInstance(Professor targetProfessor) {
+        LinkedList<Request> recommendationRequestsToProfessor = new LinkedList<>();
+        String targetProfessorID = targetProfessor.getTeachingID();
+        String recipientProfessorID;
+        for (Request request : recommendationsList) {
+            if (!request.requestHasBeenRespondedTo()) {
+                recipientProfessorID = request.getRequestRecipient().getTeachingID();
+                if (targetProfessorID.equals(recipientProfessorID)) {
+                    recommendationRequestsToProfessor.add(request);
+                }
+            }
+        }
+        return recommendationRequestsToProfessor;
     }
 }

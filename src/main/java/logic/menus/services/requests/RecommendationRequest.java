@@ -2,6 +2,7 @@ package logic.menus.services.requests;
 
 import logic.models.roles.Professor;
 import logic.models.roles.Student;
+import utils.database.data.CoursesDB;
 import utils.database.data.RecommendationsDB;
 
 public class RecommendationRequest extends Request {
@@ -28,4 +29,8 @@ public class RecommendationRequest extends Request {
         return "<html>" + message;
     }
 
+    public void updateInDatabase() {
+        RecommendationsDB.removeFromDatabase(this);
+        RecommendationsDB.addToDatabase(this);
+    }
 }

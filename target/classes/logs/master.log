@@ -2470,3 +2470,122 @@
 2022/04/25 | 20:00:37 - INFO - start of program - psvm - Main
 2022/04/25 | 20:00:40 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
 2022/04/25 | 20:00:40 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 20:00:48 - INFO - start of program - psvm - Main
+2022/04/25 | 20:00:52 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 20:01:22 - INFO - student opened the enrolment certificate subsection in academic requests - connectListeners - gui.main.StudentMenu$9
+2022/04/25 | 20:01:23 - INFO - received an enrolment certificate - connectListeners - gui.services.requests.submission.CertificateSubmission$1
+2022/04/25 | 20:01:29 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 20:01:29 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 20:56:43 - INFO - start of program - psvm - Main
+2022/04/25 | 20:56:47 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 20:57:01 - INFO - student opened the recommendation letter subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/25 | 20:57:05 - ERROR - recommendation letter request submitted - connectListeners - gui.services.requests.submission.RecommendationSubmission$1
+2022/04/25 | 20:57:08 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 20:57:08 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/25 | 20:57:12 - INFO - logged in as professor (username: 6) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 20:57:19 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 20:57:19 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 20:58:48 - INFO - start of program - psvm - Main
+2022/04/25 | 20:58:56 - INFO - logged in as professor (username: 6) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 20:59:12 - INFO - professor opened the recommendation letters subsection in academic requests - connectListeners - gui.main.ProfessorMenu$6
+2022/04/25 | 20:59:54 - INFO - start of program - psvm - Main
+2022/04/25 | 20:59:59 - INFO - logged in as professor (username: 6) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:00:03 - INFO - professor opened the recommendation letters subsection in academic requests - connectListeners - gui.main.ProfessorMenu$6
+2022/04/25 | 21:00:45 - INFO - start of program - psvm - Main
+2022/04/25 | 21:00:54 - INFO - logged in as professor (username: 6) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:00:57 - INFO - professor opened the recommendation letters subsection in academic requests - connectListeners - gui.main.ProfessorMenu$6
+2022/04/25 | 21:01:47 - INFO - start of program - psvm - Main
+2022/04/25 | 21:01:56 - INFO - logged in as professor (username: 6) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:01:58 - INFO - professor opened the recommendation letters subsection in academic requests - connectListeners - gui.main.ProfessorMenu$6
+2022/04/25 | 21:02:44 - INFO - start of program - psvm - Main
+2022/04/25 | 21:02:52 - INFO - logged in as professor (username: 6) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:02:54 - INFO - professor opened the recommendation letters subsection in academic requests - connectListeners - gui.main.ProfessorMenu$6
+2022/04/25 | 21:03:16 - INFO - start of program - psvm - Main
+2022/04/25 | 21:03:23 - INFO - logged in as professor (username: 6) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:03:26 - INFO - professor opened the recommendation letters subsection in academic requests - connectListeners - gui.main.ProfessorMenu$6
+2022/04/25 | 21:04:05 - INFO - start of program - psvm - Main
+2022/04/25 | 21:04:13 - INFO - logged in as professor (username: 6) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:04:17 - INFO - professor opened the recommendation letters subsection in academic requests - connectListeners - gui.main.ProfessorMenu$6
+2022/04/25 | 21:04:32 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 21:04:32 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 21:04:40 - INFO - start of program - psvm - Main
+2022/04/25 | 21:04:45 - INFO - logged in as professor (username: 6) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:04:48 - INFO - professor opened the recommendation letters subsection in academic requests - connectListeners - gui.main.ProfessorMenu$6
+2022/04/25 | 21:14:12 - INFO - start of program - psvm - Main
+2022/04/25 | 21:14:22 - INFO - logged in as professor (username: 6) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:14:25 - INFO - professor opened the recommendation letters subsection in academic requests - connectListeners - gui.main.ProfessorMenu$6
+2022/04/25 | 21:14:27 - INFO - recommendation request (requesting student ID: 1) has been accepted by the operating professor (ID: 6) - setApproveListener - gui.services.requests.management.RecommendationManager$1
+2022/04/25 | 21:14:32 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 21:14:35 - INFO - professor opened the recommendation letters subsection in academic requests - connectListeners - gui.main.ProfessorMenu$6
+2022/04/25 | 21:15:18 - INFO - start of program - psvm - Main
+2022/04/25 | 21:15:25 - INFO - logged in as professor (username: 6) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:15:27 - INFO - professor opened the recommendation letters subsection in academic requests - connectListeners - gui.main.ProfessorMenu$6
+2022/04/25 | 21:15:28 - INFO - recommendation request (requesting student ID: 1) has been accepted by the operating professor (ID: 6) - setApproveListener - gui.services.requests.management.RecommendationManager$1
+2022/04/25 | 21:15:30 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 21:15:31 - INFO - professor opened the recommendation letters subsection in academic requests - connectListeners - gui.main.ProfessorMenu$6
+2022/04/25 | 21:15:32 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 21:15:33 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/25 | 21:15:37 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:15:40 - INFO - student opened the recommendation letters subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/25 | 21:21:24 - INFO - start of program - psvm - Main
+2022/04/25 | 21:21:31 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:21:34 - INFO - professor opened the recommendation letters subsection in academic requests - connectListeners - gui.main.ProfessorMenu$6
+2022/04/25 | 21:21:36 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 21:21:39 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/25 | 21:21:44 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:21:50 - INFO - student opened the recommendation letters subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/25 | 21:21:54 - ERROR - recommendation letter request submitted - connectListeners - gui.services.requests.submission.RecommendationSubmission$1
+2022/04/25 | 21:21:58 - ERROR - recommendation letter request submitted - connectListeners - gui.services.requests.submission.RecommendationSubmission$1
+2022/04/25 | 21:22:01 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 21:22:01 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/25 | 21:22:06 - INFO - logged in as professor (username: 4) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:22:10 - INFO - professor opened the recommendation letters subsection in academic requests - connectListeners - gui.main.ProfessorMenu$6
+2022/04/25 | 21:22:11 - INFO - recommendation request (requesting student ID: 1) has been declined by the operating professor (ID: 4) - setDeclineListener - gui.services.requests.management.RecommendationManager$2
+2022/04/25 | 21:22:13 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 21:22:15 - INFO - professor opened the recommendation letters subsection in academic requests - connectListeners - gui.main.ProfessorMenu$6
+2022/04/25 | 21:22:16 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 21:22:17 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/25 | 21:22:23 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:22:27 - INFO - professor opened the recommendation letters subsection in academic requests - connectListeners - gui.main.ProfessorMenu$6
+2022/04/25 | 21:22:28 - INFO - recommendation request (requesting student ID: 1) has been accepted by the operating professor (ID: 5) - setApproveListener - gui.services.requests.management.RecommendationManager$1
+2022/04/25 | 21:22:30 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 21:22:31 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/25 | 21:22:37 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:22:39 - INFO - student opened the recommendation letters subsection in academic requests - connectListeners - gui.main.StudentMenu$10
+2022/04/25 | 21:22:41 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 21:22:41 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 21:43:27 - INFO - start of program - psvm - Main
+2022/04/25 | 21:43:32 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:43:49 - INFO - student opened the dropping out subsection in academic requests - connectListeners - gui.main.StudentMenu$8
+2022/04/25 | 21:43:50 - INFO - submitted a drop-out request - connectListeners - gui.services.requests.submission.DroppingOutSubmission$1
+2022/04/25 | 21:43:51 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 21:43:52 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/25 | 21:43:56 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:44:00 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 21:44:00 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 21:45:04 - INFO - start of program - psvm - Main
+2022/04/25 | 21:45:08 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:45:14 - INFO - deputy opened the dropping out subsection in academic requests - connectListeners - gui.main.ProfessorMenu$7
+2022/04/25 | 21:45:17 - INFO - dropping request (requesting student ID: 1) has been declined by the operating deputy (ID: 5) - setDeclineListener - gui.services.requests.management.DroppingOutManager$2
+2022/04/25 | 21:45:18 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 21:45:21 - INFO - deputy opened the dropping out subsection in academic requests - connectListeners - gui.main.ProfessorMenu$7
+2022/04/25 | 21:45:21 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 21:45:23 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/25 | 21:45:28 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:45:30 - INFO - student opened the dropping out subsection in academic requests - connectListeners - gui.main.StudentMenu$8
+2022/04/25 | 21:45:31 - INFO - submitted a drop-out request - connectListeners - gui.services.requests.submission.DroppingOutSubmission$1
+2022/04/25 | 21:45:32 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 21:45:32 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/25 | 21:45:46 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:45:49 - INFO - deputy opened the dropping out subsection in academic requests - connectListeners - gui.main.ProfessorMenu$7
+2022/04/25 | 21:45:50 - INFO - dropping out request (requesting student ID: 1) has been accepted by the operating deputy (ID: 5) - setApproveListener - gui.services.requests.management.DroppingOutManager$1
+2022/04/25 | 21:45:51 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 21:45:53 - INFO - deputy opened the dropping out subsection in academic requests - connectListeners - gui.main.ProfessorMenu$7
+2022/04/25 | 21:45:54 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 21:45:54 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/25 | 21:45:59 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:46:04 - INFO - student opened the profile editor in the user profile - connectListeners - gui.main.StudentMenu$1
+2022/04/25 | 21:46:07 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 21:46:08 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/25 | 21:46:09 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 21:46:09 - INFO - end of program - connectToDatabase - gui.MainFrame$1

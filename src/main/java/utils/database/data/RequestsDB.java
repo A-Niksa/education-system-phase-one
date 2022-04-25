@@ -4,6 +4,8 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import logic.menus.services.requests.MinorRequest;
 import logic.menus.services.requests.Request;
+import logic.models.abstractions.Department;
+import logic.models.roles.Professor;
 import logic.models.roles.Student;
 
 import java.io.FileWriter;
@@ -86,5 +88,24 @@ public class RequestsDB extends ModelDB {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static LinkedList<Request> getDroppingOutRequests(Department targetDepartment) {
+        return getInstance().getDroppingOutRequestsByInstance(targetDepartment);
+    }
+
+    private LinkedList<Request> getDroppingOutRequestsByInstance(Department targetDepartment) {
+        LinkedList<Request> droppingOutRequestsOfDepartment = new LinkedList<>();
+        String targetDepartmentName = targetDepartment.getDepartmentName();
+        String potentialDepartmentName;
+        for (Request request : requestsList) {
+            if (request.getRequestType() == Request.RequestType.DROPPING_OUT) {
+                potentialDepartmentName = request.getRequestingStudent().getDepartmentName();
+                if (!request.requestHasBeenRespondedTo()) {
+                    droppingOutRequestsOfDepartment.add(request);
+                }
+            }
+        }
+        return droppingOutRequestsOfDepartment;
     }
 }

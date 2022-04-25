@@ -7,6 +7,8 @@ import gui.enrolment.*;
 import gui.profile.ProfessorProfile;
 import gui.services.ProfessorExamsList;
 import gui.services.ProfessorWeeklySchedule;
+import gui.services.requests.management.DroppingOutManager;
+import gui.services.requests.management.RecommendationManager;
 import logic.models.roles.Professor;
 import logic.models.roles.User;
 import utils.logging.MasterLogger;
@@ -152,6 +154,24 @@ public class ProfessorMenu extends MainMenu {
             public void actionPerformed(ActionEvent actionEvent) {
                 MasterLogger.info("professor opened list of exams in academic services", getClass());
                 mainFrame.setCurrentPanel(new ProfessorExamsList(mainFrame, mainMenu, professorUser));
+            }
+        });
+
+        recommendationLetter.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                MasterLogger.info("professor opened the recommendation letters subsection in academic requests",
+                        getClass());
+                mainFrame.setCurrentPanel(new RecommendationManager(mainFrame, mainMenu, professorUser));
+            }
+        });
+
+        droppingOut.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                MasterLogger.info("deputy opened the dropping out subsection in academic requests",
+                        getClass());
+                mainFrame.setCurrentPanel(new DroppingOutManager(mainFrame, mainMenu, professorUser));
             }
         });
 

@@ -213,7 +213,7 @@ public class StudentMenu extends MainMenu {
         recommendationLetter.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("student opened the recommendation letter subsection in academic requests", getClass());
+                MasterLogger.info("student opened the recommendation letters subsection in academic requests", getClass());
                 mainFrame.setCurrentPanel(new RecommendationSubmission(mainFrame, mainMenu, user));
             }
         });
@@ -221,7 +221,7 @@ public class StudentMenu extends MainMenu {
         minor.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("student opened minor request subsection in academic requests", getClass());
+                MasterLogger.info("student opened minor requests subsection in academic requests", getClass());
                 mainFrame.setCurrentPanel(new MinorSubmission(mainFrame, mainMenu, user));
             }
         });
@@ -229,7 +229,7 @@ public class StudentMenu extends MainMenu {
         dormitory.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("student opened dorm request subsection in academic requests", getClass());
+                MasterLogger.info("student opened dorm requests subsection in academic requests", getClass());
                 mainFrame.setCurrentPanel(new DormSubmission(mainFrame, mainMenu, user));
             }
         });
