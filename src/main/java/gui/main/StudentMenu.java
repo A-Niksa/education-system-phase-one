@@ -4,8 +4,8 @@ import gui.MainFrame;
 import gui.enrolment.CoursesListView;
 import gui.enrolment.ProfessorsListView;
 import gui.profile.StudentProfile;
-import gui.services.ExamsListView;
-import gui.services.WeeklySchedule;
+import gui.services.StudentExamsList;
+import gui.services.StudentWeeklySchedule;
 import gui.services.requests.*;
 import gui.standing.CurrentStanding;
 import gui.standing.TemporaryStanding;
@@ -141,7 +141,7 @@ public class StudentMenu extends MainMenu {
         editUserProfile.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("opened the profile editor in the user profile", getClass());
+                MasterLogger.info("student opened the profile editor in the user profile", getClass());
                 mainFrame.setCurrentPanel(new StudentProfile(mainFrame, mainMenu, user));
             }
         });
@@ -149,7 +149,7 @@ public class StudentMenu extends MainMenu {
         listOfCourses.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("opened the courses list in educational services", getClass());
+                MasterLogger.info("student opened the courses list in educational services", getClass());
                 mainFrame.setCurrentPanel(new CoursesListView(mainFrame, mainMenu));
             }
         });
@@ -157,7 +157,7 @@ public class StudentMenu extends MainMenu {
         listOfProfessors.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("opened the professors list in educational services", getClass());
+                MasterLogger.info("student opened the professors list in educational services", getClass());
                 mainFrame.setCurrentPanel(new ProfessorsListView(mainFrame, mainMenu));
             }
         });
@@ -165,7 +165,7 @@ public class StudentMenu extends MainMenu {
         temporaryScores.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("opened temporary scores in academic standing", getClass());
+                MasterLogger.info("student opened temporary scores in academic standing", getClass());
                 mainFrame.setCurrentPanel(new TemporaryStanding(mainFrame, mainMenu, user));
             }
         });
@@ -173,7 +173,7 @@ public class StudentMenu extends MainMenu {
         currentAcademicStanding.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("opened current academic standing in academic standing", getClass());
+                MasterLogger.info("student opened current academic standing in academic standing", getClass());
                 mainFrame.setCurrentPanel(new CurrentStanding(mainFrame, mainMenu, user));
             }
         });
@@ -181,23 +181,23 @@ public class StudentMenu extends MainMenu {
         weeklySchedule.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("opened weekly schedule in academic services", getClass());
-                mainFrame.setCurrentPanel(new WeeklySchedule(mainFrame, mainMenu, user));
+                MasterLogger.info("student opened weekly schedule in academic services", getClass());
+                mainFrame.setCurrentPanel(new StudentWeeklySchedule(mainFrame, mainMenu, user));
             }
         });
 
         listOfExams.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("opened list of exams in academic services", getClass());
-                mainFrame.setCurrentPanel(new ExamsListView(mainFrame, mainMenu, user));
+                MasterLogger.info("student opened list of exams in academic services", getClass());
+                mainFrame.setCurrentPanel(new StudentExamsList(mainFrame, mainMenu, user));
             }
         });
 
         droppingOut.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("opened the dropping out subsection in academic requests", getClass());
+                MasterLogger.info("student opened the dropping out subsection in academic requests", getClass());
                 mainFrame.setCurrentPanel(new DroppingOutSubmission(mainFrame, mainMenu, user));
             }
         });
@@ -205,7 +205,7 @@ public class StudentMenu extends MainMenu {
         enrolmentCertificate.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("opened the enrolment certificate subsection in academic requests", getClass());
+                MasterLogger.info("student opened the enrolment certificate subsection in academic requests", getClass());
                 mainFrame.setCurrentPanel(new CertificateSubmission(mainFrame, mainMenu, user));
             }
         });
@@ -213,7 +213,7 @@ public class StudentMenu extends MainMenu {
         recommendationLetter.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("opened the recommendation letter subsection in academic requests", getClass());
+                MasterLogger.info("student opened the recommendation letter subsection in academic requests", getClass());
                 mainFrame.setCurrentPanel(new RecommendationSubmission(mainFrame, mainMenu, user));
             }
         });
@@ -221,7 +221,7 @@ public class StudentMenu extends MainMenu {
         minor.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("opened minor request subsection in academic requests", getClass());
+                MasterLogger.info("student opened minor request subsection in academic requests", getClass());
                 mainFrame.setCurrentPanel(new MinorSubmission(mainFrame, mainMenu, user));
             }
         });
@@ -229,16 +229,15 @@ public class StudentMenu extends MainMenu {
         dormitory.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("opened dorm request subsection in academic requests", getClass());
+                MasterLogger.info("student opened dorm request subsection in academic requests", getClass());
                 mainFrame.setCurrentPanel(new DormSubmission(mainFrame, mainMenu, user));
             }
         });
 
         defenseSlot.addActionListener(new ActionListener() {
-
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("opened defense slot selection in academic requests", getClass());
+                MasterLogger.info("student opened defense slot selection in academic requests", getClass());
                 mainFrame.setCurrentPanel(new DefenseSubmission(mainFrame, mainMenu, user));
             }
         });

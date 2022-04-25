@@ -5,28 +5,27 @@ import gui.Template;
 import gui.main.MainMenu;
 import logic.menus.services.ExamsListLoader;
 import logic.models.abstractions.Course;
-import logic.models.roles.Student;
-import logic.models.roles.User;
+import logic.models.roles.Professor;
 
 import javax.swing.*;
 import java.util.LinkedList;
 
-public class ExamsListView extends Template {
-    private Student student;
+public class ProfessorExamsList extends Template {
+    Professor operatingProfessor;
     private JTable examsTable;
     private String[] columns;
     private String[][] data;
 
-    public ExamsListView(MainFrame mainFrame, MainMenu mainMenu, User user) {
+    public ProfessorExamsList(MainFrame mainFrame, MainMenu mainMenu, Professor operatingProfessor) {
         super(mainFrame, mainMenu);
-        student = (Student) user;
+        this.operatingProfessor = operatingProfessor;
         columns = new String[] {"Course Name", "Exam Date and Time"};
         setTableData();
         drawPanel();
     }
 
     private void setTableData() {
-        LinkedList<Course> sortedCoursesList = ExamsListLoader.getSortedListOfCoursesPerExam(student);
+        LinkedList<Course> sortedCoursesList = ExamsListLoader.getSortedListOfCoursesPerExam(operatingProfessor);
         Course course;
         data = new String[sortedCoursesList.size()][];
         for (int i = 0; i < sortedCoursesList.size(); i++) {

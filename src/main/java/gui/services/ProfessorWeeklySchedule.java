@@ -3,10 +3,9 @@ package gui.services;
 import gui.MainFrame;
 import gui.Template;
 import gui.main.MainMenu;
-import logic.menus.services.ScheduleLoader;
-import logic.models.abstractions.Course;
-import logic.models.roles.Student;
-import logic.models.roles.User;
+import logic.menus.services.ProfessorScheduleLoader;
+import logic.menus.services.StudentScheduleLoader;
+import logic.models.roles.Professor;
 import utils.timing.Weekday;
 import utils.timing.WeeklyDate;
 
@@ -14,8 +13,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.LinkedList;
 
-public class WeeklySchedule extends Template {
-    private Student student;
+public class ProfessorWeeklySchedule extends Template {
+    Professor operationProfessor;
     private JPanel saturdayPanel;
     private JTable saturdayTable;
     private String[][] saturdayData;
@@ -43,32 +42,33 @@ public class WeeklySchedule extends Template {
     private String[] columns;
     private JTabbedPane tabbedPane;
 
-    public WeeklySchedule(MainFrame mainFrame, MainMenu mainMenu, User user) {
+    public ProfessorWeeklySchedule(MainFrame mainFrame, MainMenu mainMenu, Professor operationProfessor) {
         super(mainFrame, mainMenu);
-        student = (Student) user;
-        weekdayPanels = new LinkedList<>();
-        weekdayTables = new LinkedList<>();
+        this.operationProfessor = operationProfessor;
         weekdays = new String[] {"Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
-        columns = new String[] {"Course Name", "Instructor's Name", "Starts From", "Ends At"};
+        columns = new String[] {"Course Name", "Starts From", "Ends At"};
         drawPanel();
     }
 
     private String[][] getTableData(Weekday weekday) {
-        LinkedList<WeeklyDate> coursesInfoOfStudent = ScheduleLoader.getStudentsCourseInformationPerDay(student, weekday);
-        String[][] data = new String[coursesInfoOfStudent.size()][];
+        LinkedList<WeeklyDate> coursesInfoOfProfessor = ProfessorScheduleLoader.getProfessorsCourseInformationPerDay(
+                operationProfessor, weekday);
+        String[][] data = new String[coursesInfoOfProfessor.size()][];
         WeeklyDate courseInfo;
-        for (int i = 0; i < coursesInfoOfStudent.size(); i++) {
-            courseInfo = coursesInfoOfStudent.get(i);
+        for (int i = 0; i < coursesInfoOfProfessor.size(); i++) {
+            courseInfo = coursesInfoOfProfessor.get(i);
             data[i] = new String[] {courseInfo.getCourseName(),
-                                    courseInfo.getProfessorName(),
-                                    courseInfo.getStartTimeString(),
-                                    courseInfo.getEndTimeString()};
+                    courseInfo.getStartTimeString(),
+                    courseInfo.getEndTimeString()};
         }
         return data;
     }
 
     @Override
     protected void initializeComponents() {
+        weekdayPanels = new LinkedList<>();
+        weekdayTables = new LinkedList<>();
+
         saturdayPanel = new JPanel();
         weekdayPanels.add(saturdayPanel);
         saturdayTable = new JTable(getTableData(Weekday.SATURDAY), columns);

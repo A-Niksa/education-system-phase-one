@@ -5,6 +5,8 @@ import gui.addition.ProfessorAdder;
 import gui.addition.StudentAdder;
 import gui.enrolment.*;
 import gui.profile.ProfessorProfile;
+import gui.services.ProfessorExamsList;
+import gui.services.ProfessorWeeklySchedule;
 import logic.models.roles.Professor;
 import logic.models.roles.User;
 import utils.logging.MasterLogger;
@@ -108,7 +110,7 @@ public class ProfessorMenu extends MainMenu {
         editUserProfile.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("opened the profile editor in the user profile", getClass());
+                MasterLogger.info("professor opened the profile editor in the user profile", getClass());
                 mainFrame.setCurrentPanel(new ProfessorProfile(mainFrame, mainMenu, user));
             }
         });
@@ -116,7 +118,7 @@ public class ProfessorMenu extends MainMenu {
         listOfCourses.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("opened the courses list in educational services", getClass());
+                MasterLogger.info("professor opened the courses list in educational services", getClass());
                 if (role == Professor.AdministrativeRole.EDUCATION_DEPUTY) {
                     mainFrame.setCurrentPanel(new CoursesListManager(mainFrame, mainMenu, professorUser));
                 } else {
@@ -128,12 +130,28 @@ public class ProfessorMenu extends MainMenu {
         listOfProfessors.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("opened the professors list in educational services", getClass());
+                MasterLogger.info("professor opened the professors list in educational services", getClass());
                 if (role == Professor.AdministrativeRole.DEAN) {
                     mainFrame.setCurrentPanel(new ProfessorsListManager(mainFrame, mainMenu, professorUser));
                 } else {
                     mainFrame.setCurrentPanel(new ProfessorsListView(mainFrame, mainMenu));
                 }
+            }
+        });
+
+        weeklySchedule.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                MasterLogger.info("professor opened weekly schedule in academic services", getClass());
+                mainFrame.setCurrentPanel(new ProfessorWeeklySchedule(mainFrame, mainMenu, professorUser));
+            }
+        });
+
+        listOfExams.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                MasterLogger.info("professor opened list of exams in academic services", getClass());
+                mainFrame.setCurrentPanel(new ProfessorExamsList(mainFrame, mainMenu, professorUser));
             }
         });
 

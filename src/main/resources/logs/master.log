@@ -2423,3 +2423,47 @@
 2022/04/25 | 02:55:10 - INFO - start of program - psvm - Main
 2022/04/25 | 02:55:13 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
 2022/04/25 | 02:55:13 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 19:45:45 - INFO - start of program - psvm - Main
+2022/04/25 | 19:45:51 - INFO - logged in as professor (username: 6) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 19:45:54 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 19:46:00 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 19:46:02 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/25 | 19:46:06 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 19:46:08 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 19:46:09 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 19:46:10 - INFO - deputy opened the course addition section - connectListeners - gui.enrolment.CoursesListEditor$2
+2022/04/25 | 19:46:50 - INFO - added course (ID: 13512) to the system - connectListeners - gui.addition.CourseAdder$1
+2022/04/25 | 19:46:50 - INFO - went back to courses list editor - connectListeners - gui.addition.CourseAdder$2
+2022/04/25 | 19:46:52 - INFO - went back to courses list view - connectListeners - gui.enrolment.CoursesListEditor$1
+2022/04/25 | 19:46:53 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 19:46:55 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/25 | 19:46:59 - INFO - logged in as professor (username: 6) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 19:47:11 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 19:47:11 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 19:48:53 - INFO - start of program - psvm - Main
+2022/04/25 | 19:48:57 - INFO - logged in as professor (username: 6) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 19:49:00 - INFO - professor opened weekly schedule in academic services - connectListeners - gui.main.ProfessorMenu$4
+2022/04/25 | 19:49:17 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 19:49:20 - INFO - professor opened weekly schedule in academic services - connectListeners - gui.main.ProfessorMenu$4
+2022/04/25 | 19:49:23 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 19:49:24 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 19:49:24 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 19:49:37 - INFO - start of program - psvm - Main
+2022/04/25 | 19:49:37 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 19:57:26 - INFO - start of program - psvm - Main
+2022/04/25 | 19:57:35 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 19:57:39 - INFO - opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/25 | 19:57:40 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/25 | 19:57:42 - INFO - opened course editor for Real Analysis - actionPerformed - gui.enrolment.CourseEditHandler
+2022/04/25 | 19:57:51 - INFO - Real Analysis's instructor changed to Siavash Shahshahani - connectListeners - gui.enrolment.CourseEditor$4
+2022/04/25 | 19:57:52 - INFO - went back to courses list editor - connectListeners - gui.enrolment.CourseEditor$1
+2022/04/25 | 19:57:53 - INFO - opened course editor for PDE - actionPerformed - gui.enrolment.CourseEditHandler
+2022/04/25 | 19:58:02 - INFO - PDE's instructor changed to Siavash Shahshahani - connectListeners - gui.enrolment.CourseEditor$4
+2022/04/25 | 19:58:03 - INFO - went back to courses list editor - connectListeners - gui.enrolment.CourseEditor$1
+2022/04/25 | 19:58:04 - INFO - went back to courses list view - connectListeners - gui.enrolment.CoursesListEditor$1
+2022/04/25 | 19:58:09 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 19:58:13 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/25 | 19:58:16 - INFO - logged in as professor (username: 6) - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 19:59:03 - INFO - professor opened list of exams in academic services - connectListeners - gui.main.ProfessorMenu$5
+2022/04/25 | 19:59:10 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/25 | 19:59:10 - INFO - logged out - connectListeners - gui.main.MainMenu$1

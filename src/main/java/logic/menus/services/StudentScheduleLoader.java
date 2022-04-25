@@ -8,7 +8,7 @@ import utils.timing.WeeklyDate;
 
 import java.util.LinkedList;
 
-public class ScheduleLoader {
+public class StudentScheduleLoader {
     public static LinkedList<WeeklyDate> getStudentsCourseInformationPerDay(Student targetStudent, Weekday weekday) {
         LinkedList<Course> studentsCourses = getStudentsCourses(targetStudent);
         LinkedList<WeeklyDate> studentsCoursesInfoPerDay = new LinkedList<>();
