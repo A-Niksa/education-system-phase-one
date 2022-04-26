@@ -87,6 +87,11 @@ public class Department {
 //        }
         if (educationDeputy != null) {
             educationDeputy.setAdministrativeRole(Professor.AdministrativeRole.EDUCATION_DEPUTY);
+            educationDeputy.updateInDatabase();
+        }
+        if (this.educationDeputy != null) {
+            this.educationDeputy.setAdministrativeRole(Professor.AdministrativeRole.NORMAL);
+            this.educationDeputy.updateInDatabase();
         }
         this.educationDeputy = educationDeputy;
     }

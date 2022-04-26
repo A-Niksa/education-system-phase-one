@@ -2589,3 +2589,318 @@
 2022/04/25 | 21:46:08 - INFO - logged out - connectListeners - gui.main.MainMenu$1
 2022/04/25 | 21:46:09 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
 2022/04/25 | 21:46:09 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/25 | 21:48:09 - INFO - start of program - psvm - Main
+2022/04/25 | 21:48:13 - ERROR - student has dropped out and thus, cannot login - connectListeners - gui.login.LoginMenu$2
+2022/04/25 | 21:48:16 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/25 | 21:48:16 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/26 | 16:47:48 - INFO - start of program - psvm - Main
+2022/04/26 | 16:47:48 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 18:51:11 - INFO - start of program - psvm - Main
+2022/04/26 | 18:51:16 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 18:51:16 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/26 | 18:51:38 - INFO - start of program - psvm - Main
+2022/04/26 | 18:51:38 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 19:05:42 - INFO - start of program - psvm - Main
+2022/04/26 | 19:05:47 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 19:05:49 - INFO - student opened minor requests subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/26 | 19:05:55 - INFO - submitted a minor request to minor at Physics - connectListeners - gui.services.requests.submission.MinorSubmission$1
+2022/04/26 | 19:05:57 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 19:05:58 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 19:06:02 - INFO - logged in as professor (username: 12) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 19:08:11 - INFO - start of program - psvm - Main
+2022/04/26 | 19:08:17 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 19:08:20 - INFO - student opened the minor requests subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/26 | 19:08:22 - INFO - submitted a minor request to minor at Physics - connectListeners - gui.services.requests.submission.MinorSubmission$1
+2022/04/26 | 19:08:25 - ERROR - cannot request minor for the current department - connectListeners - gui.services.requests.submission.MinorSubmission$1
+2022/04/26 | 19:08:28 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 19:08:29 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 19:08:30 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 19:08:30 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/26 | 19:08:38 - INFO - start of program - psvm - Main
+2022/04/26 | 19:08:42 - INFO - logged in as professor (username: 12) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 19:08:46 - INFO - deputy opened the minor requests subsection in academic requests - connectListeners - gui.main.ProfessorMenu$8
+2022/04/26 | 19:08:51 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 19:08:51 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/26 | 19:09:18 - INFO - start of program - psvm - Main
+2022/04/26 | 19:09:22 - INFO - logged in as professor (username: 12) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 19:09:25 - INFO - deputy opened the minor requests subsection in academic requests - connectListeners - gui.main.ProfessorMenu$8
+2022/04/26 | 19:09:32 - INFO - minor request (requesting student ID: 1) has been partially accepted by the deputy of the target department (Department: Physics) - setApproveListener - gui.services.requests.management.MinorManager$1
+2022/04/26 | 19:09:34 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 19:09:35 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 19:09:46 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 19:09:48 - INFO - student opened the minor requests subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/26 | 19:09:50 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 19:09:51 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 19:09:57 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 19:09:59 - INFO - deputy opened the minor requests subsection in academic requests - connectListeners - gui.main.ProfessorMenu$8
+2022/04/26 | 19:10:01 - INFO - minor request (requesting student ID: 1) has been partially accepted by the deputy of the origin department (Department: Mathematics) - setApproveListener - gui.services.requests.management.MinorManager$1
+2022/04/26 | 19:10:02 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 19:10:03 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 19:10:09 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 19:10:13 - INFO - student opened the minor requests subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/26 | 19:10:18 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 19:10:20 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 19:10:21 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 19:10:21 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/26 | 19:12:02 - INFO - start of program - psvm - Main
+2022/04/26 | 19:12:02 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 19:12:11 - INFO - start of program - psvm - Main
+2022/04/26 | 19:12:20 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 19:12:22 - INFO - student opened the minor requests subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/26 | 19:12:50 - INFO - submitted a minor request to minor at Physics - connectListeners - gui.services.requests.submission.MinorSubmission$1
+2022/04/26 | 19:12:51 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 19:12:51 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 19:12:56 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 19:12:58 - INFO - deputy opened the minor requests subsection in academic requests - connectListeners - gui.main.ProfessorMenu$8
+2022/04/26 | 19:12:59 - INFO - minor request (requesting student ID: 1) has been partially declined by the origin department (Department: Mathematics) - setDeclineListener - gui.services.requests.management.MinorManager$2
+2022/04/26 | 19:13:00 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 19:13:01 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 19:13:16 - INFO - logged in as professor (username: 12) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 19:13:18 - INFO - deputy opened the minor requests subsection in academic requests - connectListeners - gui.main.ProfessorMenu$8
+2022/04/26 | 19:13:59 - INFO - minor request (requesting student ID: 1) has been partially accepted by the target department (Department: Physics) - setApproveListener - gui.services.requests.management.MinorManager$1
+2022/04/26 | 19:14:08 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 19:14:09 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 19:14:14 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 19:14:16 - INFO - student opened the minor requests subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/26 | 19:14:18 - INFO - submitted a minor request to minor at Physics - connectListeners - gui.services.requests.submission.MinorSubmission$1
+2022/04/26 | 19:18:58 - INFO - start of program - psvm - Main
+2022/04/26 | 19:18:59 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 19:18:59 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/26 | 19:20:46 - INFO - start of program - psvm - Main
+2022/04/26 | 19:20:50 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 19:20:52 - INFO - student opened the minor requests subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/26 | 19:20:55 - INFO - submitted a minor request to minor at Physics - connectListeners - gui.services.requests.submission.MinorSubmission$1
+2022/04/26 | 19:20:56 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 19:20:56 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 19:20:59 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 19:21:01 - INFO - deputy opened the minor requests subsection in academic requests - connectListeners - gui.main.ProfessorMenu$8
+2022/04/26 | 19:21:02 - INFO - minor request (requesting student ID: 1) has been partially accepted by the origin department (Department: Mathematics) - setApproveListener - gui.services.requests.management.MinorManager$1
+2022/04/26 | 19:21:03 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 19:21:03 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 19:21:07 - INFO - logged in as professor (username: 12) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 19:21:10 - INFO - deputy opened the minor requests subsection in academic requests - connectListeners - gui.main.ProfessorMenu$8
+2022/04/26 | 19:21:11 - INFO - minor request (requesting student ID: 1) has been partially accepted by the target department (Department: Physics) - setApproveListener - gui.services.requests.management.MinorManager$1
+2022/04/26 | 19:21:12 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 19:21:14 - INFO - deputy opened the minor requests subsection in academic requests - connectListeners - gui.main.ProfessorMenu$8
+2022/04/26 | 19:21:16 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 19:21:18 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 19:21:25 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 19:21:25 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/26 | 19:22:13 - INFO - start of program - psvm - Main
+2022/04/26 | 19:22:16 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 19:22:19 - INFO - deputy opened the minor requests subsection in academic requests - connectListeners - gui.main.ProfessorMenu$8
+2022/04/26 | 19:22:27 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 19:22:27 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 19:22:31 - INFO - logged in as student (username: 1) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 19:22:32 - INFO - student opened the minor requests subsection in academic requests - connectListeners - gui.main.StudentMenu$11
+2022/04/26 | 19:22:37 - ERROR - cannot request minor for the current department - connectListeners - gui.services.requests.submission.MinorSubmission$1
+2022/04/26 | 19:22:47 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 19:22:49 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 19:22:51 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 19:22:52 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/26 | 19:23:14 - INFO - start of program - psvm - Main
+2022/04/26 | 19:23:18 - INFO - logged in as professor (username: 5) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 19:23:20 - INFO - deputy opened the minor requests subsection in academic requests - connectListeners - gui.main.ProfessorMenu$8
+2022/04/26 | 19:23:21 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 19:23:22 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 19:23:24 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 19:23:24 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/26 | 22:54:36 - INFO - start of program - psvm - Main
+2022/04/26 | 22:54:36 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 22:54:46 - INFO - start of program - psvm - Main
+2022/04/26 | 22:54:53 - ERROR - invalid login credentials - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 22:55:07 - INFO - logged in as professor (username: 12345) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 22:55:09 - INFO - professor opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
+2022/04/26 | 22:55:13 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 22:55:14 - INFO - professor opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/26 | 22:56:55 - INFO - start of program - psvm - Main
+2022/04/26 | 22:57:07 - INFO - logged in as professor (username: 12345) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 22:57:09 - INFO - professor opened weekly schedule in academic services - connectListeners - gui.main.ProfessorMenu$4
+2022/04/26 | 22:57:12 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 22:57:14 - INFO - professor opened list of exams in academic services - connectListeners - gui.main.ProfessorMenu$5
+2022/04/26 | 22:57:17 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 22:57:20 - INFO - professor opened the recommendation letters subsection in academic requests - connectListeners - gui.main.ProfessorMenu$6
+2022/04/26 | 22:57:21 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 22:57:26 - INFO - professor opened the profile editor in the user profile - connectListeners - gui.main.ProfessorMenu$1
+2022/04/26 | 22:59:22 - INFO - start of program - psvm - Main
+2022/04/26 | 22:59:29 - INFO - logged in as professor (username: 12345) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 22:59:31 - INFO - professor opened the profile editor in the user profile - connectListeners - gui.main.ProfessorMenu$1
+2022/04/26 | 23:00:13 - INFO - start of program - psvm - Main
+2022/04/26 | 23:00:25 - INFO - logged in as professor (username: 12345) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:00:39 - INFO - professor opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
+2022/04/26 | 23:00:44 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:00:45 - INFO - professor opened weekly schedule in academic services - connectListeners - gui.main.ProfessorMenu$4
+2022/04/26 | 23:00:47 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:00:50 - INFO - professor opened the profile editor in the user profile - connectListeners - gui.main.ProfessorMenu$1
+2022/04/26 | 23:04:17 - INFO - start of program - psvm - Main
+2022/04/26 | 23:04:17 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 23:04:26 - INFO - start of program - psvm - Main
+2022/04/26 | 23:04:36 - INFO - logged in as professor (username: 12345) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:04:39 - INFO - professor opened the profile editor in the user profile - connectListeners - gui.main.ProfessorMenu$1
+2022/04/26 | 23:06:10 - INFO - start of program - psvm - Main
+2022/04/26 | 23:06:22 - INFO - logged in as professor (username: 43210) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:06:24 - INFO - professor opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/26 | 23:06:25 - INFO - professor opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
+2022/04/26 | 23:06:27 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:06:28 - INFO - professor opened the profile editor in the user profile - connectListeners - gui.main.ProfessorMenu$1
+2022/04/26 | 23:06:32 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:06:33 - INFO - professor opened the profile editor in the user profile - connectListeners - gui.main.ProfessorMenu$1
+2022/04/26 | 23:06:36 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:06:38 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 23:06:38 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/26 | 23:28:41 - INFO - start of program - psvm - Main
+2022/04/26 | 23:28:41 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 23:28:51 - INFO - start of program - psvm - Main
+2022/04/26 | 23:29:00 - INFO - logged in as professor (username: 12345) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:29:02 - INFO - professor opened the profile editor in the user profile - connectListeners - gui.main.ProfessorMenu$1
+2022/04/26 | 23:29:05 - INFO - professor opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/26 | 23:29:53 - INFO - start of program - psvm - Main
+2022/04/26 | 23:30:00 - INFO - logged in as professor (username: 12345) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:30:02 - INFO - professor opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/26 | 23:31:41 - INFO - start of program - psvm - Main
+2022/04/26 | 23:31:49 - INFO - start of program - psvm - Main
+2022/04/26 | 23:31:49 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 23:32:04 - INFO - start of program - psvm - Main
+2022/04/26 | 23:32:11 - INFO - logged in as professor (username: 12345) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:32:13 - INFO - professor opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/26 | 23:32:16 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:32:19 - INFO - professor opened the profile editor in the user profile - connectListeners - gui.main.ProfessorMenu$1
+2022/04/26 | 23:32:29 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:32:30 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 23:32:44 - INFO - logged in as professor (username: 43210) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:32:48 - INFO - professor opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/26 | 23:32:49 - INFO - deputy opened courses list editor - connectEditorListener - gui.enrolment.CoursesListManager$1
+2022/04/26 | 23:32:51 - INFO - opened course editor for Complex Analysis - actionPerformed - gui.enrolment.CourseEditHandler
+2022/04/26 | 23:32:52 - INFO - removed the selected course - connectListeners - gui.enrolment.CourseEditor$7
+2022/04/26 | 23:32:53 - INFO - went back to courses list editor - connectListeners - gui.enrolment.CourseEditor$1
+2022/04/26 | 23:32:54 - INFO - went back to courses list view - connectListeners - gui.enrolment.CoursesListEditor$1
+2022/04/26 | 23:32:56 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:32:57 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 23:32:58 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 23:32:58 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/26 | 23:33:06 - INFO - start of program - psvm - Main
+2022/04/26 | 23:33:21 - INFO - logged in as professor (username: 54321) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:33:24 - INFO - professor opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/26 | 23:33:26 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:33:27 - INFO - professor opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
+2022/04/26 | 23:33:30 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
+2022/04/26 | 23:33:33 - INFO - opened professor editor for Mohammad Safdari - actionPerformed - gui.enrolment.ProfessorEditHandler
+2022/04/26 | 23:33:36 - ERROR - cannot add a new deputy; department already has one - connectListeners - gui.enrolment.ProfessorEditor$5
+2022/04/26 | 23:33:37 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
+2022/04/26 | 23:33:39 - INFO - opened professor editor for Shahram Khazayi - actionPerformed - gui.enrolment.ProfessorEditHandler
+2022/04/26 | 23:33:41 - INFO - professor demoted to normal professor - connectListeners - gui.enrolment.ProfessorEditor$4
+2022/04/26 | 23:33:42 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
+2022/04/26 | 23:33:45 - INFO - opened professor editor for Siavash Shahshahani - actionPerformed - gui.enrolment.ProfessorEditHandler
+2022/04/26 | 23:33:48 - ERROR - cannot add a new deputy; department already has one - connectListeners - gui.enrolment.ProfessorEditor$5
+2022/04/26 | 23:33:50 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
+2022/04/26 | 23:33:54 - INFO - went back to professors list view - connectListeners - gui.enrolment.ProfessorsListEditor$1
+2022/04/26 | 23:33:55 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:33:56 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 23:34:03 - INFO - logged in as professor (username: 12345) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:34:04 - INFO - professor opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/26 | 23:34:06 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:34:08 - INFO - professor opened the profile editor in the user profile - connectListeners - gui.main.ProfessorMenu$1
+2022/04/26 | 23:34:11 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:34:11 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 23:34:21 - INFO - logged in as professor (username: 54321) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:34:25 - INFO - professor opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
+2022/04/26 | 23:34:26 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
+2022/04/26 | 23:34:30 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:34:31 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 23:34:38 - INFO - logged in as professor (username: 12345) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:34:41 - INFO - professor opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/26 | 23:34:42 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:34:45 - INFO - professor opened the recommendation letters subsection in academic requests - connectListeners - gui.main.ProfessorMenu$6
+2022/04/26 | 23:34:46 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:34:46 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 23:35:33 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 23:35:33 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/26 | 23:35:42 - INFO - start of program - psvm - Main
+2022/04/26 | 23:35:55 - INFO - logged in as professor (username: 12345) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:35:56 - INFO - professor opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/26 | 23:35:57 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:35:58 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 23:36:06 - INFO - logged in as professor (username: 43210) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:36:09 - INFO - deputy opened the minor requests subsection in academic requests - connectListeners - gui.main.ProfessorMenu$8
+2022/04/26 | 23:36:10 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:36:12 - INFO - professor opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
+2022/04/26 | 23:36:14 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:36:15 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 23:38:08 - INFO - start of program - psvm - Main
+2022/04/26 | 23:38:08 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 23:38:18 - INFO - start of program - psvm - Main
+2022/04/26 | 23:38:30 - INFO - logged in as professor (username: 54321) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:38:32 - INFO - professor opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
+2022/04/26 | 23:38:33 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
+2022/04/26 | 23:38:35 - INFO - opened professor editor for Shahram Khazayi - actionPerformed - gui.enrolment.ProfessorEditHandler
+2022/04/26 | 23:38:37 - INFO - professor demoted to normal professor - connectListeners - gui.enrolment.ProfessorEditor$4
+2022/04/26 | 23:38:38 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
+2022/04/26 | 23:38:41 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:38:42 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 23:38:51 - INFO - logged in as professor (username: 43210) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:38:52 - INFO - professor opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
+2022/04/26 | 23:38:55 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:38:57 - INFO - professor opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/26 | 23:38:58 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:38:59 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 23:39:25 - INFO - start of program - psvm - Main
+2022/04/26 | 23:39:37 - INFO - logged in as professor (username: 54321) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:39:42 - INFO - professor opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
+2022/04/26 | 23:39:44 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
+2022/04/26 | 23:39:45 - INFO - opened professor editor for Shahram Khazayi - actionPerformed - gui.enrolment.ProfessorEditHandler
+2022/04/26 | 23:39:47 - INFO - professor demoted to normal professor - connectListeners - gui.enrolment.ProfessorEditor$4
+2022/04/26 | 23:39:48 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
+2022/04/26 | 23:39:49 - INFO - opened professor editor for Mohammad Safdari - actionPerformed - gui.enrolment.ProfessorEditHandler
+2022/04/26 | 23:39:52 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
+2022/04/26 | 23:39:52 - INFO - went back to professors list view - connectListeners - gui.enrolment.ProfessorsListEditor$1
+2022/04/26 | 23:40:05 - INFO - dean opened professors list editor - connectEditor - gui.enrolment.ProfessorsListManager$1
+2022/04/26 | 23:40:06 - INFO - opened professor editor for Mohammad Safdari - actionPerformed - gui.enrolment.ProfessorEditHandler
+2022/04/26 | 23:40:10 - INFO - Mohammad Safdari's rank set to Full Professor - connectListeners - gui.enrolment.ProfessorEditor$2
+2022/04/26 | 23:40:13 - INFO - Mohammad Safdari's room set to 1000 - connectListeners - gui.enrolment.ProfessorEditor$3
+2022/04/26 | 23:40:14 - INFO - went back to professors list editor - connectListeners - gui.enrolment.ProfessorEditor$1
+2022/04/26 | 23:40:17 - INFO - went back to professors list view - connectListeners - gui.enrolment.ProfessorsListEditor$1
+2022/04/26 | 23:40:18 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:40:20 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 23:40:26 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 23:40:26 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/26 | 23:40:34 - INFO - start of program - psvm - Main
+2022/04/26 | 23:40:49 - INFO - logged in as professor (username: 20512) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:40:51 - INFO - professor opened the professors list in educational services - connectListeners - gui.main.ProfessorMenu$3
+2022/04/26 | 23:40:52 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:40:57 - INFO - professor opened the profile editor in the user profile - connectListeners - gui.main.ProfessorMenu$1
+2022/04/26 | 23:40:58 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:40:59 - INFO - professor opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/26 | 23:41:00 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:41:01 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 23:41:11 - INFO - logged in as professor (username: 43210) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:41:14 - INFO - professor opened the courses list in educational services - connectListeners - gui.main.ProfessorMenu$2
+2022/04/26 | 23:41:15 - INFO - returned to the main menu - connectTemplateListeners - gui.Template$1
+2022/04/26 | 23:41:16 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 23:41:21 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 23:41:21 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/26 | 23:53:58 - INFO - start of program - psvm - Main
+2022/04/26 | 23:54:17 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 23:54:17 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/26 | 23:54:33 - INFO - start of program - psvm - Main
+2022/04/26 | 23:54:53 - INFO - logged in as student (username: 54092) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:54:55 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 23:54:57 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 23:54:57 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/26 | 23:57:18 - INFO - start of program - psvm - Main
+2022/04/26 | 23:57:34 - INFO - has been three hours since last login. user redirect to password changing page - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:57:35 - INFO - logged in as student (username: 54092) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:57:39 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 23:57:41 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 23:57:41 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/26 | 23:58:07 - INFO - start of program - psvm - Main
+2022/04/26 | 23:58:21 - INFO - logged in as student (username: 54092) - connectListeners - gui.login.LoginMenu$2
+2022/04/26 | 23:58:22 - INFO - logged out - connectListeners - gui.main.MainMenu$1
+2022/04/26 | 23:58:23 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/26 | 23:58:24 - INFO - end of program - connectToDatabase - gui.MainFrame$1
+2022/04/27 | 00:00:18 - INFO - start of program - psvm - Main
+2022/04/27 | 00:00:37 - INFO - has been three hours since last login. user redirect to password changing page - connectListeners - gui.login.LoginMenu$2
+2022/04/27 | 00:00:52 - INFO - user changed password - connectListeners - gui.login.PasswordChanger$1
+2022/04/27 | 00:01:14 - INFO - has been three hours since last login. user redirect to password changing page - connectListeners - gui.login.LoginMenu$2
+2022/04/27 | 00:01:20 - INFO - user changed password - connectListeners - gui.login.PasswordChanger$1
+2022/04/27 | 00:01:27 - INFO - updated json databases - updateDatabase - utils.database.tools.DatabaseWriter
+2022/04/27 | 00:01:27 - INFO - end of program - connectToDatabase - gui.MainFrame$1

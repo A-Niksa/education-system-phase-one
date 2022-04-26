@@ -2,7 +2,6 @@ package gui.services.requests.management;
 
 import gui.MainFrame;
 import gui.main.MainMenu;
-import logic.menus.services.requests.RecommendationRequest;
 import logic.menus.services.requests.Request;
 import logic.models.abstractions.Department;
 import logic.models.roles.Professor;

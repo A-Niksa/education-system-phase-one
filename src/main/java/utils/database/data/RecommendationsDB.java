@@ -15,10 +15,10 @@ import java.util.LinkedList;
 public class RecommendationsDB extends ModelDB {
     private static RecommendationsDB database;
 
-    private LinkedList<RecommendationRequest> recommendationsList;
+    private LinkedList<RecommendationRequest> recommendationRequestsList;
 
     private RecommendationsDB() {
-        recommendationsList = new LinkedList<>();
+        recommendationRequestsList = new LinkedList<>();
         listType = new TypeToken<LinkedList<RecommendationRequest>>(){}.getType();
     }
 
@@ -34,7 +34,7 @@ public class RecommendationsDB extends ModelDB {
     }
 
     private void addToDatabaseByInstance(RecommendationRequest recommendationRequest) {
-        recommendationsList.add(recommendationRequest);
+        recommendationRequestsList.add(recommendationRequest);
     }
 
     public static void removeFromDatabase(RecommendationRequest recommendationRequest) {
@@ -42,9 +42,9 @@ public class RecommendationsDB extends ModelDB {
     }
 
     private void removeFromDatabaseByInstance(RecommendationRequest recommendationRequest) {
-        for (int i = 0; i < recommendationsList.size(); i++) {
-            if (recommendationRequest == recommendationsList.get(i)) {
-                recommendationsList.remove(i);
+        for (int i = 0; i < recommendationRequestsList.size(); i++) {
+            if (recommendationRequest == recommendationRequestsList.get(i)) {
+                recommendationRequestsList.remove(i);
                 return;
             }
         }
@@ -57,7 +57,7 @@ public class RecommendationsDB extends ModelDB {
     }
 
     private void setDatabaseByInstance(LinkedList<RecommendationRequest> recommendationsList) {
-        this.recommendationsList = recommendationsList;
+        this.recommendationRequestsList = recommendationsList;
     }
 
     public static Type getListType() {
@@ -69,7 +69,7 @@ public class RecommendationsDB extends ModelDB {
     }
 
     private LinkedList<RecommendationRequest> getListByInstance() {
-        return recommendationsList;
+        return recommendationRequestsList;
     }
 
     public static void addListToJson(FileWriter writer, Gson gson) {
@@ -79,7 +79,7 @@ public class RecommendationsDB extends ModelDB {
     @Override
     protected void addListToJsonByInstance(FileWriter writer, Gson gson) {
         try {
-            writer.write(gson.toJson(recommendationsList));
+            writer.write(gson.toJson(recommendationRequestsList));
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -94,7 +94,7 @@ public class RecommendationsDB extends ModelDB {
         LinkedList<RecommendationRequest> recommendationRequests = new LinkedList<>();
         Student potentialStudent;
         String targetStudentID = targetStudent.getStudentID();
-        for (RecommendationRequest request : recommendationsList) {
+        for (RecommendationRequest request : recommendationRequestsList) {
             potentialStudent = request.getRequestingStudent();
             if (potentialStudent.getStudentID().equals(targetStudentID)) {
                 recommendationRequests.add(request);
@@ -111,7 +111,7 @@ public class RecommendationsDB extends ModelDB {
         LinkedList<Request> recommendationRequestsToProfessor = new LinkedList<>();
         String targetProfessorID = targetProfessor.getTeachingID();
         String recipientProfessorID;
-        for (Request request : recommendationsList) {
+        for (Request request : recommendationRequestsList) {
             if (!request.requestHasBeenRespondedTo()) {
                 recipientProfessorID = request.getRequestRecipient().getTeachingID();
                 if (targetProfessorID.equals(recipientProfessorID)) {

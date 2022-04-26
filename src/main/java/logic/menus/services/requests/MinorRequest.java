@@ -13,10 +13,12 @@ public class MinorRequest extends Request {
         REJECTED
     }
 
-    private String originalDepartmentName;
+    private String originDepartmentName;
     private String targetDepartmentName;
-    private boolean originalDepartmentAccepted;
+    private boolean originDepartmentResponded;
+    private boolean originDepartmentAccepted;
     private boolean targetDepartmentAccepted;
+    private boolean targetDepartmentResponded;
     private Professor requestRecipientFromTargetDepartment;
     private MinorStatus status;
 
@@ -25,8 +27,10 @@ public class MinorRequest extends Request {
         this.targetDepartmentName = targetDepartmentName;
         setOriginalDepartmentName();
         requestType = RequestType.MINOR;
-        originalDepartmentAccepted = false;
+        originDepartmentResponded = false;
+        originDepartmentAccepted = false;
         targetDepartmentAccepted = false;
+        targetDepartmentResponded = false;
         status = MinorStatus.SUBMITTED;
         setRequestRecipients();
         MinorsDB.addToDatabase(this);
@@ -39,15 +43,15 @@ public class MinorRequest extends Request {
 
     private void setOriginalDepartmentName() {
         Department department = DepartmentsDB.getStudentsDepartment(requestingStudent);
-        originalDepartmentName = department.getDepartmentName();
+        originDepartmentName = department.getDepartmentName();
     }
 
     private void setRequestRecipients() {
-        setOriginalDepartmentRecipient();
+        setOriginDepartmentRecipient();
         setTargetDepartmentRecipient();
     }
 
-    private void setOriginalDepartmentRecipient() {
+    private void setOriginDepartmentRecipient() {
         Department department = DepartmentsDB.getStudentsDepartment(requestingStudent);
         requestRecipient = department.getEducationDeputy();
     }
@@ -57,20 +61,20 @@ public class MinorRequest extends Request {
         requestRecipientFromTargetDepartment = department.getEducationDeputy();
     }
 
-    public String getOriginalDepartmentName() {
-        return originalDepartmentName;
+    public String getOriginDepartmentName() {
+        return originDepartmentName;
     }
 
     public String getTargetDepartmentName() {
         return targetDepartmentName;
     }
 
-    public boolean originalDepartmentAccepted() {
-        return originalDepartmentAccepted;
+    public boolean originDepartmentAccepted() {
+        return originDepartmentAccepted;
     }
 
-    public void setOriginalDepartmentAccepted(boolean originalDepartmentAccepted) {
-        this.originalDepartmentAccepted = originalDepartmentAccepted;
+    public void setOriginDepartmentAccepted(boolean originalDepartmentAccepted) {
+        this.originDepartmentAccepted = originalDepartmentAccepted;
     }
 
     public boolean targetDepartmentAccepted() {
@@ -79,6 +83,22 @@ public class MinorRequest extends Request {
 
     public void setTargetDepartmentAccepted(boolean targetDepartmentAccepted) {
         this.targetDepartmentAccepted = targetDepartmentAccepted;
+    }
+
+    public boolean originDepartmentResponded() {
+        return originDepartmentResponded;
+    }
+
+    public void setOriginDepartmentResponded(boolean originDepartmentResponded) {
+        this.originDepartmentResponded = originDepartmentResponded;
+    }
+
+    public boolean targetDepartmentResponded() {
+        return targetDepartmentResponded;
+    }
+
+    public void setTargetDepartmentResponded(boolean targetDepartmentResponded) {
+        this.targetDepartmentResponded = targetDepartmentResponded;
     }
 
     public String getStatusString() {
@@ -99,5 +119,16 @@ public class MinorRequest extends Request {
 
     public void setStatus(MinorStatus status) {
         this.status = status;
+    }
+
+    public boolean deputyIsFromOriginDepartment(Professor deputy) {
+        String deputyID = deputy.getTeachingID();
+        Professor originDepartmentsDeputy = DepartmentsDB.getDeputyWithDepartmentName(originDepartmentName);
+        return deputyID.equals(originDepartmentsDeputy.getTeachingID());
+    }
+
+    public void updateInDatabase() {
+        MinorsDB.removeFromDatabase(this);
+        MinorsDB.addToDatabase(this);
     }
 }

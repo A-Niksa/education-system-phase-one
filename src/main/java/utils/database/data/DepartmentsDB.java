@@ -174,4 +174,17 @@ public class DepartmentsDB extends ModelDB {
         }
         return null;
     }
+
+    public static Professor getDeputyWithDepartmentName(String departmentName) {
+        return getInstance().getDeputyWithDepartmentNameByInstance(departmentName);
+    }
+
+    private Professor getDeputyWithDepartmentNameByInstance(String departmentName) {
+        for (Department department : departmentsList) {
+            if (department.getDepartmentName().equals(departmentName)) {
+                return department.getEducationDeputy();
+            }
+        }
+        return null;
+    }
 }

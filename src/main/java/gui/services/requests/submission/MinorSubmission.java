@@ -3,16 +3,13 @@ package gui.services.requests.submission;
 import gui.MainFrame;
 import gui.Template;
 import gui.main.MainMenu;
+import logic.menus.services.requests.MinorDoubleRequestChecker;
 import logic.menus.services.requests.MinorRequest;
-import logic.menus.services.requests.Request;
 import logic.models.abstractions.Department;
-import logic.models.roles.Professor;
 import logic.models.roles.Student;
 import logic.models.roles.User;
 import utils.database.data.DepartmentsDB;
 import utils.database.data.MinorsDB;
-import utils.database.data.ProfessorsDB;
-import utils.database.data.RequestsDB;
 import utils.logging.MasterLogger;
 
 import javax.swing.*;
@@ -51,12 +48,13 @@ public class MinorSubmission extends Template {
     }
 
     private void setTableData() {
+        MinorsDB.ensureStatusesAreUpToDate();
         LinkedList<MinorRequest> minorRequestsList = MinorsDB.getStudentsMinorRequests(student);
         data = new String[minorRequestsList.size()][];
         MinorRequest request;
         for (int i = 0; i < minorRequestsList.size(); i++) {
             request = minorRequestsList.get(i);
-            data[i] = new String[] {request.getOriginalDepartmentName(),
+            data[i] = new String[] {request.getOriginDepartmentName(),
                                 request.getTargetDepartmentName(),
                                 request.getStatusString()};
         }
@@ -99,6 +97,14 @@ public class MinorSubmission extends Template {
                 if (targetDepartmentName.equals(student.getDepartmentName())) {
                     MasterLogger.error("cannot request minor for the current department", getClass());
                     JOptionPane.showMessageDialog(mainFrame, "You cannot minor at your current department.");
+                    return;
+                }
+
+                if (MinorDoubleRequestChecker.requestHasBeenPreviouslyAccepted(student, targetDepartmentName)) {
+                    MasterLogger.error("cannot request minor at the department the student is currently minoring at",
+                            getClass());
+                    JOptionPane.showMessageDialog(mainFrame, "You cannot request for a minor at the department "
+                            + "you are currently minoring at.");
                     return;
                 }
 

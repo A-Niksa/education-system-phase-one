@@ -1,5 +1,6 @@
 package logic.models.roles;
 
+import utils.database.data.StudentsDB;
 import utils.resources.ImageIdentifier;
 import utils.resources.ImageManager;
 
