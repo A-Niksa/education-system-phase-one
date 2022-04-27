@@ -16,7 +16,7 @@ import java.awt.event.ActionListener;
 public class RecommendationManager extends RequestManager {
     public RecommendationManager(MainFrame mainFrame, MainMenu mainMenu, Professor operatingProfessor) {
         super(mainFrame, mainMenu, operatingProfessor);
-        columns = new String[] {"Student ID", "Student Name and Surname", "GPA"};
+        columns = new String[]{"Student ID", "Student Name and Surname", "GPA"};
         drawInteractivePanel();
     }
 
@@ -33,9 +33,9 @@ public class RecommendationManager extends RequestManager {
         for (int i = 0; i < requestsList.size(); i++) {
             request = requestsList.get(i);
             requestingStudent = request.getRequestingStudent();
-            data[i] = new String[] {requestingStudent.getStudentID(),
-                                    requestingStudent.getFirstName() + " " + requestingStudent.getLastName(),
-                                    requestingStudent.getTotalGPAString()};
+            data[i] = new String[]{requestingStudent.getStudentID(),
+                    requestingStudent.getFirstName() + " " + requestingStudent.getLastName(),
+                    requestingStudent.getTotalGPAString()};
         }
     }
 

@@ -10,6 +10,7 @@ import gui.services.ProfessorWeeklySchedule;
 import gui.services.requests.management.DroppingOutManager;
 import gui.services.requests.management.MinorManager;
 import gui.services.requests.management.RecommendationManager;
+import gui.standing.CurrentStandingMaster;
 import gui.standing.TemporaryStandingManager;
 import gui.standing.TemporaryStandingMaster;
 import logic.models.roles.Professor;
@@ -204,6 +205,14 @@ public class ProfessorMenu extends MainMenu {
                     MasterLogger.info("professor opened temporary scores in academic standing", getClass());
                     mainFrame.setCurrentPanel(new TemporaryStandingManager(mainFrame, mainMenu, professorUser));
                 }
+            }
+        });
+
+        viewStudentsAcademicStanding.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                MasterLogger.info("deputy opened current student standings in academic standing", getClass());
+                mainFrame.setCurrentPanel(new CurrentStandingMaster(mainFrame, mainMenu, professorUser));
             }
         });
 

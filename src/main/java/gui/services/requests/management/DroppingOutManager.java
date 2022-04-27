@@ -17,7 +17,7 @@ import java.awt.event.ActionListener;
 public class DroppingOutManager extends RequestManager {
     public DroppingOutManager(MainFrame mainFrame, MainMenu mainMenu, Professor operatingProfessor) {
         super(mainFrame, mainMenu, operatingProfessor);
-        columns = new String[] {"Student ID", "Student Name"};
+        columns = new String[]{"Student ID", "Student Name"};
         drawInteractivePanel();
     }
 
@@ -35,7 +35,7 @@ public class DroppingOutManager extends RequestManager {
         for (int i = 0; i < requestsList.size(); i++) {
             request = requestsList.get(i);
             requestingStudent = request.getRequestingStudent();
-            data[i] = new String[] {requestingStudent.getStudentID(),
+            data[i] = new String[]{requestingStudent.getStudentID(),
                     requestingStudent.getFirstName() + " " + requestingStudent.getLastName()};
         }
     }

@@ -4,7 +4,6 @@ import gui.MainFrame;
 import gui.Template;
 import gui.main.MainMenu;
 import logic.models.roles.Professor;
-import logic.models.roles.User;
 import utils.database.data.ProfessorsDB;
 
 import javax.swing.*;
@@ -17,7 +16,7 @@ public class ProfessorsListView extends Template {
 
     public ProfessorsListView(MainFrame mainFrame, MainMenu mainMenu) {
         super(mainFrame, mainMenu);
-        columns = new String[] {"Name and Surname", "Academic Rank", "Office Number", "Email Address"};
+        columns = new String[]{"Name and Surname", "Academic Rank", "Office Number", "Email Address"};
         setTableData();
         drawPanel();
     }
@@ -28,10 +27,10 @@ public class ProfessorsListView extends Template {
         Professor professor;
         for (int i = 0; i < professorsList.size(); i++) {
             professor = professorsList.get(i);
-            data[i] = new String[] {professor.getFirstName() + " " + professor.getLastName(),
-                                    professor.getAcademicRankString(),
-                                    professor.getOfficeNumber() + "",
-                                    professor.getEmailAddress()};
+            data[i] = new String[]{professor.getFirstName() + " " + professor.getLastName(),
+                    professor.getAcademicRankString(),
+                    professor.getOfficeNumber() + "",
+                    professor.getEmailAddress()};
         }
     }
 
@@ -49,5 +48,6 @@ public class ProfessorsListView extends Template {
     }
 
     @Override
-    protected void connectListeners() {}
+    protected void connectListeners() {
+    }
 }

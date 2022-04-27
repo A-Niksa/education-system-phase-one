@@ -83,12 +83,11 @@ public class EconomicsDeptBuilder extends DepartmentBuilder {
 
     @Override
     protected void mapStudentsToScores() {
-//        stochasticEquations.mapStudentToScore(sinaHabibi, 18.75);
-//        stochasticEquations.finalizeScore(sinaHabibi);
     }
 
     @Override
-    protected void addProfessorsToDepartment() {}
+    protected void addProfessorsToDepartment() {
+    }
 
     @Override
     protected void addStudentsToCourses() {

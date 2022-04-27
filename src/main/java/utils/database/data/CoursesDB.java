@@ -4,8 +4,6 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import gui.enrolment.FilterKey;
 import logic.models.abstractions.Course;
-import logic.models.abstractions.Department;
-import logic.models.roles.Student;
 import utils.logging.MasterLogger;
 
 import java.io.FileWriter;
@@ -20,7 +18,8 @@ public class CoursesDB extends ModelDB {
 
     private CoursesDB() {
         coursesList = new LinkedList<Course>();
-        listType = new TypeToken<LinkedList<Course>>(){}.getType();
+        listType = new TypeToken<LinkedList<Course>>() {
+        }.getType();
     }
 
     private static CoursesDB getInstance() {
@@ -141,7 +140,7 @@ public class CoursesDB extends ModelDB {
             potentialCoursesDepartmentName = course.getDepartmentName();
             potentialCourseName = course.getCourseName();
             if (potentialCoursesDepartmentName.equals(departmentName) &&
-                potentialCourseName.equals(courseName)) {
+                    potentialCourseName.equals(courseName)) {
                 return course;
             }
         }

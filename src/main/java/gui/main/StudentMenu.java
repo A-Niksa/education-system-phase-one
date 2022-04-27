@@ -55,7 +55,7 @@ public class StudentMenu extends MainMenu {
     }
 
     private void initializeComponents() {
-        Student studentUser = (Student) user; //welp
+        Student studentUser = (Student) user;
         academicStatusLabel = new JLabel("Academic Status: " + studentUser.getAcademicStatusString());
         Professor advisingProfessor = studentUser.getAdvisingProfessor();
         advisingProfessorName = new JLabel("Advising Professor: " +
@@ -173,7 +173,7 @@ public class StudentMenu extends MainMenu {
         currentAcademicStanding.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                MasterLogger.info("student opened current academic standing in academic standing", getClass());
+                MasterLogger.info("student opened current standing in academic standing", getClass());
                 mainFrame.setCurrentPanel(new CurrentStandingView(mainFrame, mainMenu, user));
             }
         });

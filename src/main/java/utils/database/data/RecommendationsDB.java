@@ -19,7 +19,8 @@ public class RecommendationsDB extends ModelDB {
 
     private RecommendationsDB() {
         recommendationRequestsList = new LinkedList<>();
-        listType = new TypeToken<LinkedList<RecommendationRequest>>(){}.getType();
+        listType = new TypeToken<LinkedList<RecommendationRequest>>() {
+        }.getType();
     }
 
     private static RecommendationsDB getInstance() {

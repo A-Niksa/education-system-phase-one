@@ -18,7 +18,6 @@ public class MasterLogger {
         return masterLogger;
     }
 
-    //welp : not overriding
     public static void log(String message, LogIdentifier logIdentifier, String methodName, String className) {
         getInstance().logByInstance(message, logIdentifier, methodName, className);
     }

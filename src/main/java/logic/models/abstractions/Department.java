@@ -1,7 +1,6 @@
 package logic.models.abstractions;
 
 import logic.models.roles.Dean;
-import logic.models.roles.EducationDeputy;
 import logic.models.roles.Professor;
 import logic.models.roles.Student;
 import utils.database.data.DepartmentsDB;
@@ -23,7 +22,7 @@ public class Department {
         listOfStudents = new LinkedList<>();
         listOfCourses = new LinkedList<>();
         addProfessor(dean);
-        DepartmentsDB.addToDatabase(this); // TODO: updating DB
+        DepartmentsDB.addToDatabase(this);
     }
 
     public void addProfessor(Professor professor) {
@@ -82,9 +81,6 @@ public class Department {
     }
 
     public void setEducationDeputy(Professor educationDeputy) {
-//        if (educationDeputy == null) {
-//            DepartmentsDB.nullifyDepartmentDeputy(this);
-//        }
         if (educationDeputy != null) {
             educationDeputy.setAdministrativeRole(Professor.AdministrativeRole.EDUCATION_DEPUTY);
             educationDeputy.updateInDatabase();

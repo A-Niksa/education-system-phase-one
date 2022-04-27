@@ -1,12 +1,9 @@
 package gui.standing;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import gui.MainFrame;
 import gui.Template;
 import gui.main.MainMenu;
 import logic.menus.standing.ScoresListManager;
-import logic.menus.standing.ScoresListMaster;
 import logic.models.abstractions.StudentStatus;
 import logic.models.roles.Professor;
 import utils.database.data.StudentsDB;
@@ -16,10 +13,11 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.lang.reflect.Type;
 import java.util.LinkedList;
 
 public class TemporaryStandingManager extends Template {
+    private static boolean savedTemporaryScores;
+
     private Professor operatingProfessor;
     private String[] coursesNames;
     private JComboBox<String> coursesBox;
@@ -35,13 +33,11 @@ public class TemporaryStandingManager extends Template {
     private LinkedList<StudentStatus> studentStatusesListClone;
     private LinkedList<JButton> addScoreButtonsList;
     private LinkedList<JButton> respondToProtestButtonsList;
-    private boolean savedTemporaryScores;
 
     public TemporaryStandingManager(MainFrame mainFrame, MainMenu mainMenu, Professor operatingProfessor) {
         super(mainFrame, mainMenu);
         this.operatingProfessor = operatingProfessor;
-        savedTemporaryScores = false;
-        columns = new String[] {"Name and Surname", "Current Score", "Student's Protest", "Your Response", "Finalized"};
+        columns = new String[]{"Name and Surname", "Current Score", "Student's Protest", "Your Response", "Finalized"};
         drawPanel();
     }
 
@@ -86,13 +82,6 @@ public class TemporaryStandingManager extends Template {
         studentStatusesListClone = (LinkedList<StudentStatus>) studentStatusesList.clone();
     }
 
-//    private void createDeepCopyOfStudentStatusesList() { // creating a deep copy so that drafting a temporary score
-//        // doesn't save it
-//        Gson gson = new Gson();
-//        Type listType = new TypeToken<LinkedList<StudentStatus>>(){}.getType();
-//        studentStatusesListClone = gson.fromJson(gson.toJson(studentStatusesList), listType);
-//    }
-
     void setTableData() {
         data = new String[studentStatusesListClone.size()][];
         StudentStatus studentStatusClone;
@@ -102,11 +91,11 @@ public class TemporaryStandingManager extends Template {
             studentStatusClone = studentStatusesListClone.get(i);
             studentID = studentStatusClone.getStudentID();
             studentNameAndSurname = StudentsDB.getStudentsNameWithID(studentID);
-            data[i] = new String[] {studentNameAndSurname,
-                                    studentStatusClone.getScoreString(),
-                                    studentStatusClone.getProtestOfStudent(),
-                                    studentStatusClone.getResponseOfProfessor(),
-                                    studentStatusClone.scoreIsFinalizedString()};
+            data[i] = new String[]{studentNameAndSurname,
+                    studentStatusClone.getScoreString(),
+                    studentStatusClone.getProtestOfStudent(),
+                    studentStatusClone.getResponseOfProfessor(),
+                    studentStatusClone.scoreIsFinalizedString()};
         }
     }
 
@@ -251,8 +240,8 @@ public class TemporaryStandingManager extends Template {
                 }
 
                 ScoresListManager.finalizeAllScores(studentStatusesList, operatingProfessor.getDepartmentName());
-                // operatingProfessor.getDepartmentName() gives us the department name of the course
-                // ^ this is a valid choice since professors teach at their own departments
+                /* operatingProfessor.getDepartmentName() gives us the department name of the course.
+                this is a valid choice since professors teach at their own departments */
                 MasterLogger.info("professor finalized scores of " + selectedCourseName, getClass());
             }
         });

@@ -4,7 +4,7 @@ import logic.models.abstractions.Department;
 import logic.models.roles.Professor;
 
 public class ProfessorConstruction {
-    public static void constructProfessor(String teachingID, String  password, String nationalID, String firstName,
+    public static void constructProfessor(String teachingID, String password, String nationalID, String firstName,
                                           String lastName, String phoneNumber, String emailAddress, int officeNumber,
                                           String academicRankString, Department department) {
         Professor.AcademicRank academicRank = getRankEnum(academicRankString);

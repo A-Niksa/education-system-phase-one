@@ -45,8 +45,8 @@ public class StudentWeeklySchedule extends Template {
     public StudentWeeklySchedule(MainFrame mainFrame, MainMenu mainMenu, User user) {
         super(mainFrame, mainMenu);
         student = (Student) user;
-        weekdays = new String[] {"Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
-        columns = new String[] {"Course Name", "Instructor's Name", "Starts From", "Ends At"};
+        weekdays = new String[]{"Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+        columns = new String[]{"Course Name", "Instructor's Name", "Starts From", "Ends At"};
         drawPanel();
     }
 
@@ -56,10 +56,10 @@ public class StudentWeeklySchedule extends Template {
         WeeklyDate courseInfo;
         for (int i = 0; i < coursesInfoOfStudent.size(); i++) {
             courseInfo = coursesInfoOfStudent.get(i);
-            data[i] = new String[] {courseInfo.getCourseName(),
-                                    courseInfo.getProfessorName(),
-                                    courseInfo.getStartTimeString(),
-                                    courseInfo.getEndTimeString()};
+            data[i] = new String[]{courseInfo.getCourseName(),
+                    courseInfo.getProfessorName(),
+                    courseInfo.getStartTimeString(),
+                    courseInfo.getEndTimeString()};
         }
         return data;
     }
@@ -120,5 +120,6 @@ public class StudentWeeklySchedule extends Template {
     }
 
     @Override
-    protected void connectListeners() {}
+    protected void connectListeners() {
+    }
 }

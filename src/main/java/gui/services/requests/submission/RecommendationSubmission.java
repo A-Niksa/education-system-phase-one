@@ -31,7 +31,7 @@ public class RecommendationSubmission extends Template {
     public RecommendationSubmission(MainFrame mainFrame, MainMenu mainMenu, User user) {
         super(mainFrame, mainMenu);
         student = (Student) user;
-        columns = new String[] {"Teaching ID", "Name and Surname", "Academic Rank", "Email Address"};
+        columns = new String[]{"Teaching ID", "Name and Surname", "Academic Rank", "Email Address"};
         setTableData();
         drawPanel();
     }
@@ -42,7 +42,7 @@ public class RecommendationSubmission extends Template {
         Professor professor;
         for (int i = 0; i < professorsList.size(); i++) {
             professor = professorsList.get(i);
-            data[i] = new String[] {professor.getTeachingID(),
+            data[i] = new String[]{professor.getTeachingID(),
                     professor.getFirstName() + " " + professor.getLastName(),
                     professor.getAcademicRankString(),
                     professor.getEmailAddress()};

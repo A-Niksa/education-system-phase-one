@@ -73,7 +73,7 @@ public class DormSubmission extends Template {
 
                 Timer timer = new Timer(3200,
                         e -> resultText.setText(randomResult));
-                timer.setRepeats(false); //welp
+                timer.setRepeats(false);
                 timer.start();
 
 

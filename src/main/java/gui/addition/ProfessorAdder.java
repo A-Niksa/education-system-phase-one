@@ -58,7 +58,7 @@ public class ProfessorAdder extends Template {
         officeNumberField = new JTextField("Office Number...");
         textFieldsList.add(officeNumberField);
 
-        academicRankNames = new String[] {"Assistant Professor", "Associate Professor", "Full Professor"};
+        academicRankNames = new String[]{"Assistant Professor", "Associate Professor", "Full Professor"};
         academicRankBox = new JComboBox<>(academicRankNames);
         comboBoxesList.add(academicRankBox);
 

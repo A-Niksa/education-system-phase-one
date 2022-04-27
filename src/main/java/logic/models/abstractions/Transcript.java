@@ -1,7 +1,5 @@
 package logic.models.abstractions;
 
-import utils.database.data.CoursesDB;
-
 import java.util.LinkedList;
 
 public class Transcript {

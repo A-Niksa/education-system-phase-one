@@ -1,8 +1,5 @@
 package utils.timing;
 
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
-
 public class WeeklyDate {
     private Weekday weekday;
     private TimeInDay startTime;

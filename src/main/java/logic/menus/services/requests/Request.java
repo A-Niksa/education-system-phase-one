@@ -2,7 +2,6 @@ package logic.menus.services.requests;
 
 import logic.models.roles.Professor;
 import logic.models.roles.Student;
-import utils.database.data.RecommendationsDB;
 import utils.database.data.RequestsDB;
 
 public class Request {

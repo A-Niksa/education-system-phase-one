@@ -10,6 +10,6 @@ public class ExamDateComparator implements Comparator<Course> {
     public int compare(Course firstCourse, Course secondCourse) {
         LocalDateTime dateOfFirstExam = firstCourse.getExamTime();
         LocalDateTime dateOfSecondExam = secondCourse.getExamTime();
-        return dateOfFirstExam.compareTo(dateOfSecondExam); //welp
+        return dateOfFirstExam.compareTo(dateOfSecondExam);
     }
 }

@@ -29,7 +29,7 @@ public class ProfessorScheduleLoader {
         LinkedList<Course> coursesOfProfessor = new LinkedList<>();
         for (Course course : coursesList) {
             if (professorTeachesCourse(targetProfessor, course)) {
-               coursesOfProfessor.add(course);
+                coursesOfProfessor.add(course);
             }
         }
         return coursesOfProfessor;

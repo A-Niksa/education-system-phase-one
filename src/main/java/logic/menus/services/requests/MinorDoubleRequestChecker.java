@@ -2,7 +2,6 @@ package logic.menus.services.requests;
 
 import logic.models.roles.Student;
 import utils.database.data.MinorsDB;
-import utils.database.data.RequestsDB;
 
 import java.util.LinkedList;
 
@@ -15,7 +14,7 @@ public class MinorDoubleRequestChecker {
             potentialStudentID = request.getRequestingStudent().getStudentID();
             if (potentialStudentID.equals(requestingStudentID)) {
                 if (request.getTargetDepartmentName().equals(targetDepartmentName) &&
-                request.requestWasSuccessful()) {
+                        request.requestWasSuccessful()) {
                     return true;
                 }
             }

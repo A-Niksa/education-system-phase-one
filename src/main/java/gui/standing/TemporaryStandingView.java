@@ -22,7 +22,7 @@ public class TemporaryStandingView extends Template {
     public TemporaryStandingView(MainFrame mainFrame, MainMenu mainMenu, User user) {
         super(mainFrame, mainMenu);
         student = (Student) user;
-        columns = new String[] {"Course Name", "Current Score", "Protest to Score", "Instructor's Response"};
+        columns = new String[]{"Course Name", "Current Score", "Protest to Score", "Instructor's Response"};
         temporaryAcademicStatuses = student.getTemporaryAcademicStatuses();
         setTableData(temporaryAcademicStatuses);
         protestButtonsList = new LinkedList<>();
@@ -35,9 +35,9 @@ public class TemporaryStandingView extends Template {
         for (int i = 0; i < statusesList.size(); i++) {
             studentStatus = statusesList.get(i);
             data[i] = new String[]{studentStatus.getCourseName(),
-                                    studentStatus.getScoreString(),
-                                    studentStatus.getProtestOfStudent(),
-                                    studentStatus.getResponseOfProfessor()};
+                    studentStatus.getScoreString(),
+                    studentStatus.getProtestOfStudent(),
+                    studentStatus.getResponseOfProfessor()};
         }
     }
 

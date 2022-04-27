@@ -190,15 +190,6 @@ public class Course {
         this.courseID = courseID;
     }
 
-//    public void removeFromTranscripts() {
-//        Transcript transcript;
-//        for (Student student : listOfStudents) {
-//            transcript = student.getTranscript();
-//            transcript.removeCourse(this);
-//            student.updateInDatabase();
-//        }
-//    }
-
     public void updateInDatabase() {
         CoursesDB.removeFromDatabase(this);
         CoursesDB.addToDatabase(this);

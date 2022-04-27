@@ -4,7 +4,6 @@ import gui.MainFrame;
 import gui.Template;
 import gui.main.MainMenu;
 import logic.menus.services.ProfessorScheduleLoader;
-import logic.menus.services.StudentScheduleLoader;
 import logic.models.roles.Professor;
 import utils.timing.Weekday;
 import utils.timing.WeeklyDate;
@@ -45,8 +44,8 @@ public class ProfessorWeeklySchedule extends Template {
     public ProfessorWeeklySchedule(MainFrame mainFrame, MainMenu mainMenu, Professor operationProfessor) {
         super(mainFrame, mainMenu);
         this.operationProfessor = operationProfessor;
-        weekdays = new String[] {"Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
-        columns = new String[] {"Course Name", "Starts From", "Ends At"};
+        weekdays = new String[]{"Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+        columns = new String[]{"Course Name", "Starts From", "Ends At"};
         drawPanel();
     }
 
@@ -57,7 +56,7 @@ public class ProfessorWeeklySchedule extends Template {
         WeeklyDate courseInfo;
         for (int i = 0; i < coursesInfoOfProfessor.size(); i++) {
             courseInfo = coursesInfoOfProfessor.get(i);
-            data[i] = new String[] {courseInfo.getCourseName(),
+            data[i] = new String[]{courseInfo.getCourseName(),
                     courseInfo.getStartTimeString(),
                     courseInfo.getEndTimeString()};
         }
@@ -120,5 +119,6 @@ public class ProfessorWeeklySchedule extends Template {
     }
 
     @Override
-    protected void connectListeners() {}
+    protected void connectListeners() {
+    }
 }

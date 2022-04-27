@@ -26,7 +26,7 @@ public class ProfessorsListEditor extends Template {
     public ProfessorsListEditor(MainFrame mainFrame, MainMenu mainMenu, Professor operatingProfessor) {
         super(mainFrame, mainMenu);
         this.operatingProfessor = operatingProfessor;
-        columns = new String[] {"Name and Surname", "Academic Rank", "Administrative Role", "Office Number", "Email Address"};
+        columns = new String[]{"Name and Surname", "Academic Rank", "Administrative Role", "Office Number", "Email Address"};
         professorsList = DepartmentListManager.getProfessorsListBarDean(operatingProfessor);
         setTableData();
         drawPanel();
@@ -37,7 +37,7 @@ public class ProfessorsListEditor extends Template {
         Professor departmentProfessor;
         for (int i = 0; i < professorsList.size(); i++) {
             departmentProfessor = professorsList.get(i);
-            data[i] = new String[] {departmentProfessor.getFirstName() + " " + departmentProfessor.getLastName(),
+            data[i] = new String[]{departmentProfessor.getFirstName() + " " + departmentProfessor.getLastName(),
                     departmentProfessor.getAcademicRankString(),
                     departmentProfessor.getAdministrativeRoleString(),
                     departmentProfessor.getOfficeNumber() + "",

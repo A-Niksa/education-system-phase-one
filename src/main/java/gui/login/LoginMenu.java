@@ -111,7 +111,7 @@ public class LoginMenu extends JPanel {
                 boolean hasBeenThreeHoursSinceLastLogin = loggedInAccount.user.hasBeenThreeHoursSinceLastLogin();
                 if (hasBeenThreeHoursSinceLastLogin) {
                     MasterLogger.info("has been three hours since last login. user redirect to password changing" +
-                                    " page", getClass());
+                            " page", getClass());
                     JOptionPane.showMessageDialog(mainFrame, "It has been three hours since your last login. Please change" +
                             " your password.");
                     mainFrame.setCurrentPanel(new PasswordChanger(mainFrame, loggedInAccount.user));

@@ -3,7 +3,6 @@ package utils.database.data;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import logic.models.roles.Professor;
-import logic.models.roles.Student;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -17,7 +16,8 @@ public class ProfessorsDB extends ModelDB {
 
     private ProfessorsDB() {
         professorsList = new LinkedList<>();
-        listType = new TypeToken<LinkedList<Professor>>(){}.getType();
+        listType = new TypeToken<LinkedList<Professor>>() {
+        }.getType();
     }
 
     private static ProfessorsDB getInstance() {
@@ -31,7 +31,7 @@ public class ProfessorsDB extends ModelDB {
         getInstance().addToDatabaseByInstance(professor);
     }
 
-    private void addToDatabaseByInstance(Professor professor){
+    private void addToDatabaseByInstance(Professor professor) {
         professorsList.add(professor);
     }
 

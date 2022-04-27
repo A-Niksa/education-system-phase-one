@@ -8,7 +8,6 @@ import logic.models.abstractions.Department;
 import logic.models.roles.Professor;
 import utils.database.data.DepartmentsDB;
 import utils.database.data.ProfessorsDB;
-import utils.database.data.StudentsDB;
 import utils.logging.MasterLogger;
 
 import javax.swing.*;
@@ -41,7 +40,7 @@ public class ProfessorEditor extends Template {
         goBackButton = new JButton("Back");
         professorName = new JLabel(professor.getFirstName() + " " + professor.getLastName(),
                 SwingConstants.CENTER);
-        newRank = new JComboBox<>(new String[] {"Assistant Professor", "Associate Professor", "Full Professor"});
+        newRank = new JComboBox<>(new String[]{"Assistant Professor", "Associate Professor", "Full Professor"});
         changeRank = new JButton("Change");
         newOfficeNumber = new JTextField("New Office Number...");
         changeOfficeNumber = new JButton("Change");
@@ -153,7 +152,6 @@ public class ProfessorEditor extends Template {
                     department.setEducationDeputy(null);
                 }
 
-//                StudentsDB.removeProfessorFromTranscripts(professor);
                 department.removeProfessor(professor);
                 ProfessorsDB.removeFromDatabase(professor);
                 MasterLogger.info("removed the selected professor", getClass());

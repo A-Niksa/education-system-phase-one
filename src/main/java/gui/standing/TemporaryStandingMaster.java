@@ -17,7 +17,7 @@ import java.awt.event.ActionListener;
 import java.util.LinkedList;
 
 public class TemporaryStandingMaster extends Template {
-    public enum CurrentMode {
+    private enum CurrentMode {
         COURSE_VIEW,
         PROFESSOR_VIEW,
         STUDENT_VIEW
@@ -74,10 +74,10 @@ public class TemporaryStandingMaster extends Template {
 
     private void setColumns() {
         if (currentMode == CurrentMode.COURSE_VIEW) {
-            columns = new String[] {"Name and Surname", "Current Score", "Student's Protest", "Instructor's Response",
+            columns = new String[]{"Name and Surname", "Current Score", "Student's Protest", "Instructor's Response",
                     "Finalized"};
         } else { // PROFESSOR_VIEW or STUDENT_VIEW by design
-            columns = new String[] {"Subject", "Name and Surname", "Current Score", "Student's Protest",
+            columns = new String[]{"Subject", "Name and Surname", "Current Score", "Student's Protest",
                     "Instructor's Response", "Finalized"};
         }
     }
@@ -112,13 +112,13 @@ public class TemporaryStandingMaster extends Template {
             studentID = studentStatus.getStudentID();
             studentNameAndSurname = StudentsDB.getStudentsNameWithID(studentID);
             if (currentMode == CurrentMode.COURSE_VIEW) {
-                data[i] = new String[] {studentNameAndSurname,
+                data[i] = new String[]{studentNameAndSurname,
                         studentStatus.getScoreString(),
                         studentStatus.getProtestOfStudent(),
                         studentStatus.getResponseOfProfessor(),
                         studentStatus.scoreIsFinalizedString()};
             } else { // PROFESSOR_VIEW or STUDENT_VIEW by design
-                data[i] = new String[] {studentStatus.getCourseName(),
+                data[i] = new String[]{studentStatus.getCourseName(),
                         studentNameAndSurname,
                         studentStatus.getScoreString(),
                         studentStatus.getProtestOfStudent(),
@@ -137,14 +137,13 @@ public class TemporaryStandingMaster extends Template {
 
     private void setStatsButton() {
         if (currentMode == CurrentMode.COURSE_VIEW) {
-            if (statsButton != null) { // resetting the statsButton if there was a previous statsButton set up (which
-                // won't be null)
+            if (statsButton != null) { /* resetting the statsButton if there was a previous statsButton set up (which
+                won't be null) */
                 remove(statsButton);
             }
 
             statsButton = new JButton("Stats");
             statsButton.setBounds(140, 622, 80, 30);
-            System.out.println(selectedCourseName);
             statsButton.addActionListener(new StatsViewHandler(mainFrame, this, selectedCourseName,
                     departmentName));
             add(statsButton);

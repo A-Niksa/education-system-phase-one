@@ -72,9 +72,9 @@ public class CourseAdder extends Template {
         numberOfCreditsField = new JTextField("Number of Credits...");
         textFieldsList.add(numberOfCreditsField);
 
-        courseLevelNames = new String[] {"Bachelors", "Graduate", "PhD"};
+        courseLevelNames = new String[]{"Bachelors", "Graduate", "PhD"};
         courseLevelBox = new JComboBox<>(courseLevelNames);
-        weekdayNames = new String[] {"Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+        weekdayNames = new String[]{"Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
         firstClassPrompt = new JLabel("First Class in Week:");
         firstClassWeekdayBox = new JComboBox<>(weekdayNames);
         firstClassStartHourField = new JTextField("Start Hour...");
@@ -91,7 +91,6 @@ public class CourseAdder extends Template {
         examDatePrompt = new JLabel("Exam Date: ");
         examDateModel = new UtilDateModel();
         properties = new Properties();
-        //welp :
         properties.put("text.today", "Today");
         properties.put("text.month", "Month");
         properties.put("text.year", "Year");

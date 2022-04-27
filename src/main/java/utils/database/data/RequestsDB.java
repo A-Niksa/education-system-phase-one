@@ -2,11 +2,8 @@ package utils.database.data;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import logic.menus.services.requests.MinorRequest;
 import logic.menus.services.requests.Request;
 import logic.models.abstractions.Department;
-import logic.models.roles.Professor;
-import logic.models.roles.Student;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -20,7 +17,8 @@ public class RequestsDB extends ModelDB {
 
     private RequestsDB() {
         requestsList = new LinkedList<>();
-        listType = new TypeToken<LinkedList<Request>>(){}.getType();
+        listType = new TypeToken<LinkedList<Request>>() {
+        }.getType();
     }
 
     private static RequestsDB getInstance() {

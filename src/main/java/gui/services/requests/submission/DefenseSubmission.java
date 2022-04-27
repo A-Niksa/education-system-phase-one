@@ -44,7 +44,6 @@ public class DefenseSubmission extends Template {
     protected void initializeComponents() {
         dateModel = new UtilDateModel();
         properties = new Properties();
-        //welp :
         properties.put("text.today", "Today");
         properties.put("text.month", "Month");
         properties.put("text.year", "Year");

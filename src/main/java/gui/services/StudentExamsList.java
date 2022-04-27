@@ -20,7 +20,7 @@ public class StudentExamsList extends Template {
     public StudentExamsList(MainFrame mainFrame, MainMenu mainMenu, User user) {
         super(mainFrame, mainMenu);
         student = (Student) user;
-        columns = new String[] {"Course Name", "Exam Date and Time"};
+        columns = new String[]{"Course Name", "Exam Date and Time"};
         setTableData();
         drawPanel();
     }
@@ -31,7 +31,7 @@ public class StudentExamsList extends Template {
         data = new String[sortedCoursesList.size()][];
         for (int i = 0; i < sortedCoursesList.size(); i++) {
             course = sortedCoursesList.get(i);
-            data[i] = new String[] {course.getCourseName(), course.getExamTimeString()};
+            data[i] = new String[]{course.getCourseName(), course.getExamTimeString()};
         }
     }
 
@@ -49,5 +49,6 @@ public class StudentExamsList extends Template {
     }
 
     @Override
-    protected void connectListeners() {}
+    protected void connectListeners() {
+    }
 }

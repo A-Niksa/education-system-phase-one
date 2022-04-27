@@ -33,7 +33,7 @@ public class ImageManager {
     public Image getImageByInstance(ImageIdentifier imageIdentifier) {
         return imageCache.getImage(imageIdentifier,
                 identifier -> Toolkit.getDefaultToolkit().getImage(getFullPath(identifier))
-                );
+        );
     }
 
     private String getFullPath(ImageIdentifier imageIdentifier) {

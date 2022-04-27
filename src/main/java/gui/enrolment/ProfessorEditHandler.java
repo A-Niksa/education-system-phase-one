@@ -26,7 +26,7 @@ public class ProfessorEditHandler implements ActionListener {
     public void actionPerformed(ActionEvent actionEvent) {
         String professorName = correspondingProfessor.getFirstName() + " " + correspondingProfessor.getLastName();
         MasterLogger.log("opened professor editor for " + professorName, LogIdentifier.INFO,
-                "actionPerformed","gui.enrolment.ProfessorEditHandler");
+                "actionPerformed", "gui.enrolment.ProfessorEditHandler");
         mainFrame.setCurrentPanel(new ProfessorEditor(mainFrame, mainMenu, dean, correspondingProfessor));
     }
 }

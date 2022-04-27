@@ -3,7 +3,6 @@ package gui.enrolment;
 import gui.MainFrame;
 import gui.Template;
 import gui.addition.CourseAdder;
-import gui.addition.ProfessorAdderOfDean;
 import gui.main.MainMenu;
 import logic.menus.enrolment.DepartmentListManager;
 import logic.models.abstractions.Course;
@@ -28,7 +27,7 @@ public class CoursesListEditor extends Template {
     public CoursesListEditor(MainFrame mainFrame, MainMenu mainMenu, Professor operatingProfessor) {
         super(mainFrame, mainMenu);
         this.operatingProfessor = operatingProfessor;
-        columns = new String[] {"Course ID", "Name", "Exam Date and Time", "Instructor", "Number of Credits",
+        columns = new String[]{"Course ID", "Name", "Exam Date and Time", "Instructor", "Number of Credits",
                 "Course Level"};
         coursesList = DepartmentListManager.getDepartmentCourses(operatingProfessor);
         setTableData();
@@ -42,7 +41,7 @@ public class CoursesListEditor extends Template {
         for (int i = 0; i < coursesList.size(); i++) {
             course = coursesList.get(i);
             teachingProfessor = course.getTeachingProfessor();
-            data[i] = new String[] {course.getCourseID(),
+            data[i] = new String[]{course.getCourseID(),
                     course.getCourseName(),
                     course.getExamTimeString(),
                     teachingProfessor.getFirstName() + " " + teachingProfessor.getLastName(),

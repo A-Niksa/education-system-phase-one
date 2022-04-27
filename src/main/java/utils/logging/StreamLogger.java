@@ -1,7 +1,6 @@
 package utils.logging;
 
 import java.io.PrintStream;
-import java.lang.reflect.Method;
 
 import static utils.timing.TimeManager.getTime;
 
@@ -21,7 +20,7 @@ public class StreamLogger implements Logger {
     @Override
     public void info(String message, Class<?> clazz) {
         printStream.println(String.format("%s - %s - %s - %s - %s", getTime(), LogIdentifier.INFO.toString(), message,
-                clazz.getEnclosingMethod().getName(), clazz.getName())); //welp: classname with $?
+                clazz.getEnclosingMethod().getName(), clazz.getName()));
     }
 
     @Override
@@ -31,7 +30,7 @@ public class StreamLogger implements Logger {
     }
 
     @Override
-    public void fatal(String message, Class<?> clazz) { //welp : raw use <?>
+    public void fatal(String message, Class<?> clazz) {
         printStream.println(String.format("%s - %s - %s - %s - %s", getTime(), LogIdentifier.FATAL.toString(), message,
                 clazz.getEnclosingMethod().getName(), clazz.getName()));
     }

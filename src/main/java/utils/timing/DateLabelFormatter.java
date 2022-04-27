@@ -6,7 +6,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class DateLabelFormatter extends JFormattedTextField.AbstractFormatter {
-    //welp
     private String formatText = "yyyy/MM/dd";
     private SimpleDateFormat formatter;
 

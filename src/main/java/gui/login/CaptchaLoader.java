@@ -10,7 +10,8 @@ public class CaptchaLoader {
     private static CaptchaLoader captchaLoader = new CaptchaLoader();
     private static CaptchaManager captchaManager = CaptchaManager.getInstance();
 
-    private CaptchaLoader() {}
+    private CaptchaLoader() {
+    }
 
     public static CaptchaLoader getInstance() {
         return captchaLoader;

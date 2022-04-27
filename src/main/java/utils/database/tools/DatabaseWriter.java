@@ -5,7 +5,6 @@ import logic.menus.services.requests.RecommendationRequest;
 import logic.menus.services.requests.Request;
 import logic.models.abstractions.Course;
 import logic.models.abstractions.Department;
-import logic.models.abstractions.Transcript;
 import logic.models.abstractions.University;
 import logic.models.roles.Professor;
 import logic.models.roles.Student;

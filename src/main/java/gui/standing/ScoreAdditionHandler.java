@@ -51,7 +51,9 @@ public class ScoreAdditionHandler implements ActionListener {
             return;
         }
 
-        studentStatusClone.setScore(score);
+        Double roundedScore = Math.round(4 * score) / 4.0; // '/ 4.0' instead of '/ 4' since Math.round() returns long
+
+        studentStatusClone.setScore(roundedScore);
         studentStatusClone.setHasBeenScored(true);
 
         MasterLogger.log("professor drafted a temporary score for the selected student", LogIdentifier.INFO,

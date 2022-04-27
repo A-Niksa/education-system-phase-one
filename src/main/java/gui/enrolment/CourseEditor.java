@@ -57,7 +57,7 @@ public class CourseEditor extends Template {
         changeInstructor = new JButton("Change");
         newNumberOfCredits = new JTextField("Changed Number of Credits...");
         changeNumberOfCredits = new JButton("Change");
-        newCourseLevel = new JComboBox<>(new String[] {"Bachelors", "Graduate", "PhD"});
+        newCourseLevel = new JComboBox<>(new String[]{"Bachelors", "Graduate", "PhD"});
         changeCourseLevel = new JButton("Change");
 
         removeCourse = new JButton("Remove Course");

@@ -6,7 +6,6 @@ import logic.models.abstractions.StudentStatus;
 import logic.models.abstractions.Transcript;
 import utils.database.data.CoursesDB;
 import utils.database.data.DepartmentsDB;
-import utils.database.data.RecommendationsDB;
 import utils.database.data.StudentsDB;
 import utils.logging.LogIdentifier;
 import utils.logging.MasterLogger;
@@ -70,7 +69,7 @@ public class Student extends User {
         if (GPA == -1) {
             return "N/A";
         }
-        return String.valueOf(GPA);
+        return String.format("%.2f", GPA);
     }
 
     public double getTotalGPA() {
@@ -192,9 +191,9 @@ public class Student extends User {
     public void setTranscript(Transcript transcript) {
         this.transcript = transcript;
     }
-    
+
     public String getDefenseTimeString() {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd - hh:mm"); //welp : reversing yyyy/MM/dd
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd - hh:mm");
         return formatter.format(defenseTime);
     }
 

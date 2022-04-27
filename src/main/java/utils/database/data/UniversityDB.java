@@ -16,7 +16,8 @@ public class UniversityDB extends ModelDB {
 
     private UniversityDB() {
         universityList = new LinkedList<>();
-        listType = new TypeToken<LinkedList<University>>(){}.getType();
+        listType = new TypeToken<LinkedList<University>>() {
+        }.getType();
     }
 
     private static UniversityDB getInstance() {

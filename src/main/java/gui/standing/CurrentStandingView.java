@@ -26,7 +26,7 @@ public class CurrentStandingView extends Template {
         super(mainFrame, mainMenu);
         student = (Student) user;
         transcript = student.getTranscript();
-        columns = new String[] {"Course Name", "Score"};
+        columns = new String[]{"Course Name", "Score"};
         setTableData();
         drawPanel();
     }
@@ -37,8 +37,8 @@ public class CurrentStandingView extends Template {
         Course course;
         for (int i = 0; i < passedCoursesIDsList.size(); i++) {
             course = CoursesDB.getCourseWithID(passedCoursesIDsList.get(i));
-            data[i] = new String[] {course.getCourseName(),
-                                    course.getStudentsScoreString(student)};
+            data[i] = new String[]{course.getCourseName(),
+                    course.getStudentsScoreString(student)};
         }
     }
 
@@ -64,6 +64,5 @@ public class CurrentStandingView extends Template {
 
     @Override
     protected void connectListeners() {
-
     }
 }

@@ -4,7 +4,6 @@ import gui.MainFrame;
 import gui.Template;
 import gui.main.MainMenu;
 import logic.menus.services.requests.Request;
-import logic.models.abstractions.Course;
 import logic.models.roles.Professor;
 import logic.models.roles.Student;
 

@@ -87,9 +87,6 @@ public class PhysicsDeptBuilder extends DepartmentBuilder {
 
     @Override
     protected void mapStudentsToScores() {
-//        experimentalAstrophysics.mapStudentToScore(sabaSadeghi, 17.0);
-//        computationalPhysics.mapStudentToScore(sabaSadeghi, 11.0);
-//        computationalPhysics.finalizeScore(sabaSadeghi);
     }
 
     @Override

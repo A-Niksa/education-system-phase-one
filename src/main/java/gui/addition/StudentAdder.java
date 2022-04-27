@@ -63,10 +63,10 @@ public class StudentAdder extends Template {
         yearOfEntryField = new JTextField("Year of Entry...");
         textFieldsList.add(yearOfEntryField);
 
-        academicStatusNames = new String[] {"Currently Studying", "Graduated", "Dropped Out"};
+        academicStatusNames = new String[]{"Currently Studying", "Graduated", "Dropped Out"};
         academicStatusBox = new JComboBox<>(academicStatusNames);
         comboBoxesList.add(academicStatusBox);
-        soughtDegreeNames = new String[] {"Bachelors", "Graduate", "PhD"};
+        soughtDegreeNames = new String[]{"Bachelors", "Graduate", "PhD"};
         soughtDegreeBox = new JComboBox<>(soughtDegreeNames);
         comboBoxesList.add(soughtDegreeBox);
         professorNames = DepartmentListManager.getProfessorsNames(operatingProfessor); // for the professor's department

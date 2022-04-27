@@ -19,7 +19,8 @@ public class DepartmentsDB extends ModelDB {
 
     private DepartmentsDB() {
         departmentsList = new LinkedList<Department>();
-        listType = new TypeToken<LinkedList<Department>>(){}.getType();
+        listType = new TypeToken<LinkedList<Department>>() {
+        }.getType();
     }
 
     private static DepartmentsDB getInstance() {
@@ -37,16 +38,6 @@ public class DepartmentsDB extends ModelDB {
         departmentsList.add(department);
     }
 
-//    public static void removeCourseFromDatabase(Course course) {
-//        getInstance().removeCourseFromDatabaseByInstance(course);
-//    }
-//
-//    private void removeCourseFromDatabaseByInstance(Course course) {
-//        for (Department department : departmentsList) {
-//
-//        }
-//    }
-
     public static void removeFromDatabase(Department department) {
         getInstance().removeFromDatabaseByInstance(department);
     }
@@ -59,19 +50,6 @@ public class DepartmentsDB extends ModelDB {
             }
         }
     }
-
-//    public static void nullifyDepartmentDeputy(Department targetDepartment) {
-//        getInstance().nullifyDepartmentDeputyByInstance(department);
-//    }
-//
-//    private void nullifyDepartmentDeputyByInstance(Department targetDepartment) {
-//        String targetDepartmentName = targetDepartment.getDepartmentName();
-//        for (Department department : departmentsList) {
-//            if (department.getDepartmentName().equals(targetDepartmentName)) {
-//                department.setEducationDeputy(null);
-//            }
-//        }
-//    }
 
     public static void setDatabase(LinkedList<Department> departmentsList) {
         if (departmentsList != null) {

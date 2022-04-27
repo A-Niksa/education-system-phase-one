@@ -12,13 +12,12 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Arrays;
 import java.util.LinkedList;
 
 public class CoursesListView extends Template {
     private JTable coursesTable;
     private JScrollPane scrollPane;
-    private String[] columns; //welp : should we see list of students, too?
+    private String[] columns;
     private String[][] data;
     private JTextField courseIDFilterField;
     private JButton filterOnCourseID;
@@ -30,7 +29,7 @@ public class CoursesListView extends Template {
 
     public CoursesListView(MainFrame mainFrame, MainMenu mainMenu) {
         super(mainFrame, mainMenu);
-        columns = new String[] {"Course ID", "Name", "Department", "Exam Date and Time", "Instructor",
+        columns = new String[]{"Course ID", "Name", "Department", "Exam Date and Time", "Instructor",
                 "Number of Credits", "Course Level"};
         setTableData(CoursesDB.getList());
         drawPanel();
@@ -43,7 +42,7 @@ public class CoursesListView extends Template {
         for (int i = 0; i < coursesList.size(); i++) {
             course = coursesList.get(i);
             teachingProfessor = course.getTeachingProfessor();
-            data[i] = new String[] {course.getCourseID(),
+            data[i] = new String[]{course.getCourseID(),
                     course.getCourseName(),
                     course.getDepartmentName(),
                     course.getExamTimeString(),
@@ -60,7 +59,7 @@ public class CoursesListView extends Template {
         filterOnCourseID = new JButton("Filter");
         numberOfCreditsFilterField = new JTextField("Number of Credits...");
         filterOnNumberOfCredits = new JButton("Filter");
-        courseLevelFilterCombo = new JComboBox<>(new String[] {"Bachelors", "Graduate", "PhD"});
+        courseLevelFilterCombo = new JComboBox<>(new String[]{"Bachelors", "Graduate", "PhD"});
         filterOnCourseLevel = new JButton("Filter");
         resetButton = new JButton("Reset");
     }

@@ -61,7 +61,8 @@ public class ChemistryDeptBuilder extends DepartmentBuilder {
     }
 
     @Override
-    protected void buildStudents() {}
+    protected void buildStudents() {
+    }
 
     @Override
     protected void setDean() {
@@ -76,16 +77,20 @@ public class ChemistryDeptBuilder extends DepartmentBuilder {
     }
 
     @Override
-    protected void mapStudentsToScores() {}
+    protected void mapStudentsToScores() {
+    }
 
     @Override
-    protected void addProfessorsToDepartment() {}
+    protected void addProfessorsToDepartment() {
+    }
 
     @Override
-    protected void addStudentsToCourses() {}
+    protected void addStudentsToCourses() {
+    }
 
     @Override
-    protected void addStudentsToDepartment() {}
+    protected void addStudentsToDepartment() {
+    }
 
     @Override
     protected void addCoursesToDepartment() {

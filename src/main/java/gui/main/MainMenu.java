@@ -3,15 +3,12 @@ package gui.main;
 import gui.MainFrame;
 import gui.login.LoginMenu;
 import logic.models.roles.User;
-import utils.logging.LogIdentifier;
 import utils.logging.MasterLogger;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import static utils.timing.TimeManager.getTime;
 
 public class MainMenu extends JPanel {
     protected MainFrame mainFrame;

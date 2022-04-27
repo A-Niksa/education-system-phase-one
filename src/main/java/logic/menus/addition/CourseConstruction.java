@@ -15,11 +15,11 @@ import java.util.LinkedList;
 
 public class CourseConstruction {
     public static void constructCourse(String courseName, String courseID, String instructorsName, int numberOfCredits,
-                                  String courseLevelString, String firstClassWeekdayString, int firstClassStartHour,
-                                  int firstClassStartMinute, int firstClassEndHour, int firstClassEndMinute,
-                                   String secondClassWeekdayString, int secondClassStartHour, int secondClassStartMinute,
-                                   int secondClassEndHour, int secondClassEndMinute, Date selectedExamDate, int examHour,
-                                   int examMinute, Department department) {
+                                       String courseLevelString, String firstClassWeekdayString, int firstClassStartHour,
+                                       int firstClassStartMinute, int firstClassEndHour, int firstClassEndMinute,
+                                       String secondClassWeekdayString, int secondClassStartHour, int secondClassStartMinute,
+                                       int secondClassEndHour, int secondClassEndMinute, Date selectedExamDate, int examHour,
+                                       int examMinute, Department department) {
         LocalDateTime examTime = convertToLocalDateTime(selectedExamDate, examHour, examMinute);
         Course.CourseLevel courseLevel = getLevelEnum(courseLevelString);
         Professor teachingProfessor = ProfessorsDB.getProfessorWithName(instructorsName);

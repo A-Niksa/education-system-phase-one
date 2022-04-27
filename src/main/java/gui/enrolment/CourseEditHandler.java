@@ -28,7 +28,7 @@ public class CourseEditHandler implements ActionListener {
     public void actionPerformed(ActionEvent actionEvent) {
         String courseName = correspondingCourse.getCourseName();
         MasterLogger.log("opened course editor for " + courseName, LogIdentifier.INFO,
-                "actionPerformed","gui.enrolment.CourseEditHandler");
+                "actionPerformed", "gui.enrolment.CourseEditHandler");
         mainFrame.setCurrentPanel(new CourseEditor(mainFrame, mainMenu, educationDeputy, correspondingCourse));
     }
 }

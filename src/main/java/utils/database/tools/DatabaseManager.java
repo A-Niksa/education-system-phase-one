@@ -4,10 +4,8 @@ import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.stream.JsonReader;
-import utils.database.data.ModelDB;
 
 import java.io.*;
-import java.util.LinkedList;
 
 public class DatabaseManager {
     protected GsonBuilder builder;

@@ -19,7 +19,8 @@ public class MinorsDB extends ModelDB {
 
     private MinorsDB() {
         minorRequestsList = new LinkedList<>();
-        listType = new TypeToken<LinkedList<MinorRequest>>(){}.getType();
+        listType = new TypeToken<LinkedList<MinorRequest>>() {
+        }.getType();
     }
 
     private static MinorsDB getInstance() {

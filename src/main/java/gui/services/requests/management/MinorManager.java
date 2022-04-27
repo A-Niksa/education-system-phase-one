@@ -15,7 +15,7 @@ import java.awt.event.ActionListener;
 public class MinorManager extends RequestManager {
     public MinorManager(MainFrame mainFrame, MainMenu mainMenu, Professor operatingProfessor) {
         super(mainFrame, mainMenu, operatingProfessor);
-        columns = new String[] {"Student ID", "Name and Surname", "GPA", "Origin Department",
+        columns = new String[]{"Student ID", "Name and Surname", "GPA", "Origin Department",
                 "Target Department"};
         drawInteractivePanel();
     }
@@ -34,7 +34,7 @@ public class MinorManager extends RequestManager {
         for (int i = 0; i < requestsList.size(); i++) {
             request = (MinorRequest) requestsList.get(i);
             requestingStudent = request.getRequestingStudent();
-            data[i] = new String[] {requestingStudent.getStudentID(),
+            data[i] = new String[]{requestingStudent.getStudentID(),
                     requestingStudent.getFirstName() + " " + requestingStudent.getLastName(),
                     requestingStudent.getTotalGPAString(),
                     request.getOriginDepartmentName(),

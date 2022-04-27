@@ -3,7 +3,6 @@ package gui.standing;
 import gui.MainFrame;
 import logic.menus.standing.CourseStatsMaster;
 import logic.models.abstractions.Course;
-import logic.models.abstractions.StudentStatus;
 import utils.database.data.CoursesDB;
 import utils.logging.LogIdentifier;
 import utils.logging.MasterLogger;

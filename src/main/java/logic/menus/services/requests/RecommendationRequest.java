@@ -2,7 +2,6 @@ package logic.menus.services.requests;
 
 import logic.models.roles.Professor;
 import logic.models.roles.Student;
-import utils.database.data.CoursesDB;
 import utils.database.data.RecommendationsDB;
 
 public class RecommendationRequest extends Request {
@@ -13,7 +12,7 @@ public class RecommendationRequest extends Request {
         RecommendationsDB.addToDatabase(this);
     }
 
-    public String getRecommendationText() { //welp
+    public String getRecommendationText() {
         String professorName = requestRecipient.getFirstName() + " " + requestRecipient.getLastName();
         String studentName = requestingStudent.getFirstName() + " " + requestingStudent.getLastName();
 

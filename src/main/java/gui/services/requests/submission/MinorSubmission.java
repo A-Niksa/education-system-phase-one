@@ -31,7 +31,7 @@ public class MinorSubmission extends Template {
     public MinorSubmission(MainFrame mainFrame, MainMenu mainMenu, User user) {
         super(mainFrame, mainMenu);
         student = (Student) user;
-        columns = new String[] {"Origin Department", "Target Department", "Status"};
+        columns = new String[]{"Origin Department", "Target Department", "Status"};
         setTableData();
         setDepartmentNames();
         drawPanel();
@@ -54,9 +54,9 @@ public class MinorSubmission extends Template {
         MinorRequest request;
         for (int i = 0; i < minorRequestsList.size(); i++) {
             request = minorRequestsList.get(i);
-            data[i] = new String[] {request.getOriginDepartmentName(),
-                                request.getTargetDepartmentName(),
-                                request.getStatusString()};
+            data[i] = new String[]{request.getOriginDepartmentName(),
+                    request.getTargetDepartmentName(),
+                    request.getStatusString()};
         }
     }
 
