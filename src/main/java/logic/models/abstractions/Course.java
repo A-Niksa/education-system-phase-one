@@ -46,10 +46,23 @@ public class Course {
     }
 
     public void mapStudentToScore(Student student, Double score) {
+        removeDuplicateStudentScore(student);
         studentScores.add(new StudentStatus(student.getStudentID(), courseName, score));
         student.getTranscript().addCourse(this); // adding the course to the student's passed courses
         updateInDatabase();
         // here, we refer to passed courses as the ones that the student has taken, not the ones that he/she has necessarily passed
+    }
+
+    private void removeDuplicateStudentScore(Student student) {
+        String targetStudentID = student.getStudentID();
+        StudentStatus studentScore;
+        for (int i = 0; i < studentScores.size(); i++) {
+            studentScore = studentScores.get(i);
+            if (studentScore.getStudentID().equals(targetStudentID)) {
+                studentScores.remove(i);
+                return;
+            }
+        }
     }
 
     public StudentStatus getStudentsStatus(Student targetStudent) {
@@ -82,7 +95,7 @@ public class Course {
         for (StudentStatus studentStatus : studentScores) {
             studentID = studentStatus.getStudentID();
             if (studentID.equals(targetStudent.getStudentID())) {
-                studentStatus.setScoreAsFinalized();
+                studentStatus.setScoreIsFinalized(true);
                 updateInDatabase();
                 return;
             }

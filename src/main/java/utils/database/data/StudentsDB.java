@@ -103,6 +103,21 @@ public class StudentsDB extends ModelDB {
         return null;
     }
 
+//    public static Student getStudentWithName(String targetStudentName) {
+//        return getInstance().getStudentWithNameByInstance(targetStudentName);
+//    }
+//
+//    private Student getStudentWithNameByInstance(String targetStudentName) {
+//        String potentialStudentName;
+//        for (Student student : studentsList) {
+//            potentialStudentName = student.getFirstName() + " " + student.getLastName();
+//            if (potentialStudentName.equals(targetStudentName)) {
+//                return student;
+//            }
+//        }
+//        return null;
+//    }
+
     public static void removeCourseFromTranscripts(Course targetCourse) {
         getInstance().removeCourseFromTranscriptsByInstance(targetCourse);
     }

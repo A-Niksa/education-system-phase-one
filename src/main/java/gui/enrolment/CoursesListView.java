@@ -78,16 +78,19 @@ public class CoursesListView extends Template {
         filterOnCourseID.setBounds(currentX + 160, 50, 70, 40);
         add(filterOnCourseID);
         currentX += 250;
+
         numberOfCreditsFilterField.setBounds(currentX, 50, 150, 40);
         add(numberOfCreditsFilterField);
         filterOnNumberOfCredits.setBounds(currentX + 160, 50, 70, 40);
         add(filterOnNumberOfCredits);
         currentX += 250;
+
         courseLevelFilterCombo.setBounds(currentX, 50, 150, 40);
         add(courseLevelFilterCombo);
         filterOnCourseLevel.setBounds(currentX + 160, 50, 70, 40);
         add(filterOnCourseLevel);
         currentX += 280;
+
         resetButton.setBounds(currentX, 50, 70, 40);
         add(resetButton);
     }

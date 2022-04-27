@@ -1,9 +1,12 @@
 package gui.standing;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import gui.MainFrame;
 import gui.Template;
 import gui.main.MainMenu;
 import logic.menus.standing.ScoresListManager;
+import logic.menus.standing.ScoresListMaster;
 import logic.models.abstractions.StudentStatus;
 import logic.models.roles.Professor;
 import utils.database.data.StudentsDB;
@@ -13,6 +16,7 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.lang.reflect.Type;
 import java.util.LinkedList;
 
 public class TemporaryStandingManager extends Template {
@@ -31,10 +35,12 @@ public class TemporaryStandingManager extends Template {
     private LinkedList<StudentStatus> studentStatusesListClone;
     private LinkedList<JButton> addScoreButtonsList;
     private LinkedList<JButton> respondToProtestButtonsList;
+    private boolean savedTemporaryScores;
 
     public TemporaryStandingManager(MainFrame mainFrame, MainMenu mainMenu, Professor operatingProfessor) {
         super(mainFrame, mainMenu);
         this.operatingProfessor = operatingProfessor;
+        savedTemporaryScores = false;
         columns = new String[] {"Name and Surname", "Current Score", "Student's Protest", "Your Response", "Finalized"};
         drawPanel();
     }
@@ -80,20 +86,27 @@ public class TemporaryStandingManager extends Template {
         studentStatusesListClone = (LinkedList<StudentStatus>) studentStatusesList.clone();
     }
 
+//    private void createDeepCopyOfStudentStatusesList() { // creating a deep copy so that drafting a temporary score
+//        // doesn't save it
+//        Gson gson = new Gson();
+//        Type listType = new TypeToken<LinkedList<StudentStatus>>(){}.getType();
+//        studentStatusesListClone = gson.fromJson(gson.toJson(studentStatusesList), listType);
+//    }
+
     void setTableData() {
-        data = new String[studentStatusesList.size()][];
-        StudentStatus studentStatus;
+        data = new String[studentStatusesListClone.size()][];
+        StudentStatus studentStatusClone;
         String studentID;
         String studentNameAndSurname;
-        for (int i = 0; i < studentStatusesList.size(); i++) {
-            studentStatus = studentStatusesList.get(i);
-            studentID = studentStatus.getStudentID();
+        for (int i = 0; i < studentStatusesListClone.size(); i++) {
+            studentStatusClone = studentStatusesListClone.get(i);
+            studentID = studentStatusClone.getStudentID();
             studentNameAndSurname = StudentsDB.getStudentsNameWithID(studentID);
             data[i] = new String[] {studentNameAndSurname,
-                                    studentStatus.getScoreString(),
-                                    studentStatus.getProtestOfStudent(),
-                                    studentStatus.getResponseOfProfessor(),
-                                    studentStatus.scoreIsFinalizedString()};
+                                    studentStatusClone.getScoreString(),
+                                    studentStatusClone.getProtestOfStudent(),
+                                    studentStatusClone.getResponseOfProfessor(),
+                                    studentStatusClone.scoreIsFinalizedString()};
         }
     }
 
@@ -208,6 +221,7 @@ public class TemporaryStandingManager extends Template {
                 }
 
                 ScoresListManager.mapAllStudentsToScores(studentStatusesListClone);
+                savedTemporaryScores = true;
                 MasterLogger.info("professor saved temporary scores of " + selectedCourseName, getClass());
             }
         });
@@ -222,10 +236,17 @@ public class TemporaryStandingManager extends Template {
                 }
 
                 if (!ScoresListManager.allStudentsHaveBeenGivenScores(studentStatusesList)) {
+                    MasterLogger.error("cannot finalize score; all students should have scores",
+                            getClass());
+                    JOptionPane.showMessageDialog(mainFrame, "All students should have scores.");
+                    return;
+                }
+
+                if (!savedTemporaryScores) {
                     MasterLogger.error("cannot finalize score; scores have to be temporarily saved at first",
                             getClass());
-                    JOptionPane.showMessageDialog(mainFrame, "You have to assign temporary scores to all students" +
-                            " of this course before commencing the finalization process.");
+                    JOptionPane.showMessageDialog(mainFrame, "You have to save students' temporary scores" +
+                            " before commencing the finalization process.");
                     return;
                 }
 

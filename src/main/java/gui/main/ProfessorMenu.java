@@ -11,6 +11,7 @@ import gui.services.requests.management.DroppingOutManager;
 import gui.services.requests.management.MinorManager;
 import gui.services.requests.management.RecommendationManager;
 import gui.standing.TemporaryStandingManager;
+import gui.standing.TemporaryStandingMaster;
 import logic.models.roles.Professor;
 import logic.models.roles.User;
 import utils.logging.MasterLogger;
@@ -198,6 +199,7 @@ public class ProfessorMenu extends MainMenu {
             public void actionPerformed(ActionEvent actionEvent) {
                 if (role == Professor.AdministrativeRole.EDUCATION_DEPUTY) {
                     MasterLogger.info("deputy opened temporary scores in academic standing", getClass());
+                    mainFrame.setCurrentPanel(new TemporaryStandingMaster(mainFrame, mainMenu, professorUser));
                 } else { // NORMAL or DEAN by design
                     MasterLogger.info("professor opened temporary scores in academic standing", getClass());
                     mainFrame.setCurrentPanel(new TemporaryStandingManager(mainFrame, mainMenu, professorUser));

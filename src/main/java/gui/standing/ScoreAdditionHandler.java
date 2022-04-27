@@ -54,7 +54,7 @@ public class ScoreAdditionHandler implements ActionListener {
         studentStatusClone.setScore(score);
         studentStatusClone.setHasBeenScored(true);
 
-        MasterLogger.log("drafted a temporary score for the selected student", LogIdentifier.INFO,
+        MasterLogger.log("professor drafted a temporary score for the selected student", LogIdentifier.INFO,
                 "actionPerformed", "gui.standing.ScoreAdditionHandler");
         updateTable();
     }

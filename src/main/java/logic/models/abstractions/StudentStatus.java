@@ -36,8 +36,8 @@ public class StudentStatus {
         this.hasBeenScored = hasBeenScored;
     }
 
-    public void setScoreAsFinalized() {
-        scoreIsFinalized = true;
+    public void setScoreIsFinalized(boolean scoreIsFinalized) {
+        this.scoreIsFinalized = scoreIsFinalized;
     }
 
     public String getScoreString() {
