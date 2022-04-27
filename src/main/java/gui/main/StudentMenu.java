@@ -7,8 +7,8 @@ import gui.profile.StudentProfile;
 import gui.services.StudentExamsList;
 import gui.services.StudentWeeklySchedule;
 import gui.services.requests.submission.*;
-import gui.standing.CurrentStanding;
-import gui.standing.TemporaryStanding;
+import gui.standing.CurrentStandingView;
+import gui.standing.TemporaryStandingView;
 import logic.models.roles.Professor;
 import logic.models.roles.Student;
 import logic.models.roles.User;
@@ -166,7 +166,7 @@ public class StudentMenu extends MainMenu {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 MasterLogger.info("student opened temporary scores in academic standing", getClass());
-                mainFrame.setCurrentPanel(new TemporaryStanding(mainFrame, mainMenu, user));
+                mainFrame.setCurrentPanel(new TemporaryStandingView(mainFrame, mainMenu, user));
             }
         });
 
@@ -174,7 +174,7 @@ public class StudentMenu extends MainMenu {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 MasterLogger.info("student opened current academic standing in academic standing", getClass());
-                mainFrame.setCurrentPanel(new CurrentStanding(mainFrame, mainMenu, user));
+                mainFrame.setCurrentPanel(new CurrentStandingView(mainFrame, mainMenu, user));
             }
         });
 

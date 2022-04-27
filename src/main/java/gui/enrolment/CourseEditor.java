@@ -9,6 +9,7 @@ import logic.models.roles.Professor;
 import utils.database.data.CoursesDB;
 import utils.database.data.DepartmentsDB;
 import utils.database.data.ProfessorsDB;
+import utils.database.data.StudentsDB;
 import utils.logging.MasterLogger;
 
 import javax.swing.*;
@@ -186,6 +187,7 @@ public class CourseEditor extends Template {
             public void actionPerformed(ActionEvent actionEvent) {
                 Department department = DepartmentsDB.getProfessorsDepartment(deputy);
 
+                StudentsDB.removeCourseFromTranscripts(course);
                 department.removeCourse(course);
                 CoursesDB.removeFromDatabase(course);
                 MasterLogger.info("removed the selected course", getClass());

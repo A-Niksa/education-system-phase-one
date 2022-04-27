@@ -2,6 +2,8 @@ package utils.database.data;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import logic.models.abstractions.Course;
+import logic.models.abstractions.Transcript;
 import logic.models.roles.Student;
 
 import java.io.FileWriter;
@@ -67,6 +69,50 @@ public class StudentsDB extends ModelDB {
 
     private LinkedList<Student> getListByInstance() {
         return studentsList;
+    }
+
+    public static String getStudentsNameWithID(String targetStudentID) {
+        return getInstance().getStudentsNameWithIDByInstance(targetStudentID);
+    }
+
+    private String getStudentsNameWithIDByInstance(String targetStudentID) {
+        String studentID;
+        String targetStudentName;
+        for (Student student : studentsList) {
+            studentID = student.getStudentID();
+            if (studentID.equals(targetStudentID)) {
+                targetStudentName = student.getFirstName() + " " + student.getLastName();
+                return targetStudentName;
+            }
+        }
+        return "";
+    }
+
+    public static Student getStudentWithID(String targetStudentID) {
+        return getInstance().getStudentWithIDByInstance(targetStudentID);
+    }
+
+    private Student getStudentWithIDByInstance(String targetStudentID) {
+        String potentialStudentID;
+        for (Student student : studentsList) {
+            potentialStudentID = student.getStudentID();
+            if (potentialStudentID.equals(targetStudentID)) {
+                return student;
+            }
+        }
+        return null;
+    }
+
+    public static void removeCourseFromTranscripts(Course targetCourse) {
+        getInstance().removeCourseFromTranscriptsByInstance(targetCourse);
+    }
+
+    private void removeCourseFromTranscriptsByInstance(Course targetCourse) {
+        Transcript transcript;
+        for (Student student : studentsList) {
+            transcript = student.getTranscript();
+            transcript.removeCourse(targetCourse);
+        }
     }
 
     public static void addListToJson(FileWriter writer, Gson gson) {

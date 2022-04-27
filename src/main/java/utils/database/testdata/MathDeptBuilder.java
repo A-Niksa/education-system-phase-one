@@ -111,17 +111,17 @@ public class MathDeptBuilder extends DepartmentBuilder {
 
     @Override
     protected void mapStudentsToScores() {
-        realAnalysis.mapStudentToScore(kamranKhoshkar, 19.5);
-        realAnalysis.mapStudentToScore(alirezaVafa, 17.0);
-        realAnalysis.mapStudentToScore(dibaDanaei, 20.0);
-        realAnalysis.finalizeScore(kamranKhoshkar);
-        realAnalysis.finalizeScore(alirezaVafa);
-
-        complexAnalysis.mapStudentToScore(kamranKhoshkar, 12.0);
-        complexAnalysis.mapStudentToScore(dibaDanaei, 17.0);
-        complexAnalysis.mapStudentToScore(aliBeyrami, 19.0);
-        complexAnalysis.finalizeScore(dibaDanaei);
-        complexAnalysis.finalizeScore(aliBeyrami);
+//        realAnalysis.mapStudentToScore(kamranKhoshkar, 19.5);
+//        realAnalysis.mapStudentToScore(alirezaVafa, 17.0);
+//        realAnalysis.mapStudentToScore(dibaDanaei, 20.0);
+//        realAnalysis.finalizeScore(kamranKhoshkar);
+//        realAnalysis.finalizeScore(alirezaVafa);
+//
+//        complexAnalysis.mapStudentToScore(kamranKhoshkar, 12.0);
+//        complexAnalysis.mapStudentToScore(dibaDanaei, 17.0);
+//        complexAnalysis.mapStudentToScore(aliBeyrami, 19.0);
+//        complexAnalysis.finalizeScore(dibaDanaei);
+//        complexAnalysis.finalizeScore(aliBeyrami);
     }
 
     @Override

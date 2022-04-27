@@ -5,16 +5,14 @@ import gui.Template;
 import gui.main.MainMenu;
 import logic.models.abstractions.Course;
 import logic.models.abstractions.Transcript;
-import logic.models.roles.Professor;
 import logic.models.roles.Student;
 import logic.models.roles.User;
 import utils.database.data.CoursesDB;
-import utils.database.data.ProfessorsDB;
 
 import javax.swing.*;
 import java.util.LinkedList;
 
-public class CurrentStanding extends Template {
+public class CurrentStandingView extends Template {
     private Student student;
     private Transcript transcript;
     private JLabel totalGPA;
@@ -24,7 +22,7 @@ public class CurrentStanding extends Template {
     private String[] columns;
     private String[][] data;
 
-    public CurrentStanding(MainFrame mainFrame, MainMenu mainMenu, User user) {
+    public CurrentStandingView(MainFrame mainFrame, MainMenu mainMenu, User user) {
         super(mainFrame, mainMenu);
         student = (Student) user;
         transcript = student.getTranscript();

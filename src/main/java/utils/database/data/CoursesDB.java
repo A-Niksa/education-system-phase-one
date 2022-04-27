@@ -38,6 +38,10 @@ public class CoursesDB extends ModelDB {
         coursesList.add(course);
     }
 
+    public static void removeFromTranscripts(Course course) {
+
+    }
+
     public static void removeFromDatabase(Course course) {
         getInstance().removeFromDatabaseByInstance(course);
     }
@@ -120,6 +124,24 @@ public class CoursesDB extends ModelDB {
     private Course getCourseWithIDByInstance(String courseID) {
         for (Course course : coursesList) {
             if (course.getCourseID().equals(courseID)) {
+                return course;
+            }
+        }
+        return null;
+    }
+
+    public static Course getCourseWithName(String courseName, String departmentName) {
+        return getInstance().getCourseWithNameByInstance(courseName, departmentName);
+    }
+
+    private Course getCourseWithNameByInstance(String courseName, String departmentName) {
+        String potentialCoursesDepartmentName;
+        String potentialCourseName;
+        for (Course course : coursesList) {
+            potentialCoursesDepartmentName = course.getDepartmentName();
+            potentialCourseName = course.getCourseName();
+            if (potentialCoursesDepartmentName.equals(departmentName) &&
+                potentialCourseName.equals(courseName)) {
                 return course;
             }
         }

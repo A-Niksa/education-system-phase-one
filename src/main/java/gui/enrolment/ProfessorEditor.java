@@ -8,6 +8,7 @@ import logic.models.abstractions.Department;
 import logic.models.roles.Professor;
 import utils.database.data.DepartmentsDB;
 import utils.database.data.ProfessorsDB;
+import utils.database.data.StudentsDB;
 import utils.logging.MasterLogger;
 
 import javax.swing.*;
@@ -152,6 +153,7 @@ public class ProfessorEditor extends Template {
                     department.setEducationDeputy(null);
                 }
 
+//                StudentsDB.removeProfessorFromTranscripts(professor);
                 department.removeProfessor(professor);
                 ProfessorsDB.removeFromDatabase(professor);
                 MasterLogger.info("removed the selected professor", getClass());

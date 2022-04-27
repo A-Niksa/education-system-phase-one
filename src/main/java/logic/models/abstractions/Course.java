@@ -41,9 +41,14 @@ public class Course {
         CoursesDB.addToDatabase(this);
     }
 
+    private void addStudentToStudentScoresList(Student student) {
+        studentScores.add(new StudentStatus(student.getStudentID(), courseName));
+    }
+
     public void mapStudentToScore(Student student, Double score) {
         studentScores.add(new StudentStatus(student.getStudentID(), courseName, score));
         student.getTranscript().addCourse(this); // adding the course to the student's passed courses
+        updateInDatabase();
         // here, we refer to passed courses as the ones that the student has taken, not the ones that he/she has necessarily passed
     }
 
@@ -57,6 +62,10 @@ public class Course {
             }
         }
         return null;
+    }
+
+    public LinkedList<StudentStatus> getStudentsStatusesList() {
+        return studentScores;
     }
 
     public String getStudentsScoreString(Student targetStudent) {
@@ -74,6 +83,7 @@ public class Course {
             studentID = studentStatus.getStudentID();
             if (studentID.equals(targetStudent.getStudentID())) {
                 studentStatus.setScoreAsFinalized();
+                updateInDatabase();
                 return;
             }
         }
@@ -81,6 +91,7 @@ public class Course {
 
     public void addStudent(Student student) {
         listOfStudents.add(student);
+        addStudentToStudentScoresList(student);
     }
 
     public void removeStudent(Student student) {
@@ -165,6 +176,15 @@ public class Course {
     public void setCourseID(String courseID) {
         this.courseID = courseID;
     }
+
+//    public void removeFromTranscripts() {
+//        Transcript transcript;
+//        for (Student student : listOfStudents) {
+//            transcript = student.getTranscript();
+//            transcript.removeCourse(this);
+//            student.updateInDatabase();
+//        }
+//    }
 
     public void updateInDatabase() {
         CoursesDB.removeFromDatabase(this);

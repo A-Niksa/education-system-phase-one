@@ -2,6 +2,8 @@ package utils.database.testdata;
 
 import logic.models.abstractions.University;
 import utils.database.tools.DatabaseWriter;
+import utils.logging.LogIdentifier;
+import utils.logging.MasterLogger;
 
 public class TestDataBuilder {
     private static TestDataBuilder builder;
@@ -36,5 +38,7 @@ public class TestDataBuilder {
         aerospaceDeptBuilder = new AerospaceDeptBuilder(sharifUniversity);
 
         DatabaseWriter.updateDatabase();
+        MasterLogger.log("end of program", LogIdentifier.INFO, "buildByInstance",
+                "utils.database.testdata.TestDataBuilder");
     }
 }

@@ -10,6 +10,7 @@ import gui.services.ProfessorWeeklySchedule;
 import gui.services.requests.management.DroppingOutManager;
 import gui.services.requests.management.MinorManager;
 import gui.services.requests.management.RecommendationManager;
+import gui.standing.TemporaryStandingManager;
 import logic.models.roles.Professor;
 import logic.models.roles.User;
 import utils.logging.MasterLogger;
@@ -82,8 +83,7 @@ public class ProfessorMenu extends MainMenu {
         academicServices.add(studentRequestsSubMenu);
         alignRequestsSubMenu();
         menuBar.add(academicStanding);
-        academicStanding.add(temporaryScores);
-        academicStanding.add(viewStudentsAcademicStanding);
+        alignStandingMenu();
         menuBar.add(userProfile);
         userProfile.add(editUserProfile);
         addUserAdditionButtons();
@@ -95,6 +95,14 @@ public class ProfessorMenu extends MainMenu {
             add(addStudent);
             addProfessor.setBounds(505, 400, 150, 40);
             add(addProfessor);
+        }
+    }
+
+    private void alignStandingMenu() {
+        academicStanding.add(temporaryScores);
+
+        if (role == Professor.AdministrativeRole.EDUCATION_DEPUTY) {
+            academicStanding.add(viewStudentsAcademicStanding);
         }
     }
 
@@ -182,6 +190,18 @@ public class ProfessorMenu extends MainMenu {
                 MasterLogger.info("deputy opened the minor requests subsection in academic requests",
                         getClass());
                 mainFrame.setCurrentPanel(new MinorManager(mainFrame, mainMenu, professorUser));
+            }
+        });
+
+        temporaryScores.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                if (role == Professor.AdministrativeRole.EDUCATION_DEPUTY) {
+                    MasterLogger.info("deputy opened temporary scores in academic standing", getClass());
+                } else { // NORMAL or DEAN by design
+                    MasterLogger.info("professor opened temporary scores in academic standing", getClass());
+                    mainFrame.setCurrentPanel(new TemporaryStandingManager(mainFrame, mainMenu, professorUser));
+                }
             }
         });
 

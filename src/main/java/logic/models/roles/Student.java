@@ -181,6 +181,7 @@ public class Student extends User {
         for (String courseID : transcript.getPassedCoursesIDs()) {
             course = CoursesDB.getCourseWithID(courseID);
             studentStatus = course.getStudentsStatus(this);
+
             if (!studentStatus.scoreIsFinalized()) {
                 temporaryAcademicStatuses.add(studentStatus);
             }

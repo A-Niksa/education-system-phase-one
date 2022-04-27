@@ -48,7 +48,16 @@ public class PasswordChanger extends JPanel {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 String newPassword = newPasswordField.getText();
+
+                if (newPassword.equals(user.getPassword())) {
+                    MasterLogger.error("the new password is the same as the old one", getClass());
+                    JOptionPane.showMessageDialog(mainFrame, "Your new password has to be different from your" +
+                            " previous one.");
+                    return;
+                }
+
                 user.setPassword(newPassword);
+
                 if (user instanceof Student) {
                     Student castUser = (Student) user;
                     castUser.updateInDatabase();

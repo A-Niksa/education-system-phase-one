@@ -3,17 +3,14 @@ package gui.standing;
 import gui.MainFrame;
 import gui.Template;
 import gui.main.MainMenu;
-import logic.models.abstractions.Course;
 import logic.models.abstractions.StudentStatus;
-import logic.models.roles.Professor;
 import logic.models.roles.Student;
 import logic.models.roles.User;
 
 import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
 import java.util.LinkedList;
 
-public class TemporaryStanding extends Template {
+public class TemporaryStandingView extends Template {
     private Student student;
     private JTable scoresTable;
     private JScrollPane scrollPane;
@@ -22,7 +19,7 @@ public class TemporaryStanding extends Template {
     private LinkedList<StudentStatus> temporaryAcademicStatuses;
     private LinkedList<JButton> protestButtonsList;
 
-    public TemporaryStanding(MainFrame mainFrame, MainMenu mainMenu, User user) {
+    public TemporaryStandingView(MainFrame mainFrame, MainMenu mainMenu, User user) {
         super(mainFrame, mainMenu);
         student = (Student) user;
         columns = new String[] {"Course Name", "Current Score", "Protest to Score", "Instructor's Response"};
@@ -38,7 +35,7 @@ public class TemporaryStanding extends Template {
         for (int i = 0; i < statusesList.size(); i++) {
             studentStatus = statusesList.get(i);
             data[i] = new String[]{studentStatus.getCourseName(),
-                                    studentStatus.getScore() + "",
+                                    studentStatus.getScoreString(),
                                     studentStatus.getProtestOfStudent(),
                                     studentStatus.getResponseOfProfessor()};
         }
@@ -77,7 +74,7 @@ public class TemporaryStanding extends Template {
         for (int i = 0; i < protestButtonsList.size(); i++) {
             protestButton = protestButtonsList.get(i);
             studentStatus = temporaryAcademicStatuses.get(i);
-            protestButton.addActionListener(new ProtestHandler(mainFrame, this, studentStatus));
+            protestButton.addActionListener(new ProtestSubmissionHandler(mainFrame, this, studentStatus));
         }
     }
 
